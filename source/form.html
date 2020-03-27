@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона. Форма Отзывов</title>
+</head>
+<body>
+<header class="page-header">
+  <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
+  <nav class="header__navigation">
+    <button type="button" class="btn btn--burger header__btn--menu">
+      <span class="visually-hidden">Кнопка Меню</span>
+    </button>
+    <ul class="header__navigation__list menu-list">
+      <li class="menu-list__item">
+        Главная
+      </li>
+      <li class="menu-list__item">
+        Фото и Видео
+      </li>
+      <li class="menu-list__item">
+        Форма отзыва
+      </li>
+      <li class="menu-list__item">
+        HTML Academy
+      </li>
+    </ul>
+  </nav>
+  <div class="greeting header__greeting greeting--small">
+    <h1 class="greeting--small__title">sedona</h1>
+  </div>
+</header>
+
+<main class="page-main">
+  <section class="review">
+    <form action="#" method="post" class="review__form">
+      <h2 class="review__heading">Оставьте свой отзыв</h2>
+      <p class="review__slogan">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+      <div class="form__wrapper">
+        <h3 class="review__user__heading">Представтесь:</h3>
+        <label class="review__user review__user--name">
+          <span class="user__indicator">Имя*:</span>
+          <input type="text" class="review__user__field review__user__filed--name">
+        </label>
+        <label class="review__user review__user--lname">
+          <span class="user__indicator">Фамилия*:</span>
+          <input type="text" class="review__user__field review__user__filed--lname">
+        </label>
+        <label class="review__user review__user--fname">
+          <span class="user__indicator">Отчество*:</span>
+          <input type="text" class="review__user__field review__user__filed--fname">
+        </label>
+      </div>
+
+      <div class="form__wrapper">
+        <h3 class="review__contacts__heading">Контактная информация:</h3>
+        <label class="review__contacts review__contacts--tel">
+          <span class="contacts__indicator">Контактная Телефон*:</span>
+          <input type="tel" class="review__contacts__field review__contacts__field--tel">
+        </label>
+        <label class="review__contacts review__contacts--mail">
+          <span class="contacts__indicator">Электронаая Почта*:</span>
+          <input type="email" class="review__contacts__field review__contacts__field--mail">
+        </label>
+      </div>
+
+      <div class="form__wrapper">
+        <h3 class="review__impression__heading">ВАше Общее впечатление:</h3>
+        <label class="review__impression review__impression--good">
+          <input type="radio" name="review-impression" value="good"
+                 class="review__impression__radio review__impression__radio--good" checked>
+          <span class="impression__indicator">Скорее положительное</span>
+        </label>
+        <label class="review__impression review__impression--bad">
+          <input type="radio" name="review-impression" value="bad"
+                 class="review__impression__radio review__impression__radio--bad">
+          <span class="impression__indicator">Скорее отрицательное</span>
+        </label>
+        <label class="review__impression review__impression--dntknw">
+          <input type="radio" name="review-impression" value="dontknow"
+                 class="review__impression__radio review__impression__radio--dntknw">
+          <span class="impression__indicator">Затрудняюсь ответить</span>
+        </label>
+      </div>
+
+      <div class="form__wrapper">
+        <h3 class="review__visited__heading">посещенные
+          достопримечательности:</h3>
+        <label class="review__visited review__visited__bridge">
+          <input type="checkbox" name="review__visited" value="bridge"
+                 class="review__visited__cb review__visited__cb--bridge">
+          <span class="visited__indicator">Мост Дьявола</span>
+        </label>
+        <label class="review__visited review__visited__mountain">
+          <input type="checkbox" name="review__visited" value="mountain"
+                 class="review__visited__cb review__visited__cb--mountain">
+          <span class="visited__indicator">Гора-Колокол</span>
+        </label>
+        <label class="review__visited review__visited__park">
+          <input type="checkbox" name="review__visited" value="park"
+                 class="review__visited__cb review__visited__cb--park">
+          <span class="visited__indicator">Слайд-парк</span>
+        </label>
+        <label class="review__visited review__visited__redrocks">
+          <input type="checkbox" name="review__visited" value="redrocks"
+                 class="review__visited__cb review__visited__cb--redrocks">
+          <span class="visited__indicator">Красные скалы</span>
+        </label>
+      </div>
+
+      <div class="form__wrapper form-wrapper--last">
+        <h3 class="review__opinion__heading">Опишите свои эмоции:</h3>
+        <label class="review__opinion">
+          <textarea class="review__opinion" placeholder="Опишите подробно все свои восторги"></textarea>
+        </label>
+      </div>
+      <button type="submit" class="btn btn--sedona review__btn">Отправить отзыв</button>
+    </form>
+  </section>
+
+</main>
+
+
+<footer class="page-footer">
+  <h3 class="footer__hashtag">#VISITSEDONA</h3>
+  <ul class="socials-list footer__socials">
+    <li class="social__item social__item--tweet">
+      <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Твитер</span></a>
+    </li>
+    <li class="social__item social__item--face">
+      <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Фейсбук</span></a>
+    </li>
+    <li class="social__item social__item--youtube">
+      <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Ютуб</span></a>
+    </li>
+  </ul>
+  <p class="footer__copy copyrighting">Разработано</p>
+</footer>
+</body>
+</html>
