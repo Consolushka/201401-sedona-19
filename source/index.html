@@ -5,8 +5,8 @@
   <title>HTML Academy: Седона</title>
 </head>
 <body>
-<header class="page-header">
-  <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
+<header class="header">
+  <img class="header__logo logo" src="img/logo-mobile.png" height="83" width="102" alt="Логотип">
   <nav class="header__navigation">
     <button type="button" class="btn btn--burger header__btn--menu">
       <span class="visually-hidden">Кнопка Меню</span>
@@ -30,7 +30,7 @@
     <img src="img/greeting.svg" class="greeting__image" height="214" width="282" alt="Приветствие">
   </div>
 </header>
-
+<!--Сделать нормальную верстку окна видеo-->
 
 <main class="page-main">
   <section class="advantages">
@@ -43,63 +43,63 @@
       Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
     </p>
     <ul class="advantages-list">
-      <li class="advantages__item advantages__item--important">
-        <h3 class="advantage__title">Настоящий городок</h3>
-        <p class="advantage__number">
+      <li class="advantages-list__item advantages-list__item--important">
+        <h3 class="advantages-list__item-title">Настоящий городок</h3>
+        <p class="advantages-lists__item-number">
           №
         </p>
-        <p class="advantage__desc">
+        <p class="advantages-list__item-desc">
           СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
         </p>
         <img class="advantage__image" src="img/photo-city.jpg" height="260" width="320" alt="Фотография Седоны">
         <ul class="comfort-list">
-          <li class="comfort__item">
-            <h4 class="comfort__item__title comfort-item-housing">Жилье</h4>
-            <p class="comfort__item__desc">
+          <li class="comfort-list__item">
+            <h4 class="comfort-list__item-title comfort-list-item--housing">Жилье</h4>
+            <p class="comfort-list__item-desc">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
-          <li class="comfort__item">
-            <h4 class="comfort__item__title comfort-item--souvenirs">Сувениры</h4>
-            <p class="comfort__item__desc">
+          <li class="comfort-list__item">
+            <h4 class="comfort-list__item-title comfort-list-item--souvenirs">Сувениры</h4>
+            <p class="comfort-list__item-desc">
               Не только китайского, но и местного производства!
             </p>
           </li>
-          <li class="comfort__item">
-            <h4 class="comfort__item__title comfort-item--eating">Еда</h4>
-            <p class="comfort-list__item__desc">
+          <li class="comfort-list__item">
+            <h4 class="comfort-list__item-title comfort-list-item--eating">Еда</h4>
+            <p class="comfort-list__item-desc">
               Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
             </p>
           </li>
         </ul>
       </li>
-      <li class="advantages__item advantages__item--important">
-        <h3 class="advantage__title">Там есть мост Дьявола</h3>
-        <p class="advantage__number">№<span class="advantage__number__count"></span></p>
-        <p class="advantage__desc">
+      <li class="advantages-list__item advantages-list__item--important">
+        <h3 class="advantages-list__item-title">Там есть мост Дьявола</h3>
+        <p class="advantages-lists__item-number">№<span class="advantage__number__count"></span></p>
+        <p class="advantages-list__item-desc">
           Да, по нему можно пройти! Если вы осмелитесь, конечно
         </p>
         <img src="img/photo-bridge.jpg" height="260" width="320" alt="Фотография Моста Дьявола">
       </li>
-      <li class="advantages__item">
-        <h3 class="advantage__title">Небольшая площадь</h3>
-        <p class="advantage__number">№<span class="advantage__number__count"></span></p>
-        <p class="advantage_desc">
+      <li class="advantages-list__item">
+        <h3 class="advantages-list__item-title">Небольшая площадь</h3>
+        <p class="advantages-lists__item-number">№<span class="advantage__number__count"></span></p>
+        <p class="advantages-list__item-desc">
           Все интересные места находятся очень близко
         </p>
       </li>
-      <li class="advantages__item">
-        <h3 class="advantage__title">Красивая дорога</h3>
-        <p class="advantage__number">№<span class="advantage__number__count"></span></p>
-        <p class="advantage_desc">
+      <li class="advantages-list__item">
+        <h3 class="advantages-list__item-title">Красивая дорога</h3>
+        <p class="advantages-lists__item-number">№<span class="advantage__number__count"></span></p>
+        <p class="advantages-list__item-desc">
           ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА
           совсем НЕ СКУЧНО!
         </p>
       </li>
-      <li class="advantages__item">
-        <h3 class="advantage__title">Мало туристов</h3>
-        <p class="advantage__number">№<span class="advantage__number__count"></span></p>
-        <p class="advantage_desc">
+      <li class="advantages-list__item">
+        <h3 class="advantages-list__item-title">Мало туристов</h3>
+        <p class="advantages-lists__item-number">№<span class="advantage__number__count"></span></p>
+        <p class="advantages-list__item-desc">
           Большенство едет в гранд каньон и толпится там
         </p>
       </li>
@@ -107,11 +107,11 @@
   </section>
 
   <section class="find-hotel">
-    <h3 class="hotel__question">Заинтересовались?</h3>
-    <p class="hotel__desc">
+    <h3 class="find-hotel__question">Заинтересовались?</h3>
+    <p class="find-hotel__desc">
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
     </p>
-    <a class="btn btn--sedona hotel__btn">Найти гостиницу</a>
+    <a class="btn btn--sedona find-hotel__btn">Найти гостиницу</a>
   </section>
 
   <section class="location">
@@ -120,16 +120,16 @@
 </main>
 
 
-<footer class="page-footer">
+<footer class="footer">
   <h3 class="footer__hashtag">#VISITSEDONA</h3>
   <ul class="socials-list footer__socials">
-    <li class="social__item social__item--tweet">
+    <li class="socials-list__item socials-list__item--tweet">
       <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Твитер</span></a>
     </li>
-    <li class="social__item social__item--face">
+    <li class="socials-list__item social-list__item--face">
       <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Фейсбук</span></a>
     </li>
-    <li class="social__item social__item--youtube">
+    <li class="social-list__item social-list__item--youtube">
       <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Ютуб</span></a>
     </li>
   </ul>

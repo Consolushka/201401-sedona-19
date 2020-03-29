@@ -5,8 +5,8 @@
   <title>HTML Academy: Седона. Форма Отзывов</title>
 </head>
 <body>
-<header class="page-header">
-  <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
+<header class="header">
+  <img class="header__logo logo" src="img/logo-mobile.png" height="83" width="102" alt="Логотип">
   <nav class="header__navigation">
     <button type="button" class="btn btn--burger header__btn--menu">
       <span class="visually-hidden">Кнопка Меню</span>
@@ -27,7 +27,7 @@
     </ul>
   </nav>
   <div class="greeting header__greeting greeting--small">
-    <h1 class="greeting__title">sedona</h1>
+    <img src="img/greeting-small.svg" class="greeting__image" height="39" width="229" alt="Седона">
   </div>
 </header>
 
@@ -40,57 +40,71 @@
     <ul class="photos-list">
       <li class="photos-list__item">
         <blockquote>
-          <img src="img/photo-1-mobile.jpg" class="photo__image" height="280" width="280" alt="Первая фотография">
-          <p class="photo__name">Неродные просторы</p>
-          <cite class="photo__author">Автор фото: Борис</cite>
-          <span class="photo_likes">1350</span>
+          <img src="img/photo-1-mobile.jpg" class="photos-list__item__image" height="280" width="280"
+               alt="Первая фотография">
+          <p class="photos-list__item__name">Неродные просторы</p>
+          <cite class="photos-list__item__author">Автор фото: Борис</cite>
+          <span class="photos-list__item__likes">1350</span>
         </blockquote>
       </li>
       <li class="photos-list__item">
         <blockquote>
-          <img src="img/photo-2-mobile.jpg" class="photo__image" height="280" width="280" alt="Первая фотография">
-          <p class="photo__name">Местная растительность</p>
-          <cite class="photo__author">Автор фото: Сергей</cite>
-          <span class="photo_likes">143</span>
+          <img src="img/photo-2-mobile.jpg" class="photos-list__item__image" height="280" width="280"
+               alt="Первая фотография">
+          <p class="photos-list__item__name">Местная растительность</p>
+          <cite class="photos-list__item__author">Автор фото: Сергей</cite>
+          <span class="photos-list__item__likes">143</span>
         </blockquote>
       </li>
       <li class="photos-list__item">
         <blockquote>
-          <img src="img/photo-3-mobile.jpg" class="photo__image" height="280" width="280" alt="Первая фотография">
-          <p class="photo__name">Дорога на Север</p>
-          <cite class="photo__author">Автор фото: Петр</cite>
-          <span class="photo_likes">96</span>
+          <img src="img/photo-3-mobile.jpg" class="photos-list__item__image" height="280" width="280"
+               alt="Первая фотография">
+          <p class="photos-list__item__name">Дорога на Север</p>
+          <cite class="photos-list__item__author">Автор фото: Петр</cite>
+          <span class="photos-list__item__likes">96</span>
         </blockquote>
       </li>
       <li class="photos-list__item">
         <blockquote>
-          <img src="img/photo-4-mobile.jpg" class="photo__image" height="280" width="280" alt="Первая фотография">
-          <p class="photo__name">Мост Дьявола</p>
-          <cite class="photo__author">Автор фото: Антон</cite>
-          <span class="photo_likes">254</span>
+          <img src="img/photo-4-mobile.jpg" class="photos-list__item__image" height="280" width="280"
+               alt="Первая фотография">
+          <p class="photos-list__item__name">Мост Дьявола</p>
+          <cite class="photos-list__item__author">Автор фото: Антон</cite>
+          <span class="photos-list__item__likes">254</span>
         </blockquote>
       </li>
     </ul>
   </section>
 
-  <section class="video-section">
+  <section class="video">
     <h3 class="video-heading">Все еще сомневаетесь?</h3>
     <p class="video-slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    <img src="img/video-mobile.jpg" class="video__image" height="267" width="320" alt="Изображение Видео">
+    <div class="video__window">
+      <img src="img/video-mobile.jpg" class="video__window-image" height="201" width="320" alt="Изображение Видео">
+      <div class="video__window__scroll-bg">
+
+      </div>
+      <div class="video__window__nav-bg">
+        <button type="button" class="btn btn--repeat"><span class="visually-hidden"></span></button>
+        <button type="button" class="btn btn--subtitles"><span class="visually-hidden"></span></button>
+        <button type="button" class="btn btn--fullscreen"><span class="visually-hidden"></span></button>
+      </div>
+    </div>
   </section>
 </main>
 
 
-<footer class="page-footer">
+<footer class="footer">
   <h3 class="footer__hashtag">#VISITSEDONA</h3>
   <ul class="socials-list footer__socials">
-    <li class="social__item social__item--tweet">
+    <li class="socials-list__item socials-list__item--tweet">
       <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Твитер</span></a>
     </li>
-    <li class="social__item social__item--face">
+    <li class="socials-list__item social-list__item--face">
       <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Фейсбук</span></a>
     </li>
-    <li class="social__item social__item--youtube">
+    <li class="social-list__item social-list__item--youtube">
       <a href="#" class="btn btn--sedona"><span class="visually-hidden">Ссылка на Ютуб</span></a>
     </li>
   </ul>
