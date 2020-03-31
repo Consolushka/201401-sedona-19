@@ -1,0 +1,9 @@
+.photos-list__item{
+  @include base-heading--mobile;
+  &-author{
+    @include base-text--mobile;
+  }
+  &-likes{
+    font-size: 14px;
+  }
+}

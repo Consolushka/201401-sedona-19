@@ -1,0 +1,47 @@
+.advantages {
+  @include base-text--mobile;
+
+  &-heading {
+    @include base-heading--mobile;
+  }
+
+  &-list__item {
+    background: #eeeeee;
+  }
+  
+  &-list__item--important {
+    color: #ffffff;
+    background: $base-color;
+  }
+
+
+  &-list__item-title {
+    @include base-heading--mobile;
+  }
+
+  &-list__item--important &-list__item-title {
+    color: #ffffff;
+  }
+}
+
+.comfort-list {
+  @include base-text--mobile;
+  background: #ffffff;
+
+  &__item-title {
+    @include base-heading--mobile;
+  }
+
+  &__item--souvenirs {
+
+  }
+
+  &__item--eating {
+
+  }
+
+  &__item--housing {
+
+  }
+}
+

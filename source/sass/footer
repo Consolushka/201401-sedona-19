@@ -1,0 +1,27 @@
+.footer{
+  &-hashtag{
+    @include base-heading--mobile;
+    font-size: 21px;
+  }
+}
+
+.socials-list__item-btn{
+  width: 46px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  &--face{
+    background-image: url("../img/icon-facebook.svg");
+  }
+  &--twit{
+    background-image: url("../img/icon-twitter.svg");
+  }
+  &--youtube{
+    background-image: url("../img/icon-youtube.svg");
+  }
+}
+
+.copyrighting{
+  @include base-text--mobile;
+  color: #000000;
+}

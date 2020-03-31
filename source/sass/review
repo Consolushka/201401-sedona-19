@@ -1,0 +1,39 @@
+.review {
+  @include base-heading--mobile;
+
+  &__slogan,
+  &__user {
+    @include base-text--mobile;
+  }
+
+  &__btn {
+    @include base-heading--mobile;
+    color: #ffffff;
+    font-size: 21px;
+  }
+
+  &__user-field,
+  &__opinion-field,
+  &__contacts-field {
+    background-color: #f2f2f2;
+    @include base-heading--mobile;
+    text-transform: none;
+    border: none;
+  }
+  &__opinion-field{
+    resize: none;
+  }
+}
+
+.contacts-indicator {
+  @include base-text--mobile;
+}
+
+.impression-indicator {
+  text-transform: none;
+}
+
+.visited-indicator {
+  text-transform: none;
+}
+

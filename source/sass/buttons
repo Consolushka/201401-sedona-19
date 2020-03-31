@@ -1,0 +1,10 @@
+.btn{
+  cursor: pointer;
+  border: none;
+  display: block;
+  &--sedona{
+    background: $base-color;
+  }
+}
+
+

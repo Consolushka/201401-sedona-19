@@ -1,0 +1,12 @@
+.video__window{
+  &-scroll-bg{
+    width: 280px;
+    height: 48px;
+    background-color: rgba(0,0,0, 0.5);
+  }
+  &-nav-bg{
+    width: 280px;
+    height: 66px;
+    background: #f2f2f2;
+  };
+}

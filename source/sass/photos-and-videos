@@ -1,0 +1,8 @@
+.photos-and-video {
+  &__heading {
+    @include base-heading--mobile;
+  }
+  &__slogan{
+    @include base-text--mobile;
+  }
+}

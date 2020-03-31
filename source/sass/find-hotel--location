@@ -1,0 +1,13 @@
+.find-hotel{
+  &-question{
+    @include base-heading--mobile;
+  }
+  &-desc{
+    @include base-text--mobile;
+  }
+  &-btn{
+    @include base-heading--mobile;
+    color: #ffffff;
+    font-size: 21px;
+  }
+}

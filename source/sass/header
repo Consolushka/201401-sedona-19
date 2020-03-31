@@ -1,0 +1,20 @@
+.header__navigation{
+  @include container--mobile;
+  background: $base-color;
+}
+
+.menu-list{
+  &__item{
+    text-align: center;
+    @include base-heading--mobile;
+    color: #ffffff;
+  }
+}
+
+.greeting{
+  @include container--mobile;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  &--small{
+    background-position-y: -231px;
+  }
+}

@@ -1,0 +1,59 @@
+@font-face {
+ font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family: "PT Sans", sans-serif;
+}
+
+*,
+*:after,
+*:before{
+  box-sizing: inherit;
+  background-repeat: no-repeat;
+}
+
+@mixin base-heading--mobile{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000000;
+}
+
+@mixin base-text--mobile{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #333333;
+}
+
+@mixin container--mobile{
+  padding: 0 20px;
+}
+
+.container{
+  margin: 0 auto;
+  &--mobile{
+    padding: 0 20px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 0;
+  margin: -1px;
+}
