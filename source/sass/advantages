@@ -1,47 +1,62 @@
 .advantages {
   @include base-text--mobile;
 
-  &-heading {
-    @include base-heading--mobile;
-  }
+}
 
-  &-list__item {
-    background: #eeeeee;
-  }
-  
-  &-list__item--important {
-    color: #ffffff;
-    background: $base-color;
-  }
+.advantages-heading {
+  @include base-heading--mobile;
 
+  margin-bottom: 40px;
 
-  &-list__item-title {
-    @include base-heading--mobile;
-  }
+}
 
-  &-list__item--important &-list__item-title {
-    color: #ffffff;
+.advantages-slogan {
+  margin-bottom: 31px;
+}
+
+.advantages-list__item {
+  background: #eeeeee;
+  padding-top: 35px;
+}
+
+.advantages-list__item--important {
+  color: #ffffff;
+  padding-top: 41px;
+  background: $base-color;
+
+  .advantages-list__item-desc {
+    padding-bottom: 41px;
   }
+}
+
+.advantages-list__item-title {
+  @include base-heading--mobile;
+  margin:0;
+  margin-bottom: 20px;
+}
+
+.advantages-list__item--important .advantages-list__item-title {
+  color: #ffffff;
+}
+
+.advantages-lists__item-number {
+  margin-bottom: 21px;
+}
+
+.advantages-list__item-desc {
+  padding-bottom: 35px;
 }
 
 .comfort-list {
   @include base-text--mobile;
   background: #ffffff;
 
-  &__item-title {
-    @include base-heading--mobile;
-  }
+  padding-bottom: 43px;
+}
 
-  &__item--souvenirs {
+.comfort-list__item-title {
+  @include base-heading--mobile;
 
-  }
-
-  &__item--eating {
-
-  }
-
-  &__item--housing {
-
-  }
+  margin: 41px 0 25px 0;
 }
 

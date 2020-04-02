@@ -1,12 +1,29 @@
+.video{
+  padding-top: 39px;
+}
+
+.video-heading{
+  margin-bottom: 40px;
+}
+
+.video-slogan{
+  margin-bottom: 42px;
+}
+
 .video__window{
-  &-scroll-bg{
-    width: 280px;
-    height: 48px;
-    background-color: rgba(0,0,0, 0.5);
-  }
-  &-nav-bg{
-    width: 280px;
-    height: 66px;
-    background: #f2f2f2;
-  };
+  position: relative;
+}
+.video__window-scroll-bg {
+  position: absolute;
+  top: 153px;
+
+  width: 280px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video__window-nav-bg {
+  width: 280px;
+  height: 66px;
+  background: #f2f2f2;
 }

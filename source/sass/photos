@@ -1,9 +1,20 @@
-.photos-list__item{
+.photos-list__item {
+  margin-top: 20px;
+  margin-bottom: 22px;
   @include base-heading--mobile;
-  &-author{
-    @include base-text--mobile;
-  }
-  &-likes{
-    font-size: 14px;
-  }
+}
+
+.photos-list__item-name{
+  margin-bottom: 14px;
+}
+
+.photos-list__item-author {
+  margin-bottom: 21px;
+  @include base-text--mobile;
+}
+
+.photos-list__item-likes {
+  font-size: 14px;
+
+  margin-bottom: 24px;
 }

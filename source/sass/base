@@ -1,52 +1,60 @@
 @font-face {
- font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff") format("woff");
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff2") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
 }
 
-body{
+body {
   margin: 0;
   box-sizing: border-box;
   background: #ffffff;
   font-family: "PT Sans", sans-serif;
 }
 
+p{
+  margin:0;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 *,
 *:after,
-*:before{
+*:before {
   box-sizing: inherit;
   background-repeat: no-repeat;
 }
 
-@mixin base-heading--mobile{
+@mixin base-heading--mobile {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
 }
 
-@mixin base-text--mobile{
+@mixin base-text--mobile {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 400;
   color: #333333;
 }
 
-@mixin container--mobile{
-  padding: 0 20px;
-}
 
-.container{
+.container {
   margin: 0 auto;
-  &--mobile{
+
+  &--mobile {
     padding: 0 20px;
   }
 }

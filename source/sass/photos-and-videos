@@ -1,8 +1,10 @@
-.photos-and-video {
-  &__heading {
-    @include base-heading--mobile;
-  }
-  &__slogan{
-    @include base-text--mobile;
-  }
+.photos-and-video__heading {
+  @include base-heading--mobile;
+  margin:0;
+  margin-bottom: 40px;
+}
+
+.photos-and-video__slogan {
+  @include base-text--mobile;
+  margin-bottom: 33px;
 }

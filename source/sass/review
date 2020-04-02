@@ -1,28 +1,103 @@
 .review {
   @include base-heading--mobile;
+}
 
-  &__slogan,
-  &__user {
-    @include base-text--mobile;
-  }
+.review__heading{
+  margin: 0;
+  margin-bottom: 36px;
+}
 
-  &__btn {
-    @include base-heading--mobile;
-    color: #ffffff;
-    font-size: 21px;
-  }
+.review__slogan{
+  padding-bottom: 24px;
+}
 
-  &__user-field,
-  &__opinion-field,
-  &__contacts-field {
-    background-color: #f2f2f2;
-    @include base-heading--mobile;
-    text-transform: none;
-    border: none;
-  }
-  &__opinion-field{
-    resize: none;
-  }
+.review__form-quiz{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.review__user{
+  padding: 25px 0;
+}
+
+.review__user-heading{
+  margin:0;
+  margin-bottom: 17px;
+}
+
+.review__user-field{
+  margin-top: 10px;
+}
+
+.review__slogan,
+.review__user {
+  @include base-text--mobile;
+}
+
+.review__contacts{
+  padding: 25px 0;
+}
+
+.review__contacts-heading{
+  margin:0;
+  margin-bottom: 13px;
+}
+
+.contacts-indicator{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.review__impression{
+  padding: 25px 0 17px 0;
+}
+
+.review__impression-heading{
+  margin:0;
+  margin-bottom: 29px;
+}
+
+.review__impression-radio{
+  margin-bottom: 10px;
+}
+
+.review__visited{
+  padding: 25px 0;
+}
+
+.review__visited-heading{
+  margin: 0;
+}
+
+.review__visited-cb{
+  margin-top: 23px;
+}
+
+.review__user-field,
+.review__opinion-field,
+.review__contacts-field {
+  background-color: #f2f2f2;
+  @include base-heading--mobile;
+  text-transform: none;
+  border: none;
+}
+
+.review__opinion{
+  padding-top: 24px;
+}
+
+.review__opinion-heading{
+  margin:0;
+  margin-bottom: 22px;
+}
+
+.review__opinion-field {
+  padding: 22px;
+  resize: none;
+
+  margin-bottom: 51px;
 }
 
 .contacts-indicator {
@@ -35,5 +110,11 @@
 
 .visited-indicator {
   text-transform: none;
+}
+
+.review__btn {
+  @include base-heading--mobile;
+  color: #ffffff;
+  font-size: 21px;
 }
 
