@@ -6,9 +6,11 @@
   margin-bottom: 41px;
   @include base-heading--mobile;
   font-size: 21px;
+
 }
 
 .socials-list{
+  @include list-style;
   margin-bottom: 41px;
 }
 
@@ -32,6 +34,7 @@
 }
 
 .copyrighting {
+  margin:0;
   @include base-text--mobile;
   color: #000000;
 }

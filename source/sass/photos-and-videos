@@ -5,6 +5,7 @@
 }
 
 .photos-and-video__slogan {
+  margin:0;
   @include base-text--mobile;
   margin-bottom: 33px;
 }

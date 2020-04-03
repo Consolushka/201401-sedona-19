@@ -8,6 +8,7 @@
 }
 
 .find-hotel__desc {
+  margin:0;
   @include base-text--mobile;
   margin-bottom: 41px;
 }

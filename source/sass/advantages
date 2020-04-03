@@ -11,7 +11,12 @@
 }
 
 .advantages-slogan {
+  margin:0;
   margin-bottom: 31px;
+}
+
+.advantages-list{
+  @include list-style;
 }
 
 .advantages-list__item {
@@ -40,14 +45,17 @@
 }
 
 .advantages-lists__item-number {
+  margin:0;
   margin-bottom: 21px;
 }
 
 .advantages-list__item-desc {
+  margin:0;
   padding-bottom: 35px;
 }
 
 .comfort-list {
+  @include list-style;
   @include base-text--mobile;
   background: #ffffff;
 
@@ -58,5 +66,9 @@
   @include base-heading--mobile;
 
   margin: 41px 0 25px 0;
+}
+
+.comfort-list__item-desc{
+  margin:0;
 }
 

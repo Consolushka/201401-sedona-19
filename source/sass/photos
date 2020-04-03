@@ -1,14 +1,20 @@
+.photos-list {
+  @include list-style;
+}
+
 .photos-list__item {
   margin-top: 20px;
   margin-bottom: 22px;
   @include base-heading--mobile;
 }
 
-.photos-list__item-name{
+.photos-list__item-name {
+  margin: 0;
   margin-bottom: 14px;
 }
 
 .photos-list__item-author {
+  margin: 0;
   margin-bottom: 21px;
   @include base-text--mobile;
 }

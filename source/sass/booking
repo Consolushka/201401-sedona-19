@@ -6,7 +6,7 @@
   @include base-text--mobile;
 }
 
-.booking-btn {
+.booking__btn {
   @include base-heading--mobile;
   color: #ffffff;
 }

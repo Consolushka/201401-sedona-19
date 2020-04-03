@@ -16,17 +16,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background: #ffffff;
-  font-family: "PT Sans", sans-serif;
-}
-
-p{
-  margin:0;
-}
-
-ul{
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 *,
@@ -34,6 +24,12 @@ ul{
 *:before {
   box-sizing: inherit;
   background-repeat: no-repeat;
+}
+
+@mixin list-style{
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 @mixin base-heading--mobile {
