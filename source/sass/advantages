@@ -1,10 +1,10 @@
 .advantages {
-  @include base-text--mobile;
+  @include base-text;
   width: 100%;
 }
 
 .advantages__heading {
-  @include base-heading--mobile;
+  @include base-heading;
 
   text-align: center;
 
@@ -19,6 +19,9 @@
   margin-bottom: 14px;
 }
 
+.advantages-list{
+  @include list-style;
+}
 
 .advantages-list__item {
   text-align: center;
@@ -39,7 +42,7 @@
 }
 
 .advantages-list__item-title {
-  @include base-heading--mobile;
+  @include base-heading;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -49,27 +52,34 @@
 }
 
 .advantages-lists__item-number {
+  margin: 0;
   margin-bottom: 21px;
 }
 
 .advantages-list__item-desc {
+  margin: 0;
   padding-bottom: 35px;
 }
 
 .comfort-list {
-  @include base-text--mobile;
+  @include list-style;
+  @include base-text;
   background: #ffffff;
 
   padding-bottom: 43px;
 }
 
 .comfort-list__item-title {
-  @include base-heading--mobile;
+  @include base-heading;
 
   margin-bottom: 25px;
 
   margin-top: 0;
   padding-top: 41px;
+}
+
+.comfort-list__item-desc{
+  margin: 0;
 }
 
 

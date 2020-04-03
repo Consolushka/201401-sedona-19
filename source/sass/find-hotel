@@ -15,18 +15,19 @@
 
 .find-hotel__heading {
   margin-bottom: 31px;
-  @include base-heading--mobile;
+  @include base-heading;
 }
 
 .find-hotel__desc {
-  @include base-text--mobile;
+  margin: 0;
+  @include base-text;
   margin-bottom: 41px;
 }
 
 .find-hotel__btn {
   width: 280px;
   padding: 21px;
-  @include base-heading--mobile;
+  @include base-heading;
   color: #ffffff;
   font-size: 21px;
 }

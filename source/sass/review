@@ -1,5 +1,5 @@
 .review {
-  @include base-heading--mobile;
+  @include base-heading;
 }
 
 .review__heading {
@@ -8,6 +8,7 @@
 }
 
 .review__slogan {
+  margin: 0;
   text-align: center;
   padding-bottom: 24px;
 }
@@ -65,7 +66,7 @@
 
 .review__slogan,
 .review__user {
-  @include base-text--mobile;
+  @include base-text;
 }
 
 .review__contacts {
@@ -77,7 +78,8 @@
   margin-bottom: 13px;
 }
 
-.contacts-indicator {
+.review__contacts-indicator {
+  @include base-text;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -111,7 +113,7 @@
 .review__opinion-field,
 .review__contacts-field {
   background-color: #f2f2f2;
-  @include base-heading--mobile;
+  @include base-heading;
   text-transform: none;
   border: none;
 }
@@ -134,15 +136,11 @@
   margin-bottom: 51px;
 }
 
-.contacts-indicator {
-  @include base-text--mobile;
-}
-
-.impression-indicator {
+.review__impression-indicator {
   text-transform: none;
 }
 
-.visited-indicator {
+.review__visited-indicator {
   text-transform: none;
 }
 
@@ -152,12 +150,13 @@
   width: 280px;
   padding: 21px;
 
-  @include base-heading--mobile;
+  @include base-heading;
   color: #ffffff;
   font-size: 21px;
 }
 
 .review__form-necessarily {
+  margin: 0;
   order: 2;
 }
 
@@ -230,10 +229,7 @@
     flex-direction: row;
   }
 
-  .review__contacts-field{
-  }
-
-  .contacts-indicator{
+  .review__contacts-indicator{
     margin-top: 0;
   }
 }

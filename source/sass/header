@@ -4,6 +4,7 @@
 }
 
 .header__navigation {
+
   background: $base-color;
 }
 
@@ -19,6 +20,7 @@
 }
 
 .menu-list {
+  @include list-style;
   display: none;
   color: #ffffff;
 }
@@ -26,7 +28,7 @@
 .menu-list__item {
   padding: 21px 0;
   text-align: center;
-  @include base-heading--mobile;
+  @include base-heading;
 }
 
 

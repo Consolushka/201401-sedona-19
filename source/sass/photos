@@ -3,6 +3,7 @@
 }
 
 .photos-list{
+  @include list-style;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,16 +13,18 @@
 .photos-list__item {
   margin-top: 20px;
   margin-bottom: 22px;
-  @include base-heading--mobile;
+  @include base-heading;
 }
 
 .item-info__name{
+  margin: 0;
   margin-bottom: 14px;
 }
 
 .item-info__author {
+  margin: 0;
   margin-bottom: 21px;
-  @include base-text--mobile;
+  @include base-text;
 }
 
 .item-info__likes {

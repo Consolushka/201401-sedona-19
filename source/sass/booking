@@ -1,13 +1,13 @@
 .booking {
-  @include base-heading--mobile;
+  @include base-heading;
 }
 
 .booking__info {
-  @include base-text--mobile;
+  @include base-text;
 }
 
 .booking-btn {
-  @include base-heading--mobile;
+  @include base-heading;
   color: #ffffff;
 }
 

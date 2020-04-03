@@ -7,11 +7,12 @@
 
 .footer-hashtag {
   margin-bottom: 41px;
-  @include base-heading--mobile;
+  @include base-heading;
   font-size: 21px;
 }
 
 .socials-list{
+  @include list-style;
   margin-bottom: 41px;
   display: flex;
   flex-direction: row;
@@ -39,7 +40,8 @@
 }
 
 .copyrighting {
-  @include base-text--mobile;
+  margin: 0;
+  @include base-text;
   color: #000000;
 }
 

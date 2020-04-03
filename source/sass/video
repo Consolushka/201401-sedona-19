@@ -9,6 +9,7 @@
 }
 
 .video-slogan{
+  margin: 0;
   margin-bottom: 42px;
 }
 

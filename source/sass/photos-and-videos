@@ -1,5 +1,5 @@
 .photos-and-video__heading {
-  @include base-heading--mobile;
+  @include base-heading;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 40px;
@@ -11,7 +11,7 @@
 }
 
 .photos-and-video__slogan {
-  @include base-text--mobile;
+  @include base-text;
   margin-bottom: 33px;
 }
 @media (min-width: $tablet-width) {
