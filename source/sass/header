@@ -1,4 +1,5 @@
 .header {
+  padding-top: 10px;
   margin-bottom: 45px;
 }
 
@@ -6,17 +7,106 @@
   background: $base-color;
 }
 
+.header__logo{
+  margin-top: -10px;
+  margin-left: calc(50% - 51px);
+  position: absolute;
+}
+
+.header__btn--menu{
+  margin: 16px 20px 16px auto;
+
+}
+
+.menu-list {
+  display: none;
+  color: #ffffff;
+}
+
 .menu-list__item {
   padding: 21px 0;
   text-align: center;
   @include base-heading--mobile;
-  color: #ffffff;
 }
+
 
 .greeting {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  margin: 0 auto;
+  height: 390px;
+
+  background:  url("../img/bg-intro-triangle-mobile.svg") no-repeat, url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+
 .greeting--small {
-  background-position-y: -231px;
+
+  height: 158px;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-list {
+    margin: 0 auto;
+
+    min-height: 57px;
+
+    padding-left: 47px;
+    padding-right: 26px;
+
+    color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-list__item{
+    font-size: 14px;
+  }
+
+  .header__navigation {
+    background: none;
+  }
+
+  .header__btn--menu {
+    display: none;
+  }
+
+
+  .greeting {
+    height: 519px;
+    background: /*url("../img/bg-intro-triangle-desktop.svg") no-repeat,*/ url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+
+    &--small{
+      height: 291px;
+      background-position-y: -57px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-list{
+    width: 1200px;
+  }
+
+  .header__logo{
+    margin-left: calc(600px - 51px);
+  }
+
+  .greeting{
+    background:url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 462px, url("../img/bg-back-desktop@1x.jpg");
+    &--small{
+      height: 302px;
+      background:url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 245px, url("../img/bg-back-desktop@1x.jpg");
+    }
+
+  }
 }

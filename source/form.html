@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Седона. Форма Отзывов</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header class="header">
@@ -14,16 +15,16 @@
   <nav class="header__navigation">
     <ul class="header__navigation-list menu-list">
       <li class="menu-list__item">
-        Главная
+        <a href="index.html" class="menu-list__item-btn">Главная</a>
       </li>
       <li class="menu-list__item">
-        Фото и Видео
+        <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
       </li>
       <li class="menu-list__item">
-        Форма отзыва
+        <a href="form.html" class="menu-list__item-btn">Форма отзыва</a>
       </li>
       <li class="menu-list__item">
-        HTML Academy
+        <a href="https://up.htmlacademy.ru/adaptive/19" class="menu-list__item-btn">HTML Academy</a>
       </li>
     </ul>
   </nav>
@@ -35,10 +36,12 @@
 <main class="page-main">
   <section class="review">
     <form action="#" method="post" class="review__form">
+      <div class="review__form-info">
       <h2 class="review__heading">Оставьте свой отзыв</h2>
       <p class="review__slogan">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
+      </div>
       <div class="review__form-wrapper">
         <h3 class="review__user-heading">Представтесь:</h3>
         <div class="review__form-quiz">
@@ -57,7 +60,7 @@
         </div>
       </div>
 
-      <div class="review__form-wrapper">
+      <div class="review__form-wrapper review__form-wrapper--contacts">
         <h3 class="review__contacts-heading">Контактная информация:</h3>
         <div class="review__form-quiz">
           <label class="review__contacts review__contacts--tel">
@@ -71,7 +74,7 @@
         </div>
       </div>
 
-      <div class="review__form-wrapper">
+      <div class="review__form-wrapper review__form-wrapper--impression">
         <h3 class="review__impression-heading">ВАше Общее впечатление:</h3>
         <div class="review__form-quiz">
           <label class="review__impression review__impression--good">
@@ -89,7 +92,7 @@
         </div>
       </div>
 
-      <div class="review__form-wrapper">
+      <div class="review__form-wrapper review__form-wrapper--visited">
         <h3 class="review__visited-heading">посещенные
           достопримечательности:</h3>
         <div class="review__form-quiz">
@@ -112,13 +115,14 @@
         </div>
       </div>
 
-      <div class="review__form-wrapper review__form-wrapper--last">
+      <div class="review__form-wrapper review__form-wrapper--opinion">
         <h3 class="review__opinion-heading">Опишите свои эмоции:</h3>
         <label class="review__opinion">
           <textarea class="review__opinion-field" placeholder="Опишите подробно все свои восторги"></textarea>
         </label>
       </div>
       <button type="submit" class="btn btn--sedona review__btn">Отправить отзыв</button>
+      <p class="review__form-necessarily">*-Обязательные поля</p>
     </form>
   </section>
 

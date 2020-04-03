@@ -12,11 +12,18 @@
   font-weight: 700;
 }
 
+html{
+  background: #f2f2f2;
+}
+
 body {
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   background: #ffffff;
   font-family: "PT Sans", sans-serif;
+  min-width: 320px;
+  max-width: 1200px;
+  box-shadow: 0 0 20px #dbdbdb;
 }
 
 p{
@@ -29,6 +36,10 @@ ul{
   list-style: none;
 }
 
+a{
+  color: inherit;
+  text-decoration: none;
+}
 *,
 *:after,
 *:before {
@@ -64,4 +75,7 @@ ul{
   clip: rect(0 0 0 0);
   height: 0;
   margin: -1px;
+}
+.disblock{
+  display: block;
 }

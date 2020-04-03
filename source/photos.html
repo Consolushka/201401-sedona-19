@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Седона. Форма Отзывов</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header class="header">
@@ -12,18 +13,18 @@
     <span class="visually-hidden">Кнопка Меню</span>
   </button>
   <nav class="header__navigation">
-    <ul class="header__navigation__list menu-list">
+    <ul class="header__navigation-list menu-list">
       <li class="menu-list__item">
-        Главная
+        <a href="index.html" class="menu-list__item-btn">Главная</a>
       </li>
       <li class="menu-list__item">
-        Фото и Видео
+        <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
       </li>
       <li class="menu-list__item">
-        Форма отзыва
+        <a href="form.html" class="menu-list__item-btn">Форма отзыва</a>
       </li>
       <li class="menu-list__item">
-        HTML Academy
+        <a href="https://up.htmlacademy.ru/adaptive/19" class="menu-list__item-btn">HTML Academy</a>
       </li>
     </ul>
   </nav>
@@ -32,7 +33,7 @@
   </div>
 </header>
 
-<main class="page-main">
+<main class="page-main page-main--photos">
   <h3 class="photos-and-video__heading">Фото и видео</h3>
   <p class="photos-and-video__slogan">
     Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
@@ -41,27 +42,43 @@
     <ul class="photos-list">
       <li class="photos-list__item">
         <img src="img/photo-1-mobile.jpg" class="photos-list__item-image" height="280" width="280" alt="Первая фотография">
-        <p class="photos-list__item-name">Неродные просторы</p>
-        <p class="photos-list__item-author">Автор фото: Борис</p>
-        <span class="photos-list__item-likes">1350</span>
+        <div class="photos-list__item-info">
+          <div class="photos-list__item-wrapper">
+            <p class="item-info__name">Неродные просторы</p>
+            <p class="item-info__author">Автор фото: Борис</p>
+          </div>
+          <span class="item-info__likes">1350</span>
+        </div>
       </li>
       <li class="photos-list__item">
-        <img src="img/photo-2-mobile.jpg" class="photos-list__item-image" height="280" width="280" alt="Первая фотография">
-        <p class="photos-list__item-name">Местная растительность</p>
-        <p class="photos-list__item-author">Автор фото: Сергей</p>
-        <span class="photos-list__item-likes">143</span>
+        <img src="img/photo-2-mobile.jpg" class="photos-list__item-image" height="280" width="280" alt="Вторая фотография">
+        <div class="photos-list__item-info">
+          <div class="photos-list__item-wrapper">
+            <p class="item-info__name">Местная растительность</p>
+            <p class="item-info__author">Автор фото: Сергей</p>
+          </div>
+          <span class="item-info__likes">143</span>
+        </div>
       </li>
       <li class="photos-list__item">
-        <img src="img/photo-3-mobile.jpg" class="photos-list__item-image" height="280" width="280" alt="Первая фотография">
-        <p class="photos-list__item-name">Дорога на Север</p>
-        <p class="photos-list__item-author">Автор фото: Петр</p>
-        <span class="photos-list__item-likes">96</span>
+        <img src="img/photo-3-mobile.jpg" class="photos-list__item-image" height="280" width="280" alt="Третья фотография">
+        <div class="photos-list__item-info">
+          <div class="photos-list__item-wrapper">
+            <p class="item-info__name">Дорога на Север</p>
+            <p class="item-info__author">Автор фото: Петр</p>
+          </div>
+          <span class="item-info__likes">96</span>
+        </div>
       </li>
       <li class="photos-list__item">
-        <img src="img/photo-4-mobile.jpg" class="photos-list__item-image" height="280" width="280" alt="Первая фотография">
-        <p class="photos-list__item-name">Мост Дьявола</p>
-        <p class="photos-list__item-author">Автор фото: Антон</p>
-        <span class="photos-list__item-likes">254</span>
+        <img src="img/photo-4-mobile.jpg" class="photos-list__item-image" height="280" width="280" alt="Четвертая фотография">
+        <div class="photos-list__item-info">
+          <div class="photos-list__item-wrapper">
+            <p class="item-info__name">Мост Дьявола</p>
+            <p class="item-info__author">Автор фото: Антон</p>
+          </div>
+          <span class="item-info__likes">254</span>
+        </div>
       </li>
     </ul>
   </section>

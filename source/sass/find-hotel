@@ -1,5 +1,16 @@
-.find-hotel{
+.find-hotel {
   padding: 33px 0 49px 0;
+
+  width: 320px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .find-hotel__heading {
@@ -13,7 +24,31 @@
 }
 
 .find-hotel__btn {
+  width: 280px;
+  padding: 21px;
   @include base-heading--mobile;
   color: #ffffff;
   font-size: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .find-hotel__heading{
+    font-size: 30px;
+  }
+
+  .find-hotel {
+    width: $tablet-width;
+  }
+
+  .find-hotel__btn{
+    font-size: 21px;
+
+    width: 458px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find-hotel {
+    width: $desktop-width;
+  }
 }

@@ -1,5 +1,8 @@
 .footer{
   padding: 41px 0 36px 0;
+
+  width: 320px;
+  margin: 0 auto;
 }
 
 .footer-hashtag {
@@ -10,6 +13,10 @@
 
 .socials-list{
   margin-bottom: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .socials-list__item-btn {
@@ -34,4 +41,28 @@
 .copyrighting {
   @include base-text--mobile;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .footer{
+    font-size: 21px;
+
+    width: $tablet-width;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer__copy{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer{
+    width: 960px;
+  }
+
 }

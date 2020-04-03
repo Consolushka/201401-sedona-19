@@ -5,6 +5,13 @@
   &--sedona{
     background: $base-color;
   }
+
+  &--burger{
+    width: 24px;
+    height: 24px;
+
+    background: url("../img/icon-menu.svg");
+  }
 }
 
 
