@@ -11,7 +11,7 @@
     <button type="button" class="btn btn--burger header__btn--menu">
       <span class="visually-hidden">Кнопка Меню</span>
     </button>
-    <ul class="header__navigation__list menu-list">
+    <ul class="header__navigation__list menu-list modal modal--disnone">
       <li class="menu-list__item">
         Главная
       </li>
@@ -41,15 +41,15 @@
       <div class="review__form-wrapper">
         <h3 class="review__user-heading">Представтесь:</h3>
         <label class="review__user review__user--name">
-          <span class="user-indicator">Имя*:</span>
+          <span class="review__user-indicator">Имя*:</span>
           <input type="text" class="review__user-field review__user-filed--name">
         </label>
         <label class="review__user review__user--lname">
-          <span class="user-indicator">Фамилия*:</span>
+          <span class="review__user-indicator">Фамилия*:</span>
           <input type="text" class="review__user-field review__user-filed--lname">
         </label>
         <label class="review__user review__user--fname">
-          <span class="user-indicator">Отчество*:</span>
+          <span class="review__user-indicator">Отчество*:</span>
           <input type="text" class="review__user-field review__user-filed--fname">
         </label>
       </div>
@@ -138,5 +138,22 @@
   </ul>
   <p class="footer__copy copyrighting">Разработано</p>
 </footer>
+
+<div class="booking booking--success modal modal-disnone">
+  <h3 class="booking-heading">Ваш отзыв отправлен!</h3>
+  <p class="booking-info">
+    Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+    В ближайшее время мы опубликуем его на сайте.
+  </p>
+  <button class="btn btn--sedona booking-btn">Закрыть окно</button>
+</div>
+<div class="booking booking--failure modal modal-disnone">
+  <h3 class="booking-heading">ЧТО-ТО ПОШЛО НЕ ТАК!
+  </h3>
+  <p class="booking-info">
+    Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+  </p>
+  <button class="btn btn--sedona booking-btn">ок</button>
+</div>
 </body>
 </html>
