@@ -12,7 +12,10 @@
     <span class="visually-hidden">Кнопка Меню</span>
   </button>
   <nav class="header__navigation">
-    <ul class="header__navigation-list menu-list">
+    <button type="button" class="btn btn--burger header__btn--menu">
+      <span class="visually-hidden">Кнопка Меню</span>
+    </button>
+    <ul class="header__navigation__list menu-list modal modal--disnone">
       <li class="menu-list__item">
         Главная
       </li>
@@ -27,8 +30,8 @@
       </li>
     </ul>
   </nav>
-  <div class="greeting header__greeting">
-    <img src="img/greeting.svg" class="greeting__image" height="214" width="282" alt="Приветствие">
+  <div class="greeting header__greeting greeting--small">
+    <img src="img/greeting-small.svg" class="greeting__image" height="39" width="229" alt="Седона">
   </div>
 </header>
 
@@ -52,19 +55,19 @@
         <img class="advantage__image" src="img/photo-city.jpg" height="260" width="320" alt="Фотография Седоны">
         <ul class="comfort-list">
           <li class="comfort-list__item">
-            <h4 class="comfort-list__item-title comfort-list__item--housing">Жилье</h4>
+            <h4 class="comfort-list__item-title comfort-list__item-title--housing">Жилье</h4>
             <p class="comfort-list__item-desc">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
           <li class="comfort-list__item">
-            <h4 class="comfort-list__item-title comfort-list__item--souvenirs">Сувениры</h4>
+            <h4 class="comfort-list__item-title comfort-list__item-title--souvenirs">Сувениры</h4>
             <p class="comfort-list__item-desc">
               Не только китайского, но и местного производства!
             </p>
           </li>
           <li class="comfort-list__item">
-            <h4 class="comfort-list__item-title comfort-list__item--eating">Еда</h4>
+            <h4 class="comfort-list__item-title comfort-list__item-title--eating">Еда</h4>
             <p class="comfort-list__item-desc">
               Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
             </p>
