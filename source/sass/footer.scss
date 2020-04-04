@@ -42,7 +42,7 @@
 .copyrighting {
   margin: 0;
   @include base-text;
-  color: #000000;
+  color: $black-color;
 }
 
 @media (min-width: $tablet-width) {

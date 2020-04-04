@@ -1,0 +1,35 @@
+.comfort-list {
+  @include list-style;
+  @include base-text;
+  background: $white-color;
+
+  padding-bottom: 43px;
+}
+
+.comfort-list__item-title {
+  @include base-heading;
+
+  margin-bottom: 25px;
+
+  margin-top: 0;
+  padding-top: 41px;
+}
+
+.comfort-list__item-desc{
+  margin: 0;
+}
+
+@media (min-width: $tablet-width){
+  .comfort-list {
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .comfort-list__item-title{
+    font-size: 21px;
+  }
+}

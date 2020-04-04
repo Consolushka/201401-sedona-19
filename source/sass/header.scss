@@ -10,7 +10,9 @@
 
 .header__logo{
   margin-top: -10px;
-  margin-left: calc(50% - 51px);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
 }
 
@@ -22,7 +24,7 @@
 .menu-list {
   @include list-style;
   display: none;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .menu-list__item {
@@ -100,7 +102,7 @@
   }
 
   .header__logo{
-    margin-left: calc(600px - 51px);
+
   }
 
   .greeting{

@@ -1,0 +1,19 @@
+@mixin list-style{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin base-heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $black-color;
+}
+
+@mixin base-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $grey-color;
+}
