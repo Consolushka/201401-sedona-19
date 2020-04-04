@@ -1,0 +1,26 @@
+.header {
+  margin-bottom: 45px;
+}
+
+.header__navigation {
+  background: $base-color;
+}
+
+.menu-list{
+  @include list-style;
+}
+
+.menu-list__item {
+  padding: 21px 0;
+  text-align: center;
+  @include base-heading--mobile;
+  color: #ffffff;
+}
+
+.greeting {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.greeting--small {
+  background-position-y: -231px;
+}

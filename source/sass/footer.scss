@@ -1,0 +1,40 @@
+.footer{
+  padding: 41px 0 36px 0;
+}
+
+.footer-hashtag {
+  margin-bottom: 41px;
+  @include base-heading--mobile;
+  font-size: 21px;
+
+}
+
+.socials-list{
+  @include list-style;
+  margin-bottom: 41px;
+}
+
+.socials-list__item-btn {
+  width: 46px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--face {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--twit {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
+}
+
+.copyrighting {
+  margin:0;
+  @include base-text--mobile;
+  color: #000000;
+}
