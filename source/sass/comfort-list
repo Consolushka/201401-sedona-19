@@ -2,18 +2,19 @@
 .comfort-list {
   @include list-style;
   @include base-text;
+  padding-top: 41px;
   background: $white-color;
 
-  padding-bottom: 43px;
+}
+
+.comfort-list__item{
+  padding-bottom: 35px;
 }
 
 .comfort-list__item-title {
   @include base-heading;
-
+  margin: 0;
   margin-bottom: 25px;
-
-  margin-top: 0;
-  padding-top: 41px;
 }
 
 .comfort-list__item-desc{
@@ -28,6 +29,13 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .comfort-list__item:first-child{
+    padding-right: 0;
+  }
+  .comfort-list__item:last-child{
+    padding-left: 0;
   }
 
   .comfort-list__item-title{

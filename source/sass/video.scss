@@ -6,6 +6,7 @@
 }
 
 .video-heading{
+  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -16,16 +17,22 @@
 
 .video__window{
   position: relative;
+  width: 320px;
+  height: 201px;
+
+  background-image: url("../img/video-mobile.jpg");
 }
 .video__window-scroll-bg {
   position: absolute;
-  top: 153px;
+  bottom: -66px;
   width: 280px;
-  height: 48px;
+  height: 111px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .video__window-nav-bg {
+  position: absolute;
+  bottom: 0;
   width: 280px;
   height: 66px;
   background: #f2f2f2;

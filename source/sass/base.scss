@@ -40,10 +40,7 @@ a{
 
 .container {
   margin: 0 auto;
-
-  &--mobile {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 }
 
 .visually-hidden {
@@ -55,3 +52,16 @@ a{
 .disblock{
   display: block;
 }
+
+@media (min-width: $tablet-width){
+  .container{
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .container{
+    padding: 0 65px;
+  }
+}
+

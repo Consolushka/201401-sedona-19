@@ -8,11 +8,13 @@
 </head>
 <body>
 <header class="header">
-  <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
-  <button type="button" class="btn btn--burger header__btn--menu">
-    <span class="visually-hidden">Кнопка Меню</span>
-  </button>
-  <nav class="header__navigation">
+  <div class="header__wrapper container">
+    <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
+    <button type="button" class="btn btn--burger header__btn--menu">
+      <span class="visually-hidden">Кнопка Меню</span>
+    </button>
+  </div>
+  <nav class="header__navigation container">
     <ul class="header__navigation-list menu-list">
       <li class="menu-list__item">
         <a href="index.html" class="menu-list__item-btn">Главная</a>
@@ -35,18 +37,20 @@
 
 <main class="page-main">
   <section class="advantages">
-    <h2 class="advantages__heading">
-      СЕДОНА — небольшой
-      городок в АРИЗОНЕ,
-      зАСЛУЖИвающий большего!
-    </h2>
-    <p class="advantages__slogan">
-      Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-    </p>
+    <div class="container">
+      <h2 class="advantages__heading">
+        СЕДОНА — небольшой
+        городок в АРИЗОНЕ,
+        зАСЛУЖИвающий большего!
+      </h2>
+      <p class="advantages__slogan">
+        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+      </p>
+    </div>
     <ul class="advantages-list">
       <li class="advantages-list__item advantages-list__item--important">
         <div class="advantages-list__item-adaptive-wrapper">
-          <div class="advantages-list__item-wrapper">
+          <div class="advantages-list__item-wrapper container">
             <h3 class="advantages-list__item-title">Настоящий городок</h3>
             <p class="advantages-lists__item-number">№<span class="advantage__number-count"></span></p>
             <p class="advantages-list__item-desc">
@@ -56,19 +60,19 @@
           <img class="advantage__image" src="img/photo-city.jpg" height="260" width="320" alt="Фотография Седоны">
         </div>
         <ul class="comfort-list">
-          <li class="comfort-list__item">
+          <li class="comfort-list__item container">
             <h4 class="comfort-list__item-title comfort-list__item--housing">Жилье</h4>
             <p class="comfort-list__item-desc">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
-          <li class="comfort-list__item">
+          <li class="comfort-list__item container">
             <h4 class="comfort-list__item-title comfort-list__item--souvenirs">Сувениры</h4>
             <p class="comfort-list__item-desc">
               Не только китайского, но и местного производства!
             </p>
           </li>
-          <li class="comfort-list__item">
+          <li class="comfort-list__item container">
             <h4 class="comfort-list__item-title comfort-list__item--eating">Еда</h4>
             <p class="comfort-list__item-desc">
               Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
@@ -78,7 +82,7 @@
       </li>
       <li class="advantages-list__item advantages-list__item--important">
         <div class="advantages-list__item-adaptive-wrapper advantages-list__item-adaptive-wrapper--reverse">
-          <div class="advantages-list__item-wrapper">
+          <div class="advantages-list__item-wrapper container">
             <h3 class="advantages-list__item-title">Там есть мост Дьявола</h3>
             <p class="advantages-lists__item-number">№<span class="advantage__number-count"></span></p>
             <p class="advantages-list__item-desc">
@@ -89,7 +93,7 @@
         </div>
       </li>
       <li class="advantages-list__item">
-        <div class="advantages-list__item-wrapper">
+        <div class="advantages-list__item-wrapper container">
           <h3 class="advantages-list__item-title">Небольшая площадь</h3>
           <p class="advantages-lists__item-number">№<span class="advantage__number-count"></span></p>
           <p class="advantages-list__item-desc">
@@ -98,7 +102,7 @@
         </div>
       </li>
       <li class="advantages-list__item">
-        <div class="advantages-list__item-wrapper">
+        <div class="advantages-list__item-wrapper container">
           <h3 class="advantages-list__item-title">Красивая дорога</h3>
           <p class="advantages-lists__item-number">№<span class="advantage__number-count"></span></p>
           <p class="advantages-list__item-desc">
@@ -108,7 +112,7 @@
         </div>
       </li>
       <li class="advantages-list__item">
-        <div class="advantages-list__item-wrapper">
+        <div class="advantages-list__item-wrapper container">
           <h3 class="advantages-list__item-title">Мало туристов</h3>
           <p class="advantages-lists__item-number">№<span class="advantage__number-count"></span></p>
           <p class="advantages-list__item-desc">
@@ -119,7 +123,7 @@
     </ul>
   </section>
 
-  <section class="find-hotel">
+  <section class="find-hotel container">
     <h3 class="find-hotel__heading">Заинтересовались?</h3>
     <p class="find-hotel__desc">
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
@@ -133,7 +137,7 @@
 </main>
 
 
-<footer class="footer">
+<footer class="footer container">
   <h3 class="footer-hashtag">#VISITSEDONA</h3>
   <ul class="socials-list footer__socials">
     <li class="socials-list__item">

@@ -37,7 +37,7 @@
   background: $base-color;
 
   .advantages-list__item-desc {
-    padding-bottom: 41px;
+    margin-bottom: 41px;
   }
 }
 
@@ -58,7 +58,6 @@
 
 .advantages-list__item-desc {
   margin: 0;
-  padding-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,9 +89,16 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
-
   .advantages-list__item-title{
     font-size: 21px;
+  }
+
+  .advantages-list__item:nth-child(3) .advantages-list__item-wrapper{
+    padding-right: 0;
+  }
+
+  .advantages-list__item:last-child .advantages-list__item-wrapper{
+    padding-left: 0;
   }
 
   .advantages-list__item--important {

@@ -1,6 +1,26 @@
 .header {
-  padding-top: 10px;
+  position: relative;
+
   margin-bottom: 45px;
+
+  &:after{
+    width: 100%;
+    height: 11%;
+
+    content: "";
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.header__wrapper{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__navigation {
@@ -8,7 +28,7 @@
   background: $base-color;
 }
 
-.header__logo{
+.header__logo {
   margin-top: -10px;
   top: 0;
   left: 50%;
@@ -16,9 +36,8 @@
   position: absolute;
 }
 
-.header__btn--menu{
-  margin: 16px 20px 16px auto;
-
+.header__btn--menu {
+  margin-left: auto;
 }
 
 .menu-list {
@@ -38,7 +57,7 @@
   margin: 0 auto;
   height: 390px;
 
-  background:  url("../img/bg-intro-triangle-mobile.svg") no-repeat, url("../img/bg-back-mobile@1x.jpg");
+  background: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position: center;
 
@@ -48,20 +67,26 @@
 }
 
 
-
 .greeting--small {
 
   height: 158px;
 }
 
 @media (min-width: $tablet-width) {
+  .header{
+    &:after{
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+  }
+
+  .header__wrapper{
+    padding: 0;
+  }
+
   .menu-list {
     margin: 0 auto;
 
     min-height: 57px;
-
-    padding-left: 47px;
-    padding-right: 26px;
 
     color: black;
 
@@ -71,7 +96,7 @@
     align-items: center;
   }
 
-  .menu-list__item{
+  .menu-list__item {
     font-size: 14px;
   }
 
@@ -86,10 +111,10 @@
 
   .greeting {
     height: 519px;
-    background: /*url("../img/bg-intro-triangle-desktop.svg") no-repeat,*/ url("../img/bg-back-tablet@1x.jpg");
+    background: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
 
-    &--small{
+    &--small {
       height: 291px;
       background-position-y: -57px;
     }
@@ -97,19 +122,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .menu-list{
-    width: 1200px;
+  .header{
+    &:after{
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
   }
 
-  .header__logo{
+  .greeting {
+    background:url("../img/bg-back-desktop@1x.jpg");
 
-  }
-
-  .greeting{
-    background:url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 462px, url("../img/bg-back-desktop@1x.jpg");
-    &--small{
+    &--small {
       height: 302px;
-      background:url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 245px, url("../img/bg-back-desktop@1x.jpg");
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 245px, url("../img/bg-back-desktop@1x.jpg");
     }
 
   }
