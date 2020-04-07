@@ -21,10 +21,13 @@
 
 .advantages-list{
   @include list-style;
+  counter-reset: advant-count;
 }
 
 .advantages-list__item {
   text-align: center;
+
+  counter-increment: advant-count;
 
   background: #eeeeee;
   padding-top: 35px;
@@ -54,6 +57,10 @@
 .advantages-lists__item-number {
   margin: 0;
   margin-bottom: 21px;
+
+  &:after{
+    content: counter(advant-count);
+  }
 }
 
 .advantages-list__item-desc {
@@ -93,14 +100,6 @@
     font-size: 21px;
   }
 
-  .advantages-list__item:nth-child(3) .advantages-list__item-wrapper{
-    padding-right: 0;
-  }
-
-  .advantages-list__item:last-child .advantages-list__item-wrapper{
-    padding-left: 0;
-  }
-
   .advantages-list__item--important {
     width: 100%;
 
@@ -112,12 +111,13 @@
 
   .advantages-list__item-wrapper{
     width: 400px;
+    padding-left: 20px;
   }
 
   .advantages-list__item-adaptive-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 
     &--reverse{

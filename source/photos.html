@@ -8,28 +8,32 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__wrapper container">
-    <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
-    <button type="button" class="btn btn--burger header__btn--menu">
-      <span class="visually-hidden">Кнопка Меню</span>
-    </button>
+  <div class="container">
+    <div class="header__wrapper">
+      <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
+      <button type="button" class="btn btn--burger header__btn--menu">
+        <span class="visually-hidden">Кнопка Меню</span>
+      </button>
+    </div>
   </div>
-  <nav class="header__navigation">
-    <ul class="header__navigation-list menu-list">
-      <li class="menu-list__item">
-        <a href="index.html" class="menu-list__item-btn">Главная</a>
-      </li>
-      <li class="menu-list__item">
-        <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
-      </li>
-      <li class="menu-list__item">
-        <a href="form.html" class="menu-list__item-btn">Форма отзыва</a>
-      </li>
-      <li class="menu-list__item">
-        <a href="https://up.htmlacademy.ru/adaptive/19" class="menu-list__item-btn">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container">
+    <nav class="header__navigation">
+      <ul class="header__navigation-list menu-list">
+        <li class="menu-list__item">
+          <a href="index.html" class="menu-list__item-btn">Главная</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="form.html" class="menu-list__item-btn">Форма отзыва</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="https://up.htmlacademy.ru/adaptive/19" class="menu-list__item-btn">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div class="greeting header__greeting greeting--small">
     <img src="img/greeting-small.svg" class="greeting__image" height="39" width="229" alt="Седона">
   </div>
@@ -90,7 +94,7 @@
   <section class="video">
     <h3 class="video-heading">Все еще сомневаетесь?</h3>
     <p class="video-slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    <div class="video__window container">
+    <div class="video__window">
       <div class="video__window-scroll-bg">
         <div class="video__window-nav-bg">
           <button type="button" class="btn btn--repeat"><span class="visually-hidden"></span></button>
@@ -103,20 +107,23 @@
 </main>
 
 
-<footer class="footer">
-  <h3 class="footer__hashtag">#VISITSEDONA</h3>
-  <ul class="socials-list footer__socials">
-    <li class="socials-list__item">
-      <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--twit"><span class="visually-hidden">Ссылка на Твитер</span></a>
-    </li>
-    <li class="socials-list__item">
-      <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--face"><span class="visually-hidden">Ссылка на Фейсбук</span></a>
-    </li>
-    <li class="social-list__item">
-      <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--youtube"><span class="visually-hidden">Ссылка на Ютуб</span></a>
-    </li>
-  </ul>
-  <p class="footer__copy copyrighting">Разработано</p>
+<footer class="container">
+  <div class="footer">
+    <h3 class="footer__hashtag">#VISITSEDONA</h3>
+    <ul class="socials-list footer__socials">
+      <li class="socials-list__item">
+        <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--twit"><span class="visually-hidden">Ссылка на Твитер</span></a>
+      </li>
+      <li class="socials-list__item">
+        <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--face"><span class="visually-hidden">Ссылка на Фейсбук</span></a>
+      </li>
+      <li class="social-list__item">
+        <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--youtube"><span class="visually-hidden">Ссылка на Ютуб</span></a>
+      </li>
+    </ul>
+    <p class="footer__copy copyrighting">Разработано</p>
+  </div>
 </footer>
+
 </body>
 </html>

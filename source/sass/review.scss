@@ -40,14 +40,9 @@
 
   order: 2;
 
-  &--visited,
-  &--opinion,
-  &--contacts {
-    width: 100%;
-  }
-
   &--opinion{
     margin-bottom: 51px;
+    width: 100%;
   }
 }
 

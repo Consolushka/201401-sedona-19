@@ -15,17 +15,3 @@
   @include base-text;
   margin-bottom: 33px;
 }
-@media (min-width: $tablet-width) {
-  .page-main--photos{
-    padding: 0 60px;
-  }
-  .photos-and-video__slogan {
-    width: 440px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-main--photos{
-    padding: 0;
-  }
-}
