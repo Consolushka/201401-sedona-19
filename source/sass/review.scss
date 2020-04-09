@@ -36,13 +36,15 @@
 }
 
 .review__form-wrapper {
+  width: 100%;
+
   border: 1px solid $black-color;
 
   order: 2;
 
+
   &--opinion{
     margin-bottom: 51px;
-    width: 100%;
   }
 }
 
@@ -53,6 +55,19 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.review__user-heading,
+.review__contacts-heading,
+.review__visited-heading,
+.review__impression-heading,
+.review__opinion-heading{
+  text-align: center;
+}
+
+.review__form-quiz{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .review__user-heading {
@@ -176,8 +191,18 @@
     flex-wrap: wrap;
   }
 
-  .review__form-wrapper--impression {
-    order: 1;
+  .review__form-quiz{
+    margin: 0;
+  }
+
+  .review__form-wrapper{
+    &--introducing,
+    &--impression{
+      width: 50%;
+    }
+    &--impression{
+      order: 1;
+    }
   }
 
   .review__form-wrapper--visited {
@@ -203,6 +228,11 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+ .review__contacts-indicator{
+   margin-left: 22px;
+ }
+
   .review__contacts-field {
     width: 100%;
   }
@@ -212,7 +242,12 @@
   .review{
     padding: 0 120px;
   }
-  .review__form{
+
+  .review__form-wrapper{
+    &--impression,
+    &--introducing{
+      width: 400px;
+    }
   }
 
   .review__form-wrapper--contacts{
@@ -220,6 +255,11 @@
       flex-direction: row;
     }
   }
+
+  .review__contacts-indicator{
+    margin-left: 0;
+  }
+
   .review__contacts{
     flex-direction: row;
   }

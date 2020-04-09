@@ -1,5 +1,7 @@
 
 .comfort-list {
+  width: 100%;
+
   @include list-style;
   @include base-text;
   padding-top: 41px;
@@ -7,28 +9,46 @@
 
 }
 
+.comfort-list__item-wrapper{
+  text-align: left;
+
+  margin-right: 20px;
+}
+
 .comfort-list__item{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding-bottom: 35px;
+
+  width: 100%;
+  margin: 0 auto;
 
   &--housing:before,
   &--souvenirs:before,
   &--eating:before {
     width: 39px;
     height: 37px;
+
+    margin-left: 20px;
+    margin-right: 12px;
+
+    content: '';
+    background-size: cover;
   }
 
   &--housing:before{
-    content: url("../img/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
   }
 
   &--souvenirs:before{
-    content: url("../img/icon-gift.svg");
+    width: 32px;
+    height: 39px;
+    background-image: url("../img/icon-gift.svg");
   }
 
   &--eating:before{
-    content: url("../img/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
   }
 }
 
@@ -39,7 +59,7 @@
 }
 
 .comfort-list__item-desc{
-  text-align: left;
+  width: 209px;
   margin: 0;
 }
 
@@ -55,8 +75,29 @@
 
   .comfort-list__item{
     flex-direction: column;
+    align-items: center;
+
+    &:before{
+      width: 75px;
+      height: 73px;
+      margin:0;
+      margin-bottom: 33px;
+    }
+
+    &--souvenirs{
+      order: 2;
+    }
+
+    &--souvenirs:before{
+      width: 64px;
+      height: 75px;
+    }
   }
 
+  .comfort-list__item-wrapper{
+    text-align: center;
+    margin: 0;
+  }
   .comfort-list__item-title{
     font-size: 21px;
   }

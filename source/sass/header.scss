@@ -1,7 +1,12 @@
 .header {
+  width: 100%;
+
   position: relative;
 
   margin-bottom: 45px;
+
+  display: flex;
+  flex-direction: column;
 
   &:after{
     width: 100%;
@@ -20,8 +25,16 @@
 }
 
 .header__wrapper{
+  position: relative;
+
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.header .container{
+  order: -1;
+  margin: 0;
+  padding: 0;
 }
 
 .header__navigation {
@@ -38,11 +51,12 @@
 
 .header__btn--menu {
   margin-left: auto;
+
+  margin-right: 20px;
 }
 
 .menu-list {
   @include list-style;
-  display: none;
   color: $white-color;
 }
 
@@ -54,7 +68,7 @@
 
 
 .greeting {
-  margin: 0 auto;
+  order: 2;
   height: 390px;
 
   background: url("../img/bg-back-mobile@1x.jpg");
@@ -79,7 +93,15 @@
     }
   }
 
+  .header .container{
+    order: 1;
+    margin: 0 auto;
+    padding: 0 45px;
+  }
+
   .header__wrapper{
+    position: static;
+
     padding: 0;
   }
 
