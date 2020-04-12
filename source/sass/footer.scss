@@ -1,7 +1,6 @@
 .footer{
-  width: 320px;
   padding-bottom: 36px;
-  margin: 46px auto 0 auto;
+  margin-top: 46px+66px;
 }
 
 .footer__flex-wrapper{
@@ -20,10 +19,11 @@
 
 .socials-list{
   @include list-style;
+  width: 151px;
   margin-bottom: 41px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -47,32 +47,48 @@
 }
 
 .copyrighting {
+  position: relative;
+
   margin: 0;
   @include base-text;
   color: $black-color;
+
+  &:after{
+    position: absolute;
+    top: -5px;
+
+    content: url("../img/logo-htmlacademy.svg");
+    width: 27px;
+    height: 34px;
+    margin-left: 12px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .footer{
     font-size: 21px;
+  }
 
-    width: $tablet-width + 40px;
+  .footer__hashtag{
+    margin: 0;
+  }
+
+  .footer__socials{
+    margin: 0;
   }
 
   .footer__flex-wrapper{
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .footer__copy{
     font-size: 14px;
+    margin-right: 39px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer{
-    width: 1080px;
-  }
 
 }

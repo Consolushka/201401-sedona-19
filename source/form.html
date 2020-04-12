@@ -8,30 +8,33 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__wrapper">
-    <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
-    <button type="button" class="btn btn--burger header__btn--menu">
-      <span class="visually-hidden">Кнопка Меню</span>
-    </button>
-  </div>
   <div class="container">
-    <nav class="header__navigation">
-      <ul class="header__navigation-list menu-list">
-        <li class="menu-list__item">
-          <a href="index.html" class="menu-list__item-btn">Главная</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="form.html" class="menu-list__item-btn">Форма отзыва</a>
-        </li>
-        <li class="menu-list__item">
-          <a href="https://up.htmlacademy.ru/adaptive/19" class="menu-list__item-btn">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__flex-wrapper">
+      <nav class="header__navigation">
+        <ul class="header__navigation-list menu-list">
+          <li class="menu-list__item">
+            <a href="index.html" class="menu-list__item-btn">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="form.html" class="menu-list__item-btn">Форма отзыва</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="https://up.htmlacademy.ru/adaptive/19" class="menu-list__item-btn">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__wrapper">
+        <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
+        <button type="button" class="btn btn--burger header__btn--menu">
+          <span class="visually-hidden">Кнопка Меню</span>
+        </button>
+      </div>
+    </div>
   </div>
+
   <div class="greeting header__greeting greeting--small">
     <img src="img/greeting-small.svg" class="greeting__image gree" height="214" width="282" alt="Приветствие">
   </div>
@@ -48,86 +51,104 @@
       </div>
 
       <div class="review__form-wrapper review__form-wrapper--introducing">
-        <h3 class="review__user-heading">Представтесь:</h3>
-        <div class="review__form-quiz">
-          <label class="review__user review__user--name">
-            <span class="review__user-indicator">Имя*:</span>
-            <input type="text" class="review__user-field review__user-filed--name">
-          </label>
-          <label class="review__user review__user--lname">
-            <span class="review__user-indicator">Фамилия*:</span>
-            <input type="text" class="review__user-field review__user-filed--lname">
-          </label>
-          <label class="review__user review__user--fname">
-            <span class="review__user-indicator">Отчество*:</span>
-            <input type="text" class="review__user-field review__user-filed--fname">
-          </label>
+        <div class="container">
+          <h3 class="review__user-heading">Представтесь:</h3>
+          <div class="review__form-quiz">
+            <label class="review__user review__user--name">
+              <span class="review__user-indicator">Имя*:</span>
+              <input type="text" class="review__user-field review__user-filed--name">
+            </label>
+            <label class="review__user review__user--lname">
+              <span class="review__user-indicator">Фамилия*:</span>
+              <input type="text" class="review__user-field review__user-filed--lname">
+            </label>
+            <label class="review__user review__user--fname">
+              <span class="review__user-indicator">Отчество*:</span>
+              <input type="text" class="review__user-field review__user-filed--fname">
+            </label>
+          </div>
         </div>
       </div>
 
       <div class="review__form-wrapper review__form-wrapper--contacts">
-        <h3 class="review__contacts-heading">Контактная информация:</h3>
-        <div class="review__form-quiz">
-          <label class="review__contacts review__contacts--tel">
-            <span class="review__contacts-indicator">Контактная Телефон*:</span>
-            <input type="tel" class="review__contacts-field review__contacts-field--tel">
-          </label>
-          <label class="review__contacts review__contacts--mail">
-            <span class="review__contacts-indicator">Электронаая Почта*:</span>
-            <input type="email" class="review__contacts-field review__contacts-field--mail">
-          </label>
+        <div class="container">
+          <h3 class="review__contacts-heading">Контактная информация:</h3>
+          <div class="review__form-quiz">
+            <label class="review__contacts review__contacts--tel">
+              <span class="review__contacts-indicator">Контактная Телефон*:</span>
+              <input type="tel" class="review__contacts-field review__contacts-field--tel">
+            </label>
+            <label class="review__contacts review__contacts--mail">
+              <span class="review__contacts-indicator">Электронаая Почта*:</span>
+              <input type="email" class="review__contacts-field review__contacts-field--mail">
+            </label>
+          </div>
         </div>
       </div>
 
       <div class="review__form-wrapper review__form-wrapper--impression">
-        <h3 class="review__impression-heading">ВАше Общее впечатление:</h3>
-        <div class="review__form-quiz">
-          <label class="review__impression review__impression--good">
-            <input type="radio" name="review-impression" value="good" class="review__impression-radio review__impression-radio--good" checked>
-            <span class="review__impression-indicator">Скорее положительное</span>
-          </label>
-          <label class="review__impression review__impression--bad">
-            <input type="radio" name="review-impression" value="bad" class="review__impression-radio review__impression-radio--bad">
-            <span class="review__impression-indicator">Скорее отрицательное</span>
-          </label>
-          <label class="review__impression review__impression--dntknw">
-            <input type="radio" name="review-impression" value="dontknow" class="review__impression-radio review__impression-radio--dntknw">
-            <span class="review__impression-indicator">Затрудняюсь ответить</span>
-          </label>
+        <div class="container">
+          <h3 class="review__impression-heading">ВАше Общее впечатление:</h3>
+          <div class="review__form-quiz">
+            <label class="review__impression review__impression--good">
+              <input type="radio" name="review-impression" value="good" class="review__impression-radio review__impression-radio--good" checked>
+              <span class="review__impression-indicator">Скорее положительное</span>
+            </label>
+            <label class="review__impression review__impression--bad">
+              <input type="radio" name="review-impression" value="bad" class="review__impression-radio review__impression-radio--bad">
+              <span class="review__impression-indicator">Скорее отрицательное</span>
+            </label>
+            <label class="review__impression review__impression--dntknw">
+              <input type="radio" name="review-impression" value="dontknow" class="review__impression-radio review__impression-radio--dntknw">
+              <span class="review__impression-indicator">Затрудняюсь ответить</span>
+            </label>
+          </div>
         </div>
       </div>
 
       <div class="review__form-wrapper review__form-wrapper--visited">
-        <h3 class="review__visited-heading">посещенные
-          достопримечательности:</h3>
-        <div class="review__form-quiz">
-          <label class="review__visited review__visited--bridge">
-            <input type="checkbox" name="review__visited" value="bridge" class="review__visited-cb review__visited-cb--bridge">
-            <span class="review__visited-indicator">Мост Дьявола</span>
-          </label>
-          <label class="review__visited review__visited--mountain">
-            <input type="checkbox" name="review__visited" value="mountain" class="review__visited-cb review__visited-cb--mountain">
-            <span class="review__visited-indicator">Гора-Колокол</span>
-          </label>
-          <label class="review__visited review__visited--park">
-            <input type="checkbox" name="review__visited" value="park" class="review__visited-cb review__visited-cb--park">
-            <span class="review__visited-indicator">Слайд-парк</span>
-          </label>
-          <label class="review__visited review__visited--redrocks">
-            <input type="checkbox" name="review__visited" value="redrocks" class="review__visited-cb review__visited-cb--redrocks">
-            <span class="review__visited-indicator">Красные скалы</span>
-          </label>
+        <div class="container">
+          <h3 class="review__visited-heading">посещенные
+            достопримечательности:</h3>
+          <div class="review__form-quiz">
+            <label class="review__visited review__visited--bridge">
+              <input type="checkbox" name="review__visited" value="bridge" class="review__visited-cb review__visited-cb--bridge">
+              <span class="review__visited-indicator">Мост Дьявола</span>
+            </label>
+            <label class="review__visited review__visited--mountain">
+              <input type="checkbox" name="review__visited" value="mountain" class="review__visited-cb review__visited-cb--mountain">
+              <span class="review__visited-indicator">Гора-Колокол</span>
+            </label>
+            <label class="review__visited review__visited--park">
+              <input type="checkbox" name="review__visited" value="park" class="review__visited-cb review__visited-cb--park">
+              <span class="review__visited-indicator">Слайд-парк</span>
+            </label>
+            <label class="review__visited review__visited--redrocks">
+              <input type="checkbox" name="review__visited" value="redrocks" class="review__visited-cb review__visited-cb--redrocks">
+              <span class="review__visited-indicator">Красные скалы</span>
+            </label>
+          </div>
         </div>
       </div>
 
       <div class="review__form-wrapper review__form-wrapper--opinion">
-        <h3 class="review__opinion-heading">Опишите свои эмоции:</h3>
-        <label class="review__opinion">
-          <textarea class="review__opinion-field" placeholder="Опишите подробно все свои восторги"></textarea>
-        </label>
+        <div class="container">
+          <h3 class="review__opinion-heading">Опишите свои эмоции:</h3>
+          <label class="review__opinion">
+            <textarea class="review__opinion-field" placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+        </div>
       </div>
-      <button type="submit" class="btn btn--sedona review__btn">Отправить отзыв</button>
-      <p class="review__form-necessarily">*-Обязательные поля</p>
+
+
+      <div class="review__from-last">
+        <div class="container">
+          <div class="review__form-wrapper">
+            <button type="submit" class="btn btn--sedona review__btn">Отправить отзыв</button>
+            <p class="review__form-necessarily">*-Обязательные поля</p>
+          </div>
+        </div>
+      </div>
     </form>
   </section>
 

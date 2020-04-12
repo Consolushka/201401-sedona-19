@@ -31,17 +31,23 @@
 
 
 @media (min-width: $tablet-width) {
-
-  .photos{
-    width: $tablet-width;
-  }
-
   .photos-list{
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
   }
+
+  .photos-list__item{
+    width: 50%;
+  }
+
+  .photos-list__item:first-child{
+    width: 100%;
+  }
+
   .photos-list__item-info{
+    padding: 0 20px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,12 +63,8 @@
     padding: 0;
   }
 
-  .photos{
-    width: $desktop-width;
-  }
-
   .photos-list__item{
-    width: 400px;
+    width: 33.33%;
   }
 
   .photos-list__item-info{

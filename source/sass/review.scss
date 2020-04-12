@@ -37,18 +37,23 @@
 
 .review__form-wrapper {
   width: 100%;
-
-  border: 1px solid $black-color;
-
   order: 2;
-
 
   &--opinion{
     margin-bottom: 51px;
   }
+
+  &:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .review__user {
+  width: 100%;
+
   margin: 25px 0;
 
   display: flex;
@@ -63,11 +68,6 @@
 .review__impression-heading,
 .review__opinion-heading{
   text-align: center;
-}
-
-.review__form-quiz{
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .review__user-heading {
@@ -154,9 +154,13 @@
   text-transform: none;
 }
 
-.review__btn {
-  order: 2;
+.review__from-last{
+  width: 100%;
 
+  order: 2;
+}
+
+.review__btn {
   width: 280px;
   padding: 21px;
 
@@ -167,14 +171,10 @@
 
 .review__form-necessarily {
   margin: 0;
-  order: 2;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .review{
-    padding: 0 60px;
-  }
-
   .review__heading{
     font-size: 30px;
   }
@@ -189,10 +189,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  .review__form-quiz{
-    margin: 0;
   }
 
   .review__form-wrapper{
@@ -236,13 +232,13 @@
   .review__contacts-field {
     width: 100%;
   }
+
+  .review__form-necessarily{
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .review{
-    padding: 0 120px;
-  }
-
   .review__form-wrapper{
     &--impression,
     &--introducing{

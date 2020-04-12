@@ -64,13 +64,11 @@
 }
 
 @media (min-width: $tablet-width){
-  .comfort-list {
-    font-size: 14px;
-
+  .comfort-list__wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .comfort-list__item{
