@@ -1,0 +1,102 @@
+
+.comfort-list {
+  width: 100%;
+
+  @include list-style;
+  @include base-text;
+  padding-top: 41px;
+  background: $white-color;
+
+}
+
+.comfort-list__item-wrapper{
+  text-align: left;
+
+  margin-right: 20px;
+}
+
+.comfort-list__item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 35px;
+
+  width: 100%;
+  margin: 0 auto;
+
+  &--housing:before,
+  &--souvenirs:before,
+  &--eating:before {
+    width: 39px;
+    height: 37px;
+
+    margin-left: 20px;
+    margin-right: 12px;
+
+    content: '';
+    background-size: cover;
+  }
+
+  &--housing:before{
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenirs:before{
+    width: 32px;
+    height: 39px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--eating:before{
+    background-image: url("../img/icon-burger.svg");
+  }
+}
+
+.comfort-list__item-title {
+  @include base-heading;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.comfort-list__item-desc{
+  width: 209px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width){
+  .comfort-list__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .comfort-list__item{
+    flex-direction: column;
+    align-items: center;
+
+    &:before{
+      width: 75px;
+      height: 73px;
+      margin:0;
+      margin-bottom: 33px;
+    }
+
+    &--souvenirs{
+      order: 2;
+    }
+
+    &--souvenirs:before{
+      width: 64px;
+      height: 75px;
+    }
+  }
+
+  .comfort-list__item-wrapper{
+    text-align: center;
+    margin: 0;
+  }
+  .comfort-list__item-title{
+    font-size: 21px;
+  }
+}

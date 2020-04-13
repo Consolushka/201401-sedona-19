@@ -1,0 +1,13 @@
+
+.booking {
+  @include base-heading;
+}
+
+.booking__info {
+  @include base-text;
+}
+
+.booking-btn {
+  @include base-heading;
+  color: $white-color;
+}

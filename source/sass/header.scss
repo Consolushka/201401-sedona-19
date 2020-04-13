@@ -1,26 +1,162 @@
 .header {
+  width: 100%;
+
+  position: relative;
+
   margin-bottom: 45px;
+
+  &:after{
+    width: 100%;
+    height: 11%;
+
+    content: "";
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    bottom: 0;
+  }
 }
 
-.header__navigation {
-  background: $base-color;
+.header__flex-wrapper{
+  display: flex;
+  flex-direction: column;
 }
 
-.menu-list{
+.header__wrapper{
+  position: relative;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__logo {
+  margin-top: -10px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.header__btn--menu {
+  margin-left: auto;
+
+  margin-right: 20px;
+}
+
+.menu-list {
   @include list-style;
+margin: 0 -20px;
+  color: $white-color;
 }
 
 .menu-list__item {
   padding: 21px 0;
   text-align: center;
-  @include base-heading--mobile;
-  color: #ffffff;
+  @include base-heading;
+  border-bottom: #678fa8;
+  border-top: #9ac2db;
+}
+
+.menu-list__item::last-child{
+border-bottom: none;
+}
+
+.header__navigation .menu-list__item{
+ background: $base-color;
 }
 
 .greeting {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  order: 2;
+  height: 390px;
+
+  background: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .greeting--small {
-  background-position-y: -231px;
+
+  height: 158px;
+}
+
+@media (min-width: $tablet-width) {
+  .header{
+    &:after{
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+  }
+
+.header__navigation{
+   margin: 0 -15px;
+}
+
+  .header__wrapper{
+    position: static;
+
+    padding: 0;
+  }
+
+  .menu-list {
+    margin: 0 auto;
+
+    min-height: 57px;
+
+    color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-list__item {
+    font-size: 14px;
+  }
+
+  .header__navigation .menu-list__item{
+    background: none;
+}
+
+  .header__btn--menu {
+    display: none;
+  }
+
+
+  .greeting {
+    height: 519px;
+    background: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+
+    &--small {
+      height: 291px;
+      background-position-y: -57px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header{
+    &:after{
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
+
+  .greeting {
+    background:url("../img/bg-back-desktop@1x.jpg");
+
+    &--small {
+      height: 302px;
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 245px, url("../img/bg-back-desktop@1x.jpg");
+    }
+
+  }
 }

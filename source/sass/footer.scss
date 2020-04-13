@@ -1,17 +1,30 @@
 .footer{
-  padding: 41px 0 36px 0;
+  padding-bottom: 36px;
+  margin-top: 46px+66px;
 }
 
-.footer-hashtag {
-  margin-bottom: 41px;
-  @include base-heading--mobile;
-  font-size: 21px;
+.footer__flex-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.footer__hashtag {
+  margin: 0;
+  margin-bottom: 41px;
+  @include base-heading;
+  font-size: 21px;
 }
 
 .socials-list{
   @include list-style;
+  width: 151px;
   margin-bottom: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .socials-list__item-btn {
@@ -34,7 +47,48 @@
 }
 
 .copyrighting {
-  margin:0;
-  @include base-text--mobile;
-  color: #000000;
+  position: relative;
+
+  margin: 0;
+  @include base-text;
+  color: $black-color;
+
+  &:after{
+    position: absolute;
+    top: -5px;
+
+    content: url("../img/logo-htmlacademy.svg");
+    width: 27px;
+    height: 34px;
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer{
+    font-size: 21px;
+  }
+
+  .footer__hashtag{
+    margin: 0;
+  }
+
+  .footer__socials{
+    margin: 0;
+  }
+
+  .footer__flex-wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__copy{
+    font-size: 14px;
+    margin-right: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
