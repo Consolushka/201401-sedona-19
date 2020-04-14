@@ -68,6 +68,10 @@
   }
 
   .photos-list__item-info{
+    position:relative;
+
+    z-index: 2;
+
     color: $white-color;
 
     margin-top: -80px;

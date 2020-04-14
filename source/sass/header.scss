@@ -57,8 +57,8 @@ margin: 0 -20px;
   padding: 21px 0;
   text-align: center;
   @include base-heading;
-  border-bottom: #678fa8;
-  border-top: #9ac2db;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
 }
 
 .menu-list__item::last-child{
@@ -124,6 +124,7 @@ border-bottom: none;
 
   .header__navigation .menu-list__item{
     background: none;
+    border: none;
 }
 
   .header__btn--menu {
