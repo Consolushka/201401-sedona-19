@@ -3,15 +3,40 @@
   @include base-heading;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 40px;
-}
-
-.photos-and-video__slogan{
-  text-align: center;
-  margin: 0 auto;
+  margin-bottom: 31px;
 }
 
 .photos-and-video__slogan {
   @include base-text;
-  margin-bottom: 33px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 5px;
+  line-height: 22px;
+  margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main--photos{
+    margin-top: 67px;
+  }
+
+  .photos-and-video__heading{
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .photos-and-video__slogan{
+    padding: 0 101px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .page-main--photos{
+    margin-top: 103px;
+  }
+
+  .photos-and-video__slogan{
+    padding: 0 312px;
+  }
 }

@@ -4,3 +4,15 @@
 
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .location{
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location{
+    margin-top: 18px;
+  }
+}

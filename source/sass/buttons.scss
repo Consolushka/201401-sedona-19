@@ -13,4 +13,11 @@
 
     background: url("../img/icon-menu.svg");
   }
+
+  &--close{
+    width: 23px;
+    height: 22px;
+    right: 20px;
+    background: url("../img/icon-cross.svg");
+  }
 }
