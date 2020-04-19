@@ -12,8 +12,7 @@
 
   text-align: center;
 
-  width: 100%;
-  padding: 0 12px;
+  width: 91%;
   line-height: 26px;
 
   margin: 0 auto;
@@ -152,9 +151,9 @@
 }
 
 .advantages-other__item .advantages-item__desc {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   margin-top: -1.5px;
-  padding: 0 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -247,7 +246,7 @@
     }
 
     .advantages-item__desc{
-      padding: 0 49px;
+      width: 70%;
       margin-bottom: 2px;
     }
   }
@@ -335,5 +334,11 @@
 
   .advantages-other .advantages-item__desc {
     padding: 0 4px;
+  }
+
+  .advantages-other__item:nth-child(2){
+    .modile-hidden{
+      display: none;
+    }
   }
 }

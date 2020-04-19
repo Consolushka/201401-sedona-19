@@ -14,7 +14,7 @@
         <ul class="header__navigation-list menu-list">
           <li class="menu-list__item menu-list__item--main">
             <a href="index.html" class="menu-list__item-btn">Главная</a>
-            <button type="button" class="btn btn--close menu-list__item-btn--close">
+            <button type="button" class="btn btn--close menu-list__item-btn menu-list__item-btn--close">
               <span class="visually-hidden">Закрыть Меню</span>
             </button>
           </li>
@@ -43,7 +43,10 @@
   </div>
 
   <div class="greeting header__greeting">
-    <img src="img/text-sedona.svg" class="greeting__image" height="214" width="282" alt="Приветствие">
+    <picture>
+      <source srcset="img/text-sedona-index.svg" sizes="(max-width: 767px) 460px 350px, (min-width: 768px) 61vw 350px">
+      <img src="img/text-sedona-index.svg" class="greeting__image" alt="Приветствие">
+    </picture>
   </div>
 </header>
 
@@ -93,7 +96,7 @@
           <div class="comfort-list__item-wrapper">
             <h4 class="comfort-list__item-title">Сувениры</h4>
             <p class="comfort-list__item-desc">
-              Не только китайского, но и местного производства!
+              Не только китайского, <br class="modile-hidden">но и местного производства!
             </p>
           </div>
         </div>
@@ -101,7 +104,7 @@
           <div class="comfort-list__item-wrapper">
             <h4 class="comfort-list__item-title">Еда</h4>
             <p class="comfort-list__item-desc">
-              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,  Вы НЕ разочаруетесь!
+              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,  <br class="modile-hidden">Вы НЕ разочаруетесь!
             </p>
           </div>
         </div>
@@ -112,7 +115,7 @@
     <div class="container">
       <div class="advantages-item__adaptive-wrapper advantages-item__adaptive-wrapper--reverse">
         <div class="advantages-item__wrapper">
-          <h3 class="advantages-item__title">Там есть мост Дьявола</h3>
+          <h3 class="advantages-item__title">Там есть <br class="modile-hidden">мост Дьявола</h3>
           <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
           <p class="advantages-item__desc">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
@@ -143,8 +146,8 @@
             <h3 class="advantages-item__title">Красивая дорога</h3>
             <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
             <p class="advantages-item__desc">
-              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА
-              совсем НЕ СКУЧНО!
+              ЕХАТЬ В СЕДОНУ ИЗ <br class="modile-hidden">ЛАС-ВЕГАСА
+              совсем <br class="modile-hidden">НЕ СКУЧНО!
             </p>
           </div>
         </div>
@@ -166,7 +169,7 @@
       <div class="find-hotel__wrapper">
         <h3 class="find-hotel__heading">Заинтересовались?</h3>
         <p class="find-hotel__desc">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+          Укажите предполагаемые даты поездки, <br class="modile-hidden">и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <a class="btn btn--sedona find-hotel__btn">Найти гостиницу</a>
       </div>

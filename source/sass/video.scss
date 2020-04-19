@@ -4,7 +4,7 @@
   text-align: center;
 
   padding-top: 28px;
-  margin-bottom: 110px;
+  margin-bottom: 44px;
 }
 
 .video__flex-container {
@@ -40,44 +40,38 @@
 }
 
 .video__window-scroll-bg {
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -100%);
   width: 280px;
   height: 46px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .video__window-scroll-line {
   width: 234px;
   height: 3px;
-  margin: 21px auto;
   background: #858584;
 }
 
-.video__window-scroll-slider {
-  position: relative;
 
-  &:before {
-    position: absolute;
-    top: -3px;
-    left: -82px;
-    content: "";
-    height: 9px;
-    width: 9px;
-    border-radius: 50%;
-    background: $white-color;
-  }
+
+.video__window-scroll-toggle {
+  position: relative;
+  top: -4px;
+  left: 33px;
 }
 
 .video__window-nav-bg {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  transform: translateY(100%);
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 280px;
   height: 66px;
@@ -123,20 +117,26 @@
   }
 
   .video__window-scroll-bg {
-    width: 648px;
+    width: 389px;
     height: 92px;
+    left: 94px;
+    background: none;
+    transform: none;
   }
 
   .video__window-scroll-line{
     width: 389px;
-    margin: 45px 92px;
+  }
+
+  .video__window-scroll-toggle{
+    left: 112px;
   }
 
   .video__window-nav-bg {
     width: 648px;
     height: 92px;
-    transform: none;
-    background: none;
+    background: rgba(0,0,0,0.5);
+    transform: translateY(-100%);
   }
 
   .video__window-nav__repeat {
@@ -179,7 +179,7 @@
   }
 
   .video__window-scroll-bg {
-    width: 800px;
+    width: 539px;
     height: 94px;
   }
 
@@ -187,11 +187,10 @@
     width: 539px;
   }
 
-  .video__window-scroll-slider{
-    &:before{
-      left: -157px;
-    }
+  .video__window-scroll-toggle{
+    left: 110px;
   }
+
 
   .video__window-nav-bg{
     width: 800px;
