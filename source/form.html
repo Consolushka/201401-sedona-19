@@ -43,7 +43,10 @@
   </div>
 
   <div class="greeting header__greeting greeting--small">
-    <img src="img/greeting-small.svg" class="greeting__image" height="214" width="228" alt="Приветствие">
+    <picture>
+      <source srcset="img/text-sedona.svg" sizes="(min-width: 0px) 228px 100px, (min-width: 768px) 61vw 350px">
+      <img src="img/text-sedona.svg" class="greeting__image" alt="Приветствие">
+    </picture>
   </div>
 </header>
 
@@ -85,12 +88,12 @@
             <h3 class="review__contacts-heading">Контактная информация:</h3>
             <div class="review__form-quiz">
               <label class="review__contacts review__contacts--tel">
-                <span class="review__contacts-indicator">Контактный Телефон*:</span>
-                <input type="tel" class="review__contacts-field review__contacts-field--tel">
+                <span class="review__contacts-indicator"><span class="desktop-hidden">Контактный</span> Телефон*:</span>
+                <input type="tel" class="review__contacts-field review__contacts-field--tel" placeholder="Введите телефон">
               </label>
               <label class="review__contacts review__contacts--mail">
                 <span class="review__contacts-indicator">Электронаая Почта*:</span>
-                <input type="email" class="review__contacts-field review__contacts-field--mail">
+                <input type="email" class="review__contacts-field review__contacts-field--mail" placeholder="Введите e-mail">
               </label>
             </div>
           </div>

@@ -8,8 +8,7 @@
 
 .photos-list__item {
   border-top: 1px solid #e5e5e5;
-  padding-top: 20px;
-  padding-bottom: 22px;
+  padding: 20px 0;
   @include base-heading;
 
   .centric-container{
@@ -107,10 +106,16 @@
     margin-top: 19px;
   }
 
+  .photos-list__item:nth-child(3){
+    .item-info__likes{
+      margin-right: 16px;
+    }
+  }
+
   .item-info__likes{
     margin-top: 27px;
     margin-left: auto;
-    margin-right: 13px;
+    margin-right: 11px;
 
     &:before{
       margin-right: 10px;

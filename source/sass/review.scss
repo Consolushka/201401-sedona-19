@@ -107,13 +107,9 @@
   padding-bottom: 27px;
 }
 
-.review__contacts {
-  margin-top: 9px;
-}
-
 .review__contacts-heading {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .review__contacts-indicator {
@@ -123,23 +119,35 @@
   margin-bottom: 15px;
 }
 
-.review__contacts-field{
-  padding: 20px;
-  margin-top: 9px;
+.review__contacts{
+  margin-top: 11px;
+  position: relative;
 
   &:after{
     content: "";
+    position: absolute;
+    bottom: 0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 58px;
-    height: 58px;
+    height: 57px;
     background-color: #e6e6e6;
   }
 }
 
-.review__contacts-field--tel:after{
+.review__contacts-field{
+  padding: 18px;
+  margin-top: 11px;
+  padding-left: 21px;
+}
+
+.review__contacts--tel:after{
   content: url("../img/icon-phone.svg");
 }
 
-.review__contacts-field--mail:after{
+.review__contacts--mail:after{
   content: url("../img/icon-mail.svg");
 }
 
@@ -203,6 +211,7 @@
 .review__visited-heading {
   margin: 0;
   margin-bottom: 9px;
+  line-height: 25px;
 }
 
 .review__visited-indicator{
@@ -282,10 +291,12 @@
 
 .review__btn {
   width: 280px;
-  padding: 19px;
+  padding: 17px 19px;
 
   @include base-heading;
   color: #ffffff;
+  font-size: 19px;
+  letter-spacing: 1.2px;
 }
 
 .review__form-necessarily {
@@ -296,7 +307,7 @@
 @media (min-width: $tablet-width) {
   .review{
     margin-top: 66px;
-    margin-bottom: 64px;
+    margin-bottom: 67px;
 
     .container{
       padding: 0;
@@ -369,10 +380,16 @@
   .review__contacts {
     width: 100%;
 
+    padding: 0;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
+    &:after{
+      bottom: -3px;
+    }
   }
 
   .review__form-wrapper--contacts,
@@ -395,18 +412,19 @@
   }
 
   .review__contacts-indicator{
-    margin-bottom: 0;
+    margin-bottom: 10px;
     margin-left: 22px;
   }
 
   .review__contacts-field {
     width: 100%;
+    margin-top: 0;
     margin-bottom: -3px;
   }
 
   .review__form-wrapper--visited {
     .review__form-quiz {
-      padding: 16px 94px 16px 97px;
+      padding: 23px 94px 16px 97px;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -443,7 +461,9 @@
 
   .review__btn{
     width:325px;
-    padding-left: 6px;
+    font-size: 19px;
+    letter-spacing: 1.2px;
+    padding-left: 7px;
   }
 
   .review__form-necessarily{
@@ -463,6 +483,12 @@
 
   .review__form-info{
     margin-bottom: 58px;
+  }
+
+  .review__form-wrapper--contacts,
+  .review__form-wrapper--visited,
+  .review__form-wrapper--opinion {
+    margin-top: 43px;
   }
 
   .review__slogan{
@@ -488,21 +514,42 @@
 
     .review__form-quiz{
       flex-direction: row;
+      margin-bottom: 21px;
     }
   }
 
   .review__contacts-indicator{
-    margin-top: 0;
+    margin-top: 12px;
     margin-left: 0;
     margin-right: 20px;
   }
 
   .review__contacts{
+    padding-top: 7px;
+    padding-left: 0;
     flex-direction: row;
+    align-items: center;
+
+    &:after{
+      bottom: 0;
+      right:1px
+    }
+  }
+
+  .review__contacts--tel{
+    padding-right: 2px;
+    &:after{
+      right:81px;
+    }
+  }
+
+  .review__contacts--mail{
+    padding-right: 0;
   }
 
   .review__contacts-field{
-    width: 238px;
+    width: 254px;
+    margin-bottom: 0;
   }
 
   .review__form-wrapper--visited{
@@ -513,6 +560,7 @@
 
     .review__visited-heading{
        margin-bottom: 0;
+      padding-top: 6px;
      }
   }
 
@@ -534,5 +582,6 @@
 
   .review__btn{
     width: 480px;
+    padding-left: 20px;
   }
 }

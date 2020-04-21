@@ -152,8 +152,9 @@
 
 .advantages-other__item .advantages-item__desc {
   width: 90%;
+  position: relative;
   margin: 0 auto;
-  margin-top: -1.5px;
+  top: - 1.5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -285,7 +286,7 @@
 
   .advantages-item--important{
     .advantages-item__title{
-      margin-top: 50px;
+      margin-top: 53px;
       padding: 0 70px;
     }
     .advantages-item__desc{
@@ -333,11 +334,11 @@
   }
 
   .advantages-other .advantages-item__desc {
-    padding: 0 4px;
+    width: 100%;
   }
 
   .advantages-other__item:nth-child(2){
-    .modile-hidden{
+    .mobile-hidden{
       display: none;
     }
   }

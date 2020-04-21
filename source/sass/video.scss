@@ -3,7 +3,7 @@
 
   text-align: center;
 
-  padding-top: 28px;
+  padding-top: 33px;
   margin-bottom: 44px;
 }
 
@@ -61,7 +61,7 @@
 
 
 .video__window-scroll-toggle {
-  position: relative;
+  position: absolute;
   top: -4px;
   left: 33px;
 }
@@ -97,7 +97,7 @@
 @media (min-width: $tablet-width) {
   .video {
     padding-top: 60px;
-    margin-bottom: 45px;
+    margin-bottom: -47px;
   }
 
   .video-heading {
@@ -125,7 +125,7 @@
   }
 
   .video__window-scroll-line{
-    width: 389px;
+    width: 100%;
   }
 
   .video__window-scroll-toggle{
@@ -165,7 +165,7 @@
 @media (min-width: $desktop-width) {
   .video{
     padding-top: 63px;
-    margin-bottom: 87px;
+    margin-bottom: -6px;
   }
 
   .video-slogan{
@@ -181,10 +181,6 @@
   .video__window-scroll-bg {
     width: 539px;
     height: 94px;
-  }
-
-  .video__window-scroll-line{
-    width: 539px;
   }
 
   .video__window-scroll-toggle{

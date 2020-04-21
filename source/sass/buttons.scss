@@ -4,6 +4,7 @@
   border: none;
   display: block;
   background: none;
+  font-family: inherit;
 
   &--sedona{
     background: $base-color;
@@ -28,5 +29,10 @@
     width: 10px;
     border-radius: 50%;
     background: #ffffff;
+  }
+
+  &--like{
+    padding-left: 0;
+    margin-right: 5px;
   }
 }

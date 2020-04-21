@@ -65,7 +65,7 @@ a{
 .disblock{
   display: block;
 }
-.modile-hidden{
+.mobile-hidden{
   display: none;
 }
 
@@ -74,7 +74,7 @@ a{
     padding: 0 60px;
   }
 
-  .modile-hidden{
+  .mobile-hidden{
     display: block;
   }
 }
@@ -82,6 +82,10 @@ a{
 @media (min-width: $desktop-width){
   .container{
     padding: 0 65px;
+  }
+
+  .desktop-hidden{
+    display: none;
   }
 }
 
