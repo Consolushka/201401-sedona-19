@@ -1,6 +1,6 @@
 .footer{
   padding-bottom: 36px;
-  margin-top: 46px+66px;
+  padding-top: 31px;
 }
 
 .footer__flex-wrapper{
@@ -12,7 +12,7 @@
 
 .footer__hashtag {
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 35px;
   @include base-heading;
   font-size: 21px;
 }
@@ -20,7 +20,7 @@
 .socials-list{
   @include list-style;
   width: 151px;
-  margin-bottom: 41px;
+  margin-bottom: 48px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,6 +47,9 @@
 }
 
 .copyrighting {
+  width: 130px;
+  letter-spacing: 0.3px;
+
   position: relative;
 
   margin: 0;
@@ -55,12 +58,12 @@
 
   &:after{
     position: absolute;
-    top: -5px;
+    top: -6px;
 
     content: url("../img/logo-htmlacademy.svg");
     width: 27px;
     height: 34px;
-    margin-left: 12px;
+    margin-left: 10px;
   }
 }
 
@@ -85,10 +88,11 @@
 
   .footer__copy{
     font-size: 14px;
-    margin-right: 39px;
   }
 }
 
 @media (min-width: $desktop-width) {
-
+  .footer__flex-wrapper{
+    padding: 0 54px;
+  }
 }

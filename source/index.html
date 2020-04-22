@@ -12,8 +12,11 @@
     <div class="header__flex-wrapper">
       <nav class="header__navigation">
         <ul class="header__navigation-list menu-list">
-          <li class="menu-list__item">
+          <li class="menu-list__item menu-list__item--main">
             <a href="index.html" class="menu-list__item-btn">Главная</a>
+            <button type="button" class="btn btn--close menu-list__item-btn menu-list__item-btn--close">
+              <span class="visually-hidden">Закрыть Меню</span>
+            </button>
           </li>
           <li class="menu-list__item">
             <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
@@ -27,7 +30,11 @@
         </ul>
       </nav>
       <div class="header__wrapper">
-        <img class="header__logo logo" src="img/logo-mobile.svg" height="83" width="102" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="header__logo logo" src="img/logo-mobile.svg" alt="Логотип">
+        </picture>
         <button type="button" class="btn btn--burger header__btn--menu">
           <span class="visually-hidden">Кнопка Меню</span>
         </button>
@@ -36,7 +43,10 @@
   </div>
 
   <div class="greeting header__greeting">
-    <img src="img/greeting.svg" class="greeting__image" height="214" width="282" alt="Приветствие">
+    <picture>
+      <source srcset="img/text-sedona-index.svg" sizes="(max-width: 767px) 460px 350px, (min-width: 768px) 61vw 350px">
+      <img src="img/text-sedona-index.svg" class="greeting__image" alt="Приветствие">
+    </picture>
   </div>
 </header>
 
@@ -53,7 +63,7 @@
       </p>
     </div>
   </section>
-  <section class="advantages-item advantages-item--important">
+  <section class="advantages-item advantages-item--first advantages-item--important">
     <div class="container">
       <div class="advantages-item__adaptive-wrapper">
         <div class="advantages-item__wrapper">
@@ -63,7 +73,11 @@
             СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
           </p>
         </div>
-        <img class="advantages-item__image" src="img/photo-city.jpg" height="260" width="320" alt="Фотография Седоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+          <img class="advantages-item__image" src="img/photo-city.jpg" alt="Фотография Седоны">
+        </picture>
       </div>
     </div>
   </section>
@@ -82,7 +96,7 @@
           <div class="comfort-list__item-wrapper">
             <h4 class="comfort-list__item-title">Сувениры</h4>
             <p class="comfort-list__item-desc">
-              Не только китайского, но и местного производства!
+              Не только китайского, <br class="mobile-hidden">но и местного производства!
             </p>
           </div>
         </div>
@@ -90,7 +104,7 @@
           <div class="comfort-list__item-wrapper">
             <h4 class="comfort-list__item-title">Еда</h4>
             <p class="comfort-list__item-desc">
-              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,  <br class="mobile-hidden">Вы НЕ разочаруетесь!
             </p>
           </div>
         </div>
@@ -101,13 +115,17 @@
     <div class="container">
       <div class="advantages-item__adaptive-wrapper advantages-item__adaptive-wrapper--reverse">
         <div class="advantages-item__wrapper">
-          <h3 class="advantages-item__title">Там есть мост Дьявола</h3>
+          <h3 class="advantages-item__title">Там есть <br class="mobile-hidden">мост Дьявола</h3>
           <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
           <p class="advantages-item__desc">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
-        <img src="img/photo-bridge.jpg" class="advantages-item__image" height="260" width="320" alt="Фотография Моста Дьявола">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
+          <img src="img/photo-bridge.jpg" class="advantages-item__image" alt="Фотография Моста Дьявола">
+        </picture>
       </div>
     </div>
   </section>
@@ -128,8 +146,8 @@
             <h3 class="advantages-item__title">Красивая дорога</h3>
             <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
             <p class="advantages-item__desc">
-              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА
-              совсем НЕ СКУЧНО!
+              ЕХАТЬ В СЕДОНУ ИЗ <br class="mobile-hidden">ЛАС-ВЕГАСА
+              совсем <br class="mobile-hidden desktop-hidden">НЕ СКУЧНО!
             </p>
           </div>
         </div>
@@ -151,7 +169,7 @@
       <div class="find-hotel__wrapper">
         <h3 class="find-hotel__heading">Заинтересовались?</h3>
         <p class="find-hotel__desc">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+          Укажите предполагаемые даты поездки, <br class="mobile-hidden">и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <a class="btn btn--sedona find-hotel__btn">Найти гостиницу</a>
       </div>
@@ -159,7 +177,11 @@
   </section>
 
   <section class="location">
-    <img class="location__image" src="img/location.jpg" height="350" width="320" alt="Местоположение">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg" sizes="100vw">
+      <img class="location__image" src="img/location.jpg" alt="Местоположение">
+    </picture>
   </section>
 </main>
 

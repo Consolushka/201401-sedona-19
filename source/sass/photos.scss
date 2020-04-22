@@ -7,26 +7,35 @@
 }
 
 .photos-list__item {
-  margin-top: 20px;
-  margin-bottom: 22px;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 0;
   @include base-heading;
+
+  .centric-container{
+    align-items: flex-start;
+  }
+
+  &:last-child{
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .item-info__name{
-  margin: 0;
-  margin-bottom: 14px;
+  font-size: 14px;
+  margin: 14px 0 5px 0;
 }
 
 .item-info__author {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 8px;
   @include base-text;
+  text-transform: none;
 }
 
 .item-info__likes {
   font-size: 14px;
-
-  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -39,21 +48,78 @@
 
   .photos-list__item{
     width: 50%;
+    border: none;
+    padding: 0;
+
+    .centric-container{
+      align-items: center;
+    }
   }
+
+  .photos-list__item:last-child{
+    border: none;
+  }
+
+  .photos-list__item:nth-child(2),
+  .photos-list__item:last-child{
+    .container{
+      padding-right: 0;
+    }
+  }
+
+  .photos-list__item:nth-child(3){
+    .container{
+      padding-left: 0;
+    }
+  }
+
 
   .photos-list__item:first-child{
     width: 100%;
+    padding-top: 37px;
+
+    .photos-list__item-info{
+      max-width:648px;
+    }
+
+    .item-info__likes{
+      margin-right: 0;
+    }
   }
 
   .photos-list__item-info{
+    width: 100%;
+    max-width: 324px;
     padding: 0 20px;
+    min-height: 80px;
+    margin-top: -5px;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 
     background: #f2f2f2;
+  }
+
+  .item-info__name{
+    margin-top: 19px;
+  }
+
+  .photos-list__item:nth-child(3){
+    .item-info__likes{
+      margin-right: 16px;
+    }
+  }
+
+  .item-info__likes{
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: 11px;
+
+    &:before{
+      margin-right: 10px;
+    }
   }
 }
 
@@ -65,17 +131,49 @@
 
   .photos-list__item{
     width: 33.33%;
+
+    &:first-child{
+      padding-top: 40px;
+    }
+  }
+
+  .photos-list__item:first-child{
+    .photos-list__item-info{
+      max-width: none;
+    }
   }
 
   .photos-list__item-info{
+    position:relative;
+
+    width: 100%;
+    max-width: none;
+
+    z-index: 2;
+
     color: $white-color;
 
-    margin-top: -80px;
+    margin-top: -85px;
 
     background-color: rgba(0, 0, 0, 0.5);
   }
 
   .item-info__author{
     color: $white-color;
+  }
+
+  .photos-list__item:nth-child(3){
+    .item-info__likes{
+      margin-right: 19px;
+    }
+  }
+
+  .item-info__likes{
+    margin-top: 26px;
+    margin-right: 12px;
+
+    path{
+      fill: $white-color;
+    }
   }
 }
