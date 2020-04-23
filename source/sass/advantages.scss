@@ -337,8 +337,8 @@
     width: 100%;
   }
 
-  .advantages-other__item:nth-child(2){
-    .mobile-hidden{
+  .advantages-item__desc--desktop{
+    br{
       display: none;
     }
   }

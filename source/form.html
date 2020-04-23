@@ -44,7 +44,7 @@
 
   <div class="greeting header__greeting greeting--small">
     <picture>
-      <source srcset="img/text-sedona.svg" sizes="(min-width: 0px) 228px 100px, (min-width: 768px) 61vw 350px">
+      <source srcset="img/text-sedona.svg" sizes="(max-width: 767px) 232px 40px, (min-width: 768px) 460px 78px">
       <img src="img/text-sedona.svg" class="greeting__image" alt="Приветствие">
     </picture>
   </div>
@@ -69,15 +69,15 @@
             <div class="review__form-quiz">
               <label class="review__user review__user--name">
                 <span class="review__user-indicator">Имя*:</span>
-                <input type="text" class="review__user-field review__user-filed--name">
+                <input type="text" class="review__user-field review__user-filed--name" placeholder="Петр">
               </label>
               <label class="review__user review__user--lname">
                 <span class="review__user-indicator">Фамилия*:</span>
-                <input type="text" class="review__user-field review__user-filed--lname">
+                <input type="text" class="review__user-field review__user-filed--lname" placeholder="Иванов">
               </label>
               <label class="review__user review__user--fname">
                 <span class="review__user-indicator">Отчество*:</span>
-                <input type="text" class="review__user-field review__user-filed--fname">
+                <input type="text" class="review__user-field review__user-filed--fname" placeholder="Александрович">
               </label>
             </div>
           </div>
@@ -125,15 +125,15 @@
               достопримечательности:</h3>
             <div class="review__form-quiz">
               <label class="review__visited review__visited--bridge">
-                <input type="checkbox" name="review__visited" value="bridge" class="review__visited-cb review__visited-cb--bridge visually-hidden">
+                <input type="checkbox" name="review__visited" value="bridge" class="review__visited-cb review__visited-cb--bridge visually-hidden" checked>
                 <span class="review__visited-indicator">Мост Дьявола</span>
               </label>
               <label class="review__visited review__visited--mountain">
-                <input type="checkbox" name="review__visited" value="mountain" class="review__visited-cb review__visited-cb--mountain visually-hidden">
+                <input type="checkbox" name="review__visited" value="mountain" class="review__visited-cb review__visited-cb--mountain visually-hidden" checked>
                 <span class="review__visited-indicator">Гора-Колокол</span>
               </label>
               <label class="review__visited review__visited--park">
-                <input type="checkbox" name="review__visited" value="park" class="review__visited-cb review__visited-cb--park visually-hidden">
+                <input type="checkbox" name="review__visited" value="park" class="review__visited-cb review__visited-cb--park visually-hidden" checked>
                 <span class="review__visited-indicator">Слайд-парк</span>
               </label>
               <label class="review__visited review__visited--redrocks">
