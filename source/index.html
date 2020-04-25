@@ -43,10 +43,7 @@
   </div>
 
   <div class="greeting header__greeting">
-    <picture>
-      <source srcset="img/text-sedona-index.svg" sizes="(max-width: 767px) 280px 209px, (min-width: 768px) 460px 350px">
-      <img src="img/text-sedona-index.svg" class="greeting__image" alt="Приветствие">
-    </picture>
+    <img src="img/text-sedona-index.svg" class="greeting__image" alt="Приветствие">
   </div>
 </header>
 
@@ -74,9 +71,10 @@
           </p>
         </div>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
-          <img class="advantages-item__image" src="img/photo-city.jpg" alt="Фотография Седоны">
+          <source media="(min-width: 1200px)" srcset="img/main-city-desktop@2x.jpg 2x, img/main-city-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/main-city-tablet@2x.jpg 2x, img/main-bridge-tablet@1x.jpg">
+          <source srcset="img/main-city-mobile@2x.jpg 2x">
+          <img class="advantages-item__image" src="img/main-city-mobile@1x.jpg" alt="Фотография Седоны">
         </picture>
       </div>
     </div>
@@ -104,7 +102,7 @@
           <div class="comfort-list__item-wrapper">
             <h4 class="comfort-list__item-title">Еда</h4>
             <p class="comfort-list__item-desc">
-              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,  <br>Вы НЕ разочаруетесь!
+              Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, <br>Вы НЕ разочаруетесь!
             </p>
           </div>
         </div>
@@ -122,9 +120,10 @@
           </p>
         </div>
         <picture>
-          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-          <img src="img/photo-bridge.jpg" class="advantages-item__image" alt="Фотография Моста Дьявола">
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@2x.jpg 2x, img/main-bridge-desktop@1x.jpg 1x">
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@2x.jpg 2x, img/main-bridge-tablet@1x.jpg">
+          <source srcset="img/main-bridge-mobile@2x.jpg 2x">
+          <img class="advantages-item__image" src="img/main-bridge-mobile@1x.jpg" alt="Фотография Седоны">
         </picture>
       </div>
     </div>
@@ -147,7 +146,7 @@
             <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
             <p class="advantages-item__desc advantages-item__desc--desktop">
               ЕХАТЬ В СЕДОНУ ИЗ <br>ЛАС-ВЕГАСА
-              совсем <br class="desktop-hidden">НЕ СКУЧНО!
+              совсем <br>НЕ СКУЧНО!
             </p>
           </div>
         </div>
@@ -178,9 +177,10 @@
 
   <section class="location">
     <picture>
-      <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg" sizes="100vw">
-      <img class="location__image" src="img/location.jpg" alt="Местоположение">
+      <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@2x.jpg 2x, img/bg-map-desktop@1x.jpg 1x">
+      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@2x.jpg 2x, img/bg-map-tablet@1x.jpg 1x">
+      <source srcset="img/bg-map-mobile@2x.jpg 2x">
+      <img class="location__image" src="img/bg-map-mobile@1x.jpg" alt="Местоположение">
     </picture>
   </section>
 </main>

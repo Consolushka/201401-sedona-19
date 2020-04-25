@@ -79,7 +79,7 @@
 }
 
 .greeting {
-  padding-top: 87px;
+  padding-top: 2px;
   order: 2;
   height: 390px;
 
@@ -92,14 +92,26 @@
 }
 
 .greeting__image {
-  margin-top: 4px;
+  position: relative;
+  top: 2px;
+  width: 280px;
 }
 
 .greeting--small {
   background-size: auto;
   background-position: bottom;
   height: 158px;
-  padding: 20px;
+
+  .greeting__image{
+    width: 227px;
+    top: -5px;
+  }
+}
+
+@media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
+  .greeting{
+    background: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -165,19 +177,30 @@
 
   .greeting {
     height: 519px;
-    padding-top: 72px;
+    padding-top: 0;
     background: url("../img/bg-back-tablet@1x.jpg");
 
     &--small {
       height: 291px;
-      padding-top: 90px;
       background-position: bottom;
     }
   }
 
-  .greeting--small {
-    .greeting__image {
+  .greeting--small{
+    .greeting__image{
       width: 460px;
+      top: -12px;
+    }
+  }
+
+  .greeting__image {
+    width: 460px;
+    top: -7px;
+  }
+
+  @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
+    .greeting{
+      background: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 }
@@ -215,15 +238,14 @@
 
     &--small {
       height: 302px;
-      padding-top: 95px;
       background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 0 245px, url("../img/bg-back-desktop@1x.jpg");
       background-position: bottom;
     }
-
   }
 
-  .greeting__image {
-    width: 468px;
-    height: auto;
+  @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
+    .greeting{
+      background: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
