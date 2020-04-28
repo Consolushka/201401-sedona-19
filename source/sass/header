@@ -74,7 +74,7 @@
   border-bottom: none;
 }
 
-.header__navigation .menu-list__item {
+.menu-list__item {
   background: $base-color;
 }
 
@@ -160,11 +160,24 @@
     }
   }
 
-  .header__navigation .menu-list__item {
+  .menu-list__item {
     background: none;
     border: none;
     color: $black-color;
+
+    &--active{
+      color: #766357;
+
+      &:hover{
+        color: #604e43;
+      }
+
+      &:active{
+        opacity: 0.3;
+      }
+    }
   }
+
 
   .menu-list__item-btn--close {
     display: none;
@@ -214,10 +227,10 @@
   .header {
     &:after {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
-      height: 11%;
+      height: 16%;
 
       background-size: contain;
-      bottom: -3px;
+      bottom: -18px;
     }
   }
 

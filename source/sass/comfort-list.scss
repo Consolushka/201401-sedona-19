@@ -25,32 +25,6 @@
   width: 100%;
   margin: 0 auto;
 
-  &--housing:before,
-  &--souvenirs:before,
-  &--eating:before {
-    width: 39px;
-    height: 37px;
-
-    margin-right: 12px;
-    margin-top: -10px;
-
-    content: '';
-    background-size: cover;
-  }
-
-  &--housing:before{
-    background-image: url("../img/icon-house.svg");
-  }
-
-  &--souvenirs:before{
-    width: 32px;
-    height: 39px;
-    background-image: url("../img/icon-gift.svg");
-  }
-
-  &--eating:before{
-    background-image: url("../img/icon-burger.svg");
-  }
 }
 
 .comfort-list__item-title {
@@ -83,29 +57,13 @@
 
     padding-bottom: 49px;
 
-    &:before{
-      width: 75px;
-      height: 73px;
-      margin:0;
-      margin-bottom: 27px;
-    }
-
     &--housing{
       margin-left: -60px;
-    }
-
-    &--eating:before{
-      background-position-x: -4px;
     }
 
     &--souvenirs{
       margin-right: -60px;
       order: 2;
-    }
-
-    &--souvenirs:before{
-      width: 64px;
-      height: 75px;
     }
   }
 

@@ -84,20 +84,34 @@
   background: #f2f2f2;
 }
 
-.video__window-nav__repeat {
+.video__window-nav__btn--repeat {
   margin-left: 19px;
   background: none;
 }
 
-.video__window-nav__subtitles {
+.video__window-nav__btn--subtitles {
   margin-left: auto;
   margin-right: 19px;
   background: none;
 }
 
-.video__window-nav__fullscreen {
+.video__window-nav__btn--fullscreen {
   margin-right: 17px;
   background: none;
+}
+
+.video__window-nav__btn:hover{
+  path,
+  polygon{
+    fill: $dark-grey-color;
+  }
+}
+
+.video__window-nav__btn:active{
+  path,
+  polygon{
+    fill: #b8b8b8;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -130,6 +144,8 @@
   }
 
   .video__window-scroll-bg {
+    position: static;
+    margin-left: 36px;
     width: 389px;
     height: 92px;
     left: 94px;
@@ -152,26 +168,33 @@
     transform: translateY(-100%);
   }
 
-  .video__window-nav__repeat {
+  .video__window-nav__btn{
+    path,
+    polygon{
+      fill: $white-color;
+    }
+  }
+
+  .video__window-nav__btn:hover{
+    path,
+    polygon{
+      fill: #c2c2c2;
+    }
+  }
+
+  .video__window-nav__btn:active{
+    path,
+    polygon{
+      fill: #949494;
+    }
+  }
+
+  .video__window-nav__btn--repeat {
     margin-left: 29px;
-
-    path {
-      fill: $white-color;
-    }
   }
 
-  .video__window-nav__subtitles {
-      path {
-      fill: $white-color;
-    }
-  }
-
-  .video__window-nav__fullscreen {
+  .video__window-nav__btn--fullscreen {
     margin-right: 35px;
-
-    polygon {
-      fill: $white-color;
-    }
   }
 }
 
