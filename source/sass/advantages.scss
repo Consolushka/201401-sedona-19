@@ -218,6 +218,7 @@
 
   .advantages-item--first .advantages-item__desc{
     padding: 0 24px;
+    margin-bottom: 46px;
   }
 
   .advantages-item__adaptive-wrapper {
@@ -233,6 +234,7 @@
 
   .advantages-item__image {
     width: 512px;
+    height: 255px;
     margin-right: -60px;
   }
   .advantages-item__adaptive-wrapper--reverse .advantages-item__image {
@@ -286,7 +288,7 @@
 
   .advantages-item--important{
     .advantages-item__title{
-      margin-top: 53px;
+      margin-top: 49px;
       padding: 0 70px;
     }
     .advantages-item__desc{
@@ -337,8 +339,8 @@
     width: 100%;
   }
 
-  .advantages-other__item:nth-child(2){
-    .mobile-hidden{
+  .advantages-item__desc--desktop{
+    br{
       display: none;
     }
   }

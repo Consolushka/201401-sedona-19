@@ -65,7 +65,8 @@ a{
 .disblock{
   display: block;
 }
-.mobile-hidden{
+
+br{
   display: none;
 }
 
@@ -74,7 +75,7 @@ a{
     padding: 0 60px;
   }
 
-  .mobile-hidden{
+  br{
     display: block;
   }
 }
