@@ -113,6 +113,7 @@
 
   .comfort-list {
     padding-top: 52px;
+    margin-bottom: 15px;
   }
 
   .comfort-list__item {
@@ -132,8 +133,20 @@
     margin-bottom: 17px;
   }
 
+  .comfort-list__item--housing{
+    br{
+      display: none;
+    }
+  }
+
   .comfort-list__item--souvenirs .comfort-list__item-desc {
     padding: 0 47px;
+  }
+
+  .comfort-list__item--eating{
+    br{
+      display: none;
+    }
   }
 
   .comfort-list__item-wrapper {

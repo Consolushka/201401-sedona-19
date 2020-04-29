@@ -78,6 +78,11 @@
     width: 100%;
     padding-top: 37px;
 
+    .photos-list__item-image{
+      width: 648px;
+      height: 400px;
+    }
+
     .photos-list__item-info{
       max-width:648px;
     }
@@ -85,6 +90,12 @@
     .item-info__likes{
       margin-right: 0;
     }
+  }
+
+
+  .photos-list__item-image{
+    width: 324px;
+    height: 267px;
   }
 
   .photos-list__item-info{
@@ -138,9 +149,18 @@
   }
 
   .photos-list__item:first-child{
+    .photos-list__item-image{
+      width: 1200px;
+      height: 400px;
+    }
     .photos-list__item-info{
       max-width: none;
     }
+  }
+
+  .photos-list__item-image{
+    width: 400px;
+    height: 267px;
   }
 
   .photos-list__item-info{

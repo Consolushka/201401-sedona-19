@@ -169,24 +169,15 @@
   }
 
   .video__window-nav__btn{
-    path,
-    polygon{
-      fill: $white-color;
-    }
+    fill: $white-color;
   }
 
   .video__window-nav__btn:hover{
-    path,
-    polygon{
-      fill: #c2c2c2;
-    }
+    color: #c2c2c2;
   }
 
   .video__window-nav__btn:active{
-    path,
-    polygon{
-      fill: #949494;
-    }
+    color: #949494;
   }
 
   .video__window-nav__btn--repeat {
