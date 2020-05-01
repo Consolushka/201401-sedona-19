@@ -8,6 +8,27 @@
 
   &--sedona{
     background: $base-color;
+
+    &:hover{
+      background: #669ec0;
+    }
+
+    &:active{
+      background:#5496bd;
+      color: #94b9d2;
+      fill: #94b9d2;
+    }
+    &:active path{
+      fill: #94b9d2;
+    }
+
+    &:disabled{
+      background: #e5e5e5;
+      color: #f0f0f0;
+    }
+    &:disabled path{
+      fill: #f0f0f0;
+    }
   }
 
   &--burger{
@@ -17,11 +38,27 @@
     background: url("../img/icon-menu.svg");
   }
 
+  &--burger:hover{
+    opacity: 0.5;
+  }
+
+  &--burger:active{
+    opacity: 0.3;
+  }
+
   &--close{
     width: 23px;
     height: 22px;
     right: 20px;
     background: url("../img/icon-cross.svg");
+
+    &:hover{
+      opacity: 0.5;
+    }
+
+    &:active{
+      opacity: 0.3;
+    }
   }
 
   &--toggle{
@@ -34,5 +71,26 @@
   &--like{
     padding-left: 0;
     margin-right: 5px;
+  }
+
+  &--menu:hover{
+    background-color: #669ec0;
+  }
+
+  &--menu:active{
+    background-color: #5496bd;
+    color: #94b9d2;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn{
+    &--menu:hover{
+      background: none;
+      color: $base-color;
+    }
+    &--menu:active{
+      color: #cacaca;
+    }
   }
 }

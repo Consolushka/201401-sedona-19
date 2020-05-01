@@ -33,17 +33,9 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &--face {
-    background-image: url("../img/icon-facebook.svg");
-  }
-
-  &--twit {
-    background-image: url("../img/icon-twitter.svg");
-  }
-
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyrighting {
@@ -56,15 +48,19 @@
   @include base-text;
   color: $black-color;
 
-  &:after{
-    position: absolute;
-    top: -6px;
+}
 
-    content: url("../img/logo-htmlacademy.svg");
-    width: 27px;
-    height: 34px;
-    margin-left: 10px;
-  }
+.copyrighting svg{
+  position: absolute;
+  top: -10px;
+}
+
+.copyrighting:hover{
+  fill: $base-color;
+}
+
+.copyrighting:active{
+  fill: #b2b2b2;
 }
 
 @media (min-width: $tablet-width) {

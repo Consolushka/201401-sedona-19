@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.location__image{
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .location{
     margin-top: 9px;
