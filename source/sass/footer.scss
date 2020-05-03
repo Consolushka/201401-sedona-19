@@ -50,17 +50,16 @@
 
 }
 
-.copyrighting svg{
+.footer__copy-icon{
   position: absolute;
   top: -10px;
-}
-
-.copyrighting:hover{
-  fill: $base-color;
-}
-
-.copyrighting:active{
-  fill: #b2b2b2;
+  fill: $black-color;
+  &:hover{
+    fill: $base-color;
+  }
+  &:active{
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: $tablet-width) {

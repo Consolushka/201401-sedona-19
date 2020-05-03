@@ -84,6 +84,10 @@
   background: #f2f2f2;
 }
 
+.video__window-nav__btn{
+  fill: #5c6870;
+}
+
 .video__window-nav__btn--repeat {
   margin-left: 19px;
   background: none;
@@ -101,17 +105,11 @@
 }
 
 .video__window-nav__btn:hover{
-  path,
-  polygon{
     fill: $dark-grey-color;
-  }
 }
 
 .video__window-nav__btn:active{
-  path,
-  polygon{
     fill: #b8b8b8;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -173,11 +171,11 @@
   }
 
   .video__window-nav__btn:hover{
-    color: #c2c2c2;
+    fill: #c2c2c2;
   }
 
   .video__window-nav__btn:active{
-    color: #949494;
+    fill: #949494;
   }
 
   .video__window-nav__btn--repeat {
