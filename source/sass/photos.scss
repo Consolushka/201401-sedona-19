@@ -39,6 +39,8 @@
 }
 
 .btn--like{
+  padding-left: 0;
+  margin-right: 8px;
   fill: #a9a9a9;
 }
 
@@ -195,9 +197,9 @@
   .item-info__likes{
     margin-top: 26px;
     margin-right: 12px;
+  }
 
-    path{
-      fill: $white-color;
-    }
+  .btn--like {
+    fill: $white-color;
   }
 }

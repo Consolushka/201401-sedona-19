@@ -88,9 +88,13 @@
 
   .comfort-list__item-image {
     width: 75px;
-    height: 73px;
+    height: 74px;
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+
+    &--eating{
+      padding-top: 4px;
+    }
 
     &--souvenirs {
       width: 64px;

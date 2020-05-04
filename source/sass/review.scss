@@ -275,6 +275,7 @@
 .review__contacts-field {
   background-color: $field-color;
   @include base-heading;
+  width: 100%;
   text-transform: none;
   border: 4px solid transparent;
   outline: none;
@@ -593,7 +594,7 @@
   .review__contacts--tel{
     padding-right: 2px;
     &:after{
-      right: 80px;
+      right: 46px;
     }
   }
 
