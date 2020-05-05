@@ -78,6 +78,7 @@ gulp.task("copy", function () {
     "source/img/**",
     "source/js/**",
     "source/*.ico",
+    "source/*.html",
     "source/css/style.min.css"
   ],{
     base: "source",
@@ -92,6 +93,8 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series(
   "clean",
+  "images",
+  "webp",
   "copy",
   "css",
   "svgstore"

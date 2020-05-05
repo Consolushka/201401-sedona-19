@@ -36,11 +36,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &--twit,
-  &--youtube{
-    padding-top: 6px;
-  }
 }
 
 .copyrighting {
@@ -58,7 +53,7 @@
 .footer__copy-icon{
   position: absolute;
   top: -7px;
-  right: -17px;
+  right: 2px;
   fill: $black-color;
   &:hover{
     fill: $base-color;
