@@ -212,6 +212,8 @@
   .greeting--small{
     .greeting__image{
       top: -12px;
+      width: 457px;
+      height: 81px;
     }
   }
 

@@ -80,7 +80,8 @@ gulp.task("copy", function () {
     "source/*.ico",
     "source/css/style.min.css"
   ],{
-    base: "source"
+    base: "source",
+    allowEmpty: true
   })
     .pipe(gulp.dest("build"));
 });
