@@ -72,6 +72,10 @@
   @include base-heading;
   margin: 0;
   margin-bottom: 11px;
+
+  br{
+    display: none;
+  }
 }
 
 .advantages-item--important .advantages-item__title {
@@ -115,6 +119,10 @@
   margin: 0;
   font-size: 14px;
   text-transform: uppercase;
+
+  br{
+    display: none;
+  }
 }
 
 .advantages-item__image {
@@ -189,6 +197,10 @@
 
   .advantages-item__title {
     font-size: 21px;
+
+    br{
+      display: block;
+    }
   }
 
   .advantages-item__number {
@@ -198,6 +210,10 @@
   .advantages-item__desc {
     padding: 0 10px;
     line-height: 20px;
+
+    br{
+      display: block;
+    }
   }
 
   .advantages-item--important {

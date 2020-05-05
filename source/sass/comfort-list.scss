@@ -51,6 +51,10 @@
   width: 209px;
   margin: 0;
   line-height: 19px;
+
+  br{
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -110,6 +114,10 @@
     width: 100%;
     margin: 0 auto;
     line-height: 22px;
+
+    br{
+      display: block;
+    }
   }
 }
 

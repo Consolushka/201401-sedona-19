@@ -66,17 +66,9 @@ a{
   display: block;
 }
 
-br{
-  display: none;
-}
-
 @media (min-width: $tablet-width){
   .container{
     padding: 0 60px;
-  }
-
-  br{
-    display: block;
   }
 }
 

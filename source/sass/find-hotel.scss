@@ -17,6 +17,10 @@
   @include base-text;
   margin-bottom: 36px;
   line-height: 23px;
+
+  br{
+    display: none;
+  }
 }
 
 .find-hotel__btn {
@@ -43,6 +47,10 @@
     width: 69%;
     margin: 0 auto;
     margin-bottom: 44px;
+
+    br{
+      display: block;
+    }
   }
 
   .find-hotel__btn{
