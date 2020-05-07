@@ -36,7 +36,7 @@
 
   margin: 0 -20px;
 
-  background-image: url("../img/video-mobile.jpg");
+  background-image: url("../img/video-mobile@1x.jpg");
 }
 
 @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
@@ -95,7 +95,7 @@
 
 .video__window-nav__btn--subtitles {
   margin-left: auto;
-  margin-right: 19px;
+  margin-right: 11px;
   background: none;
 }
 

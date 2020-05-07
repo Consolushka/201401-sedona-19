@@ -133,7 +133,8 @@
     align-items: center;
     width: 60px;
     height: 65px;
-    background-color: #e6e6e6;
+    background-size: auto;
+    background-position: center;
   }
 }
 
@@ -144,11 +145,11 @@
 }
 
 .review__contacts--tel:after{
-  content: url("../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
 }
 
 .review__contacts--mail:after{
-  content: url("../img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
 }
 
 .review__form-wrapper--impression{
@@ -275,6 +276,7 @@
 .review__contacts-field {
   background-color: $field-color;
   @include base-heading;
+  width: 100%;
   text-transform: none;
   border: 4px solid transparent;
   outline: none;
@@ -578,6 +580,10 @@
     margin-right: 20px;
   }
 
+  .review__contacts-indicator span{
+    display: none;
+  }
+
   .review__contacts{
     padding-top: 7px;
     padding-left: 0;
@@ -593,7 +599,7 @@
   .review__contacts--tel{
     padding-right: 2px;
     &:after{
-      right: 80px;
+      right: 79px;
     }
   }
 
@@ -602,7 +608,7 @@
   }
 
   .review__contacts-field{
-    width: 254px;
+    width: 312px;
     margin-bottom: 0;
   }
 
