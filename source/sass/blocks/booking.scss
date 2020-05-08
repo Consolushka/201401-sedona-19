@@ -3,15 +3,13 @@
   @include base-heading;
   padding-top: 48px;
   width: 100%;
-  position: absolute;
-  bottom: 280px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   background-color: $white-color;
   box-shadow: 0 0 10px #dfdfdf;
-
-  &--failure {
-    bottom: 650px;
-  }
 }
 
 .booking__heading {
@@ -63,17 +61,12 @@
 
 @media (min-width: $tablet-width) {
   .booking {
-    left: 50%;
-    transform: translateX(-50%);
-
     &--failure {
       width: 400px;
-      bottom: 343px;
     }
 
     &--success {
       width: 645px;
-      bottom: 505px;
       padding-top: 113px;
     }
   }
