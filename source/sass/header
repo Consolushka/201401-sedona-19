@@ -83,6 +83,7 @@
   order: 2;
   height: 390px;
 
+  background-color: #3b719d;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position: center;
@@ -131,6 +132,7 @@
   }
 
   .header__navigation {
+    display: block;
     margin: 0 -12px;
     margin-right: -33px;
   }

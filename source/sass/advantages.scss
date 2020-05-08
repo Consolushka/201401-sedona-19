@@ -43,7 +43,8 @@
     position: absolute;
     top: 0;
     content: "";
-    background: url("../img/bg-triangle.svg");
+    background-color:  $white-color;
+    background-image: url("../img/bg-triangle.svg");
     background-size: cover;
     width: 100%;
     height: 37px;

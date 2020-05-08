@@ -32,11 +32,13 @@
         </ul>
       </nav>
       <div class="header__wrapper">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-          <img class="header__logo logo" src="img/logo-sedona-mobile.svg" alt="Логотип">
-        </picture>
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="header__logo logo" src="img/logo-sedona-mobile.svg" alt="Логотип">
+          </picture>
+        </a>
         <button type="button" class="btn btn--burger header__btn--menu">
           <span class="visually-hidden">Кнопка Меню</span>
         </button>
@@ -45,14 +47,14 @@
   </div>
 
   <div class="greeting header__greeting greeting--small">
-      <img src="img/text-sedona.svg" class="greeting__image" alt="Приветствие">
+    <img src="img/text-sedona.svg" class="greeting__image" alt="Приветствие">
   </div>
 </header>
 
 <main class="page-main">
   <section class="review">
     <div class="container container--special">
-      <form action="#" method="post" class="review__form">
+      <form action="#" method="post" class="review__form" onsubmit="return false;">
         <div class="review__form-info">
           <div class="container">
             <h2 class="review__heading">Оставьте свой отзыв</h2>
@@ -176,23 +178,29 @@
         <li class="socials-list__item">
           <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--twit">
             <span class="visually-hidden">Ссылка на Твитер</span>
-            <svg width="20" height="20" viewBox="0 0 17.5 14.663"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+            <svg width="20" height="20" viewBox="0 0 17.5 14.663">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
           </a>
         </li>
         <li class="socials-list__item">
           <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--face">
             <span class="visually-hidden">Ссылка на Фейсбук</span>
-            <svg width="20" height="20" viewBox="0 0 8.672 18.944"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+            <svg width="20" height="20" viewBox="0 0 8.672 18.944">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--youtube">
             <span class="visually-hidden">Ссылка на Ютуб</span>
-            <svg width="20" height="20" viewBox="0 0 19.979 14.015"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
+            <svg width="20" height="20" viewBox="0 0 19.979 14.015">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
           </a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/" class="footer__copy copyrighting">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copy copyrighting">
         Разработано
         <svg width="27" height="34" class="footer__copy-icon" viewBox="0 0 26.943 34.09">
           <use xlink:href="img/sprite.svg#icon-htmlacademy"/>
@@ -203,20 +211,32 @@
   </div>
 </footer>
 
-<div class="booking booking--success modal modal--disnone">
-  <h3 class="booking__heading">Ваш отзыв отправлен!</h3>
-  <p class="booking-info">
-    Спасибо за ваше участие, ваш отзыв уже поступил к нам.
-    В ближайшее время мы опубликуем его на сайте.
-  </p>
-  <button class="btn btn--sedona booking-btn">Закрыть окно</button>
+<div class="booking booking--success modal-disnone">
+  <div class="container">
+    <h3 class="booking__heading">Ваш отзыв отправлен!</h3>
+    <p class="booking__info">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <div class="booking__btn-wrapper">
+      <button class="btn btn--sedona booking__btn booking__btn--success">Закрыть окно</button>
+    </div>
+  </div>
 </div>
-<div class="booking booking--failure modal modal--disnone">
-  <h3 class="booking__heading">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
-  <p class="booking-info">
-    Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-  </p>
-  <button class="btn btn--sedona booking-btn">ок</button>
+<div class="booking booking--failure modal-disnone">
+  <div class="container">
+    <h3 class="booking__heading">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+    <p class="booking__info booking__info--failure">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <div class="booking__btn-wrapper booking__btn-wrapper--failure">
+      <button class="btn btn--sedona booking__btn booking__btn--failure">ок</button>
+    </div>
+  </div>
 </div>
 </body>
+
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+
 </html>
