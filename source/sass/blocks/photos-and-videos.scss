@@ -16,27 +16,27 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main--photos{
+  .page-main--photos {
     margin-top: 67px;
   }
 
-  .photos-and-video__heading{
+  .photos-and-video__heading {
     font-size: 30px;
     margin-bottom: 24px;
   }
 
-  .photos-and-video__slogan{
+  .photos-and-video__slogan {
     padding: 0 101px;
     line-height: 24px;
   }
 }
 
-@media (min-width: $desktop-width){
-  .page-main--photos{
+@media (min-width: $desktop-width) {
+  .page-main--photos {
     margin-top: 103px;
   }
 
-  .photos-and-video__slogan{
+  .photos-and-video__slogan {
     padding: 0 312px;
   }
 }

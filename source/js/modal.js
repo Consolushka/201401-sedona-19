@@ -12,15 +12,14 @@ btnOpenModal.addEventListener("click", function (e) {
 
 btnCloseAll.forEach(button => {
   button.addEventListener("click", function () {
-    if (button.classList.contains("booking__btn--success")){
+    if (button.classList.contains("booking__btn--success")) {
       document.querySelector(".booking--success").classList.add("modal-disnone");
-    }
-    else{
+    } else {
       document.querySelector(".booking--failure").classList.add("modal-disnone");
     }
   })
 });
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function (e) {
 
 });

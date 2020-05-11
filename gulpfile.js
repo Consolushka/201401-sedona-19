@@ -80,7 +80,7 @@ gulp.task("copy", function () {
     "source/*.ico",
     "source/*.html",
     "source/css/style.min.css"
-  ],{
+  ], {
     base: "source",
     allowEmpty: true
   })

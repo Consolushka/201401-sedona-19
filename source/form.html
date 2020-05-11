@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script defer src="node_modules/svgxuse/svgxuse.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
+  <script src="js/picturepolyfill.js"></script>
 </head>
 <body>
 <header class="header header--small">
@@ -70,15 +72,15 @@
             <div class="review__form-quiz">
               <label class="review__user review__user--name">
                 <span class="review__user-indicator">Имя*:</span>
-                <input type="text" class="review__user-field review__user-filed--name form__required" placeholder="Петр" required>
+                <input type="text" class="review__user-field review__user-filed--name" placeholder="Петр" required>
               </label>
               <label class="review__user review__user--lname">
                 <span class="review__user-indicator">Фамилия*:</span>
-                <input type="text" class="review__user-field review__user-filed--lname form__required" placeholder="Иванов" required>
+                <input type="text" class="review__user-field review__user-filed--lname" placeholder="Иванов" required>
               </label>
               <label class="review__user review__user--fname">
                 <span class="review__user-indicator">Отчество*:</span>
-                <input type="text" class="review__user-field review__user-filed--fname form__required" placeholder="Александрович" required>
+                <input type="text" class="review__user-field review__user-filed--fname" placeholder="Александрович" required>
               </label>
             </div>
           </div>
@@ -104,15 +106,15 @@
           <div class="container">
             <h3 class="review__impression-heading">ВАше Общее впечатление:</h3>
             <div class="review__form-quiz">
-              <label class="review__impression review__impression--good">
+              <label class="review__impression review__impression--good" tabindex="0">
                 <input type="radio" name="review-impression" value="good" class="review__impression-radio review__impression-radio--good" checked hidden>
                 <span class="review__impression-indicator">Скорее положительное</span>
               </label>
-              <label class="review__impression review__impression--bad">
+              <label class="review__impression review__impression--bad" tabindex="0">
                 <input type="radio" name="review-impression" value="bad" class="review__impression-radio review__impression-radio--bad" hidden>
                 <span class="review__impression-indicator">Скорее отрицательное</span>
               </label>
-              <label class="review__impression review__impression--dntknw">
+              <label class="review__impression review__impression--dntknw" tabindex="0">
                 <input type="radio" name="review-impression" value="dontknow" class="review__impression-radio review__impression-radio--dntknw" hidden>
                 <span class="review__impression-indicator">Затрудняюсь ответить</span>
               </label>
@@ -125,19 +127,19 @@
             <h3 class="review__visited-heading">посещенные
               достопримечательности:</h3>
             <div class="review__form-quiz">
-              <label class="review__visited review__visited--bridge">
+              <label class="review__visited review__visited--bridge" tabindex="0">
                 <input type="checkbox" name="review__visited" value="bridge" class="review__visited-cb review__visited-cb--bridge" checked hidden>
                 <span class="review__visited-indicator">Мост Дьявола</span>
               </label>
-              <label class="review__visited review__visited--mountain">
+              <label class="review__visited review__visited--mountain" tabindex="0">
                 <input type="checkbox" name="review__visited" value="mountain" class="review__visited-cb review__visited-cb--mountain" checked hidden>
                 <span class="review__visited-indicator">Гора-Колокол</span>
               </label>
-              <label class="review__visited review__visited--park">
+              <label class="review__visited review__visited--park" tabindex="0">
                 <input type="checkbox" name="review__visited" value="park" class="review__visited-cb review__visited-cb--park" checked hidden>
                 <span class="review__visited-indicator">Слайд-парк</span>
               </label>
-              <label class="review__visited review__visited--redrocks">
+              <label class="review__visited review__visited--redrocks" tabindex="0">
                 <input type="checkbox" name="review__visited" value="redrocks" class="review__visited-cb review__visited-cb--redrocks" hidden>
                 <span class="review__visited-indicator">Красные скалы</span>
               </label>

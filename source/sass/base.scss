@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 
-html{
+html {
   background: #f2f2f2;
 }
 
@@ -20,20 +20,26 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   background: $white-color;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   min-width: 320px;
   max-width: 1200px;
   box-shadow: 0 0 20px #dbdbdb;
 }
 
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: inherit;
   background-repeat: no-repeat;
 }
@@ -45,42 +51,45 @@ a{
   padding: 0 20px;
 }
 
-.modal-disnone{
+.modal-disnone {
   display: none;
 }
 
-.centric-container{
+.centric-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
+/* stylelint-disable declaration-no-important */
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
+  padding: 0 !important;
+  border: 0 !important;
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
 }
-.disblock{
+
+.disblock {
   display: block;
 }
 
-@media (min-width: $tablet-width){
-  .container{
+@media (min-width: $tablet-width) {
+  .container {
     padding: 0 60px;
   }
 }
 
-@media (min-width: $desktop-width){
-  .container{
+@media (min-width: $desktop-width) {
+  .container {
     padding: 0 65px;
   }
-  .desktop-hidden{
+  
+  .desktop-hidden {
     display: none;
   }
 }
