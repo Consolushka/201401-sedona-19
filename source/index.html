@@ -17,7 +17,7 @@
         <ul class="header__navigation-list menu-list">
           <li class="menu-list__item menu-list__item--main menu-list__item--active btn--menu">
             <a href="index.html" class="menu-list__item-btn">Главная</a>
-            <button type="button" class="btn btn--close menu-list__item-btn menu-list__item-btn--close">
+            <button type="button" class="btn btn--close menu-list__item-btn menu-list__item-btn--close no-js">
               <span class="visually-hidden">Закрыть Меню</span>
             </button>
           </li>
@@ -211,16 +211,11 @@
 
   <section class="location">
     <h3 class="visually-hidden">Местоположение</h3>
-    <picture>
-      <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@2x.webp 2x, img/bg-map-desktop@1x.webp 1x">
-      <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@2x.webp 2x, img/bg-map-tablet@1x.webp 1x">
-      <source type="image/webp" srcset="img/bg-map-mobile@2x.webp 2x, img/bg-map-mobile@1x.webp 1x">
-
-      <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@2x.jpg 2x, img/bg-map-desktop@1x.jpg 1x">
-      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@2x.jpg 2x, img/bg-map-tablet@1x.jpg 1x">
-      <source srcset="img/bg-map-mobile@2x.jpg 2x">
-      <img class="location__image" src="img/bg-map-mobile@1x.jpg" alt="Местоположение">
-    </picture>
+    <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774555!2d-111.8301578595786!3d34.854443815278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1589366271324!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+    <svg xmlns="http://www.w3.org/2000/svg" class="location__marker" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+      <image id="map-marker.svg" width="27" height="27" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAABhUlEQVRIicWWwUrDQBCGZ6KCIEiLIh4q6EWPyc2j6RP4CH0FfZL4Cn0En6Dx6KnJUS8K9iCiFARBEBn5Q9PGzezGNG39bt3d2a+ZTGaXqhCRQEQiERmKznAyH1Ru5pCEIjKwCGxgfVhXFNWUmER/kbQc6aoL9mm5ZIsSTYXF/deLqSMi9SV/fn1TOhrT3fM7Pb59TMcPd7boZH+b/E6bNjfWtNCsuJj5Ej94IsJLHWirbx9e6eb+JRPagOjseI9Oj3ZtS7rMHOcyiEpVdJ2OKH0aWyUm/kGbzv2ONhUzc9ebfB8lEZ6ojghgPeIU8BkFHhH1zBmkDKmbB0fKe572VCgG1ztykReTQuhpFYiqa4IlPktjiWJ5z4MtXpUti/+XoTM0wRYPWWIOogU1wRKfQBabo45eVwniEK8QQ9bXAtDr5gFxlj/a95g50Z4OTRW9rg5Yb2nG6I3J6rs+zc6zC21lg/MMXOXn2S+WfVKbstXdQYopbSiqvl0ZwtXcGw3pYm7ERPQDTKEg3qwHbPQAAAAASUVORK5CYII="/>
+    </svg>
   </section>
 </main>
 

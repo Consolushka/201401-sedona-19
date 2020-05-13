@@ -139,17 +139,15 @@
 
     &--housing {
       margin-top: 10px;
+
+      br {
+        display: none;
+      }
     }
   }
 
   .comfort-list__item-image--housing {
     margin-bottom: 17px;
-  }
-
-  .comfort-list__item--housing {
-    br {
-      display: none;
-    }
   }
 
   .comfort-list__item--souvenirs .comfort-list__item-desc {

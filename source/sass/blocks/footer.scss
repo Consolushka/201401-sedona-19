@@ -30,6 +30,7 @@
 }
 
 .socials-list__item-btn {
+  fill: $white-color;
   width: 46px;
   height: 48px;
 
@@ -42,7 +43,8 @@
   }
 
   &:active {
-    opacity: 0.7;
+    background: #5496bd;
+    fill: #88b6d1;
   }
 }
 

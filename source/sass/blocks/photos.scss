@@ -150,17 +150,15 @@
 
     &:first-child {
       padding-top: 40px;
-    }
-  }
 
-  .photos-list__item:first-child {
-    .photos-list__item-image {
-      width: 1200px;
-      height: 400px;
-    }
+      .photos-list__item-image {
+        width: 1200px;
+        height: 400px;
+      }
 
-    .photos-list__item-info {
-      max-width: none;
+      .photos-list__item-info {
+        max-width: none;
+      }
     }
   }
 
