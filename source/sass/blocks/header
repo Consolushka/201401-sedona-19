@@ -28,11 +28,12 @@
 
 .header__wrapper {
   position: relative;
-
+  min-height: 54px;
   padding: 16px 0;
 }
 
 .header__logo {
+  width: 102px;
   top: -1px;
   left: 50%;
   transform: translateX(-50%);
@@ -50,7 +51,6 @@
 }
 
 .menu-list__item {
-  padding: 15.5px 0;
   text-align: center;
   @include base-heading;
   color: #ffffff;
@@ -70,6 +70,17 @@
   }
 }
 
+.menu-list__item-btn {
+  display: block;
+  width: 100%;
+  padding: 15.5px 0;
+
+  &--close {
+    padding: 0;
+    width: 23px;
+  }
+}
+
 .menu-list__item:last-child {
   border-bottom: none;
 }
@@ -83,6 +94,7 @@
   order: 2;
   height: 390px;
 
+  background-color: #3b719d;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position: center;
@@ -99,19 +111,19 @@
 }
 
 .greeting--small {
-  background-size: auto;
+  background-size: cover;
   background-position: bottom;
   height: 158px;
 
-  .greeting__image{
+  .greeting__image {
     width: 222px;
     height: 39px;
     top: -8px;
   }
 }
 
-@media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
-  .greeting{
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .greeting {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
@@ -126,18 +138,19 @@
     }
   }
 
-  .header--small:after{
+  .header--small:after {
     height: 16%;
   }
 
   .header__navigation {
+    display: block;
     margin: 0 -12px;
     margin-right: -33px;
   }
 
   .header__wrapper {
     position: static;
-
+    min-height: 0;
     padding: 0;
   }
 
@@ -171,14 +184,14 @@
     border: none;
     color: $black-color;
 
-    &--active{
+    &--active {
       color: #766357;
 
-      &:hover{
+      &:hover {
         color: #604e43;
       }
 
-      &:active{
+      &:active {
         opacity: 0.3;
       }
     }
@@ -205,12 +218,12 @@
     }
   }
 
-  .greeting__image{
+  .greeting__image {
     width: 460px;
   }
 
-  .greeting--small{
-    .greeting__image{
+  .greeting--small {
+    .greeting__image {
       top: -12px;
       width: 457px;
       height: 81px;
@@ -222,8 +235,8 @@
     top: -7px;
   }
 
-  @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
-    .greeting{
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .greeting {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
@@ -245,7 +258,11 @@
     }
   }
 
-  .header--small:after{
+  .header__logo {
+    width: 188px;
+  }
+
+  .header--small:after {
     bottom: 0;
   }
 
@@ -271,8 +288,8 @@
     }
   }
 
-  @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
-    .greeting{
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .greeting {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }

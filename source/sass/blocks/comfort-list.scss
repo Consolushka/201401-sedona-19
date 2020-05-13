@@ -26,7 +26,6 @@
 
   width: 100%;
   margin: 0 auto;
-
 }
 
 .comfort-list__item-image {
@@ -52,7 +51,7 @@
   margin: 0;
   line-height: 19px;
 
-  br{
+  br {
     display: none;
   }
 }
@@ -60,6 +59,10 @@
 @media (min-width: $tablet-width) {
   .comfort-list {
     padding-top: 58px;
+
+    .container {
+      padding: 0 4px;
+    }
   }
 
   .comfort-list__wrapper {
@@ -73,12 +76,7 @@
     width: 33%;
     padding-bottom: 45px;
 
-    &--housing {
-      margin-left: -37px;
-    }
-
     &--souvenirs {
-      margin-right: -37px;
       order: 2;
     }
   }
@@ -88,6 +86,10 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
+
+    div {
+      width: 100%;
+    }
   }
 
   .comfort-list__item-image {
@@ -96,7 +98,7 @@
     margin: 0;
     margin-bottom: 16px;
 
-    &--eating{
+    &--eating {
       padding-top: 4px;
     }
 
@@ -114,49 +116,46 @@
     width: 100%;
     margin: 0 auto;
     line-height: 22px;
+    padding: 0 19px;
 
-    br{
+    br {
       display: block;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .comfort-list {
     padding-top: 52px;
     margin-bottom: 15px;
+
+    .container {
+      padding: 0;
+    }
   }
 
   .comfort-list__item {
     padding-bottom: 64px;
 
     &--housing {
-      margin-left: -42px;
       margin-top: 10px;
-    }
 
-    &--souvenirs{
-      margin-right: -40px;
+      br {
+        display: none;
+      }
     }
   }
 
-  .comfort-list__item-image--housing{
+  .comfort-list__item-image--housing {
     margin-bottom: 17px;
-  }
-
-  .comfort-list__item--housing{
-    br{
-      display: none;
-    }
   }
 
   .comfort-list__item--souvenirs .comfort-list__item-desc {
     padding: 0 47px;
   }
 
-  .comfort-list__item--eating{
-    br{
+  .comfort-list__item--eating {
+    br {
       display: none;
     }
   }

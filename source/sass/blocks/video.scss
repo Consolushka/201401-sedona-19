@@ -39,8 +39,8 @@
   background-image: url("../img/video-mobile@1x.jpg");
 }
 
-@media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
-  .video__window{
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .video__window {
     background: url("../img/video-mobile@2x.jpg");
     background-size: contain;
   }
@@ -84,7 +84,7 @@
   background: #f2f2f2;
 }
 
-.video__window-nav__btn{
+.video__window-nav__btn {
   fill: #5c6870;
 }
 
@@ -104,12 +104,12 @@
   background: none;
 }
 
-.video__window-nav__btn:hover{
-    fill: $dark-grey-color;
+.video__window-nav__btn:hover {
+  fill: $dark-grey-color;
 }
 
-.video__window-nav__btn:active{
-    fill: #b8b8b8;
+.video__window-nav__btn:active {
+  fill: #b8b8b8;
 }
 
 @media (min-width: $tablet-width) {
@@ -134,8 +134,8 @@
     background: url("../img/video-tablet@1x.jpg");
   }
 
-  @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
-    .video__window{
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .video__window {
       background: url("../img/video-tablet@2x.jpg");
       background-size: contain;
     }
@@ -151,30 +151,30 @@
     transform: none;
   }
 
-  .video__window-scroll-line{
+  .video__window-scroll-line {
     width: 100%;
   }
 
-  .video__window-scroll-toggle{
+  .video__window-scroll-toggle {
     left: 112px;
   }
 
   .video__window-nav-bg {
     width: 648px;
     height: 92px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     transform: translateY(-100%);
   }
 
-  .video__window-nav__btn{
+  .video__window-nav__btn {
     fill: $white-color;
   }
 
-  .video__window-nav__btn:hover{
+  .video__window-nav__btn:hover {
     fill: #c2c2c2;
   }
 
-  .video__window-nav__btn:active{
+  .video__window-nav__btn:active {
     fill: #949494;
   }
 
@@ -188,12 +188,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .video{
+  .video {
     padding-top: 63px;
     margin-bottom: -6px;
   }
 
-  .video-slogan{
+  .video-slogan {
     padding: 0 318px;
   }
 
@@ -203,8 +203,8 @@
     background: url("../img/video-desktop@1x.jpg");
   }
 
-  @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx) {
-    .video__window{
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .video__window {
       background: url("../img/video-desktop@2x.jpg");
       background-size: contain;
     }
@@ -215,12 +215,12 @@
     height: 94px;
   }
 
-  .video__window-scroll-toggle{
+  .video__window-scroll-toggle {
     left: 110px;
   }
 
 
-  .video__window-nav-bg{
+  .video__window-nav-bg {
     width: 800px;
     height: 94px;
   }

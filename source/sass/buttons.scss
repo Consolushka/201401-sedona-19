@@ -1,93 +1,93 @@
 
-.btn{
+.btn {
   cursor: pointer;
   border: none;
   display: block;
   background: none;
   font-family: inherit;
 
-  &--sedona{
+  &--sedona {
     background: $base-color;
 
-    &:hover{
+    &:hover {
       background: #669ec0;
     }
 
-    &:active{
-      background:#5496bd;
+    &:active {
+      background: #5496bd;
       color: #94b9d2;
       fill: #94b9d2;
     }
-    &:active path{
+
+    &:active path {
       fill: #94b9d2;
     }
 
-    &:disabled{
+    &:disabled {
       background: #e5e5e5;
       color: #f0f0f0;
     }
-    &:disabled path{
+
+    &:disabled path {
       fill: #f0f0f0;
     }
   }
 
-  &--burger{
+  &--burger {
     width: 24px;
     height: 22px;
 
     background: url("../img/icon-menu.svg");
   }
 
-  &--burger:hover{
+  &--burger:hover {
     opacity: 0.5;
   }
 
-  &--burger:active{
+  &--burger:active {
     opacity: 0.3;
   }
 
-  &--close{
+  &--close {
     width: 23px;
     height: 22px;
     right: 20px;
     background: url("../img/icon-cross.svg");
 
-    &:hover{
+    &:hover {
       opacity: 0.5;
     }
 
-    &:active{
+    &:active {
       opacity: 0.3;
     }
   }
 
-  &--toggle{
+  &--toggle {
     height: 11px;
     width: 10px;
     border-radius: 50%;
     background: #ffffff;
   }
 
-  &--like{
-  }
-
-  &--menu:hover{
+  &--menu:hover {
     background-color: #669ec0;
   }
 
-  &--menu:active{
+  &--menu:active {
     background-color: #5496bd;
     color: #94b9d2;
   }
 }
 
 @media (min-width: 768px) {
-  .btn{
-    &--menu:hover{
+  .btn {
+    &--menu:hover {
       background: none;
       color: $base-color;
     }
-    &--menu:active{
+
+    &--menu:active {
       color: #cacaca;
     }
   }
