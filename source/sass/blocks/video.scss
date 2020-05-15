@@ -14,14 +14,14 @@
   align-items: center;
 }
 
-.video-heading {
+.video__heading {
   @include base-heading;
   line-height: 21px;
   margin: 0;
   margin-bottom: 32px;
 }
 
-.video-slogan {
+.video__slogan {
   @include base-text;
   padding: 0 10px;
   line-height: 23px;
@@ -119,13 +119,13 @@
     margin-bottom: -44px;
   }
 
-  .video-heading {
+  .video__heading {
     line-height: 41px;
     font-size: 30px;
     margin-bottom: 25px;
   }
 
-  .video-slogan {
+  .video__slogan {
     padding: 0 110px;
     margin-bottom: 74px;
   }
@@ -195,7 +195,7 @@
     margin-bottom: -1px;
   }
 
-  .video-slogan {
+  .video__slogan {
     padding: 0 318px;
   }
 

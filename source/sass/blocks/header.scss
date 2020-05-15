@@ -51,6 +51,18 @@
   &--close {
     background-image: url("../img/icon-cross.svg");
   }
+
+  &--no-js{
+    display: none;
+  }
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:active{
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) {
