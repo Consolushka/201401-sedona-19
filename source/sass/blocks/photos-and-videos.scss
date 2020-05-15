@@ -1,8 +1,8 @@
-
 .photos-and-video__heading {
   @include base-heading;
   margin: 0 auto;
   text-align: center;
+  line-height: 24px;
   margin-bottom: 31px;
 }
 
@@ -16,13 +16,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main--photos {
+  .photos-and-video {
     margin-top: 67px;
   }
 
   .photos-and-video__heading {
     font-size: 30px;
     margin-bottom: 24px;
+    line-height: 37px;
   }
 
   .photos-and-video__slogan {
@@ -32,7 +33,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main--photos {
+  .photos-and-video {
     margin-top: 103px;
   }
 

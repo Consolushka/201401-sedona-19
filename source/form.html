@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Седона. Форма Отзывов</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="js/svg4everybody.js"></script>
@@ -11,40 +15,35 @@
   <script src="js/picturepolyfill.js"></script>
 </head>
 <body>
-<header class="header header--small">
+<header class="header">
   <div class="container">
     <div class="header__flex-wrapper">
       <nav class="header__navigation">
         <ul class="header__navigation-list menu-list">
-          <li class="menu-list__item menu-list__item--main btn--menu">
-            <a href="index.html" class="menu-list__item-btn ">Главная</a>
-            <button type="button" class="btn btn--close menu-list__item-btn menu-list__item-btn--close">
-              <span class="visually-hidden">Закрыть Меню</span>
-            </button>
+          <li class="menu-list__item menu-list__item--main">
+            <a href="index.html" class="menu-list__item-btn">Главная</a>
           </li>
-          <li class="menu-list__item btn--menu">
+          <li class="menu-list__item">
             <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
           </li>
-          <li class="menu-list__item menu-list__item--active btn--menu">
+          <li class="menu-list__item menu-list__item--active">
             <a href="form.html" class="menu-list__item-btn">Форма отзыва</a>
           </li>
-          <li class="menu-list__item btn--menu">
+          <li class="menu-list__item">
             <a href="https://up.htmlacademy.ru/adaptive/19" class="menu-list__item-btn">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <div class="header__wrapper">
-        <a href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="header__logo logo" src="img/logo-sedona-mobile.svg" alt="Логотип">
-          </picture>
-        </a>
-        <button type="button" class="btn btn--burger header__btn--menu modal-disnone">
-          <span class="visually-hidden">Кнопка Меню</span>
-        </button>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="header__logo logo" src="img/logo-sedona-mobile.svg" alt="Логотип">
+        </picture>
       </div>
+      <button type="button" class="btn header__btn header__btn--close no-js">
+        <span class="visually-hidden">Закрыть Меню</span>
+      </button>
     </div>
   </div>
 
@@ -53,7 +52,7 @@
   </div>
 </header>
 
-<main class="page-main">
+<main>
   <section class="review">
     <div class="container container--special">
       <form action="#" method="post" class="review__form">
@@ -72,15 +71,15 @@
             <div class="review__form-quiz">
               <label class="review__user review__user--name">
                 <span class="review__user-indicator">Имя*:</span>
-                <input type="text" class="review__user-field review__user-filed--name" placeholder="Петр" required>
+                <input type="text" class="review__user-field review__user-field--name" placeholder="Петр" required>
               </label>
               <label class="review__user review__user--lname">
                 <span class="review__user-indicator">Фамилия*:</span>
-                <input type="text" class="review__user-field review__user-filed--lname" placeholder="Иванов" required>
+                <input type="text" class="review__user-field review__user-field--lname" placeholder="Иванов" required>
               </label>
               <label class="review__user review__user--fname">
                 <span class="review__user-indicator">Отчество*:</span>
-                <input type="text" class="review__user-field review__user-filed--fname" placeholder="Александрович" required>
+                <input type="text" class="review__user-field review__user-field--fname" placeholder="Александрович" required>
               </label>
             </div>
           </div>
@@ -92,11 +91,11 @@
             <div class="review__form-quiz">
               <label class="review__contacts review__contacts--tel">
                 <span class="review__contacts-indicator"><span>Контактный</span> Телефон*:</span>
-                <input type="tel" class="review__contacts-field review__contacts-field--tel form__required" placeholder="Введите телефон" required>
+                <input type="tel" class="review__contacts-field review__contacts-field--tel" placeholder="Введите телефон" required>
               </label>
               <label class="review__contacts review__contacts--mail">
-                <span class="review__contacts-indicator">Электронная Почта*:</span>
-                <input type="email" class="review__contacts-field review__contacts-field--mail form__required" placeholder="Введите e-mail" required>
+                <span class="review__contacts-indicator review__contacts-indicator--mail">Электронная Почта*:</span>
+                <input type="email" class="review__contacts-field review__contacts-field--mail" placeholder="Введите e-mail" required>
               </label>
             </div>
           </div>
@@ -193,7 +192,7 @@
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="socials-list__item">
           <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--youtube">
             <span class="visually-hidden">Ссылка на Ютуб</span>
             <svg width="20" height="20" viewBox="0 0 19.979 14.015">
@@ -236,9 +235,8 @@
     </div>
   </div>
 </div>
-</body>
 
 <script type="text/javascript" src="js/menu.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
-
+</body>
 </html>

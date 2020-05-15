@@ -40,91 +40,16 @@
   position: absolute;
 }
 
-.header__btn--menu {
-  margin-left: auto;
-}
-
-.menu-list {
-  @include list-style;
-  margin: 0 -20px;
-  color: $white-color;
-}
-
-.menu-list__item {
-  text-align: center;
-  @include base-heading;
-  color: #ffffff;
-  border-bottom: 1px solid #678fa8;
-  border-top: 1px solid #9ac2db;
-
-  &-btn--close {
-    position: absolute;
-    right: 20px;
-  }
-
-  &--main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.menu-list__item-btn {
-  display: block;
-  width: 100%;
-  padding: 15.5px 0;
+.header__btn {
+  position: absolute;
+  background-image: url("../img/icon-menu.svg");
+  top: 16px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
 
   &--close {
-    padding: 0;
-    width: 23px;
-  }
-}
-
-.menu-list__item:last-child {
-  border-bottom: none;
-}
-
-.menu-list__item {
-  background: $base-color;
-}
-
-.greeting {
-  padding-top: 2px;
-  order: 2;
-  height: 390px;
-
-  background-color: #3b719d;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.greeting__image {
-  position: relative;
-  top: 2px;
-  width: 280px;
-}
-
-.greeting--small {
-  background-size: cover;
-  background-position: bottom;
-  height: 158px;
-
-  .greeting__image {
-    width: 222px;
-    height: 39px;
-    top: -8px;
-  }
-}
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .greeting {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/icon-cross.svg");
   }
 }
 
@@ -134,8 +59,18 @@
 
     &:after {
       background-image: url("../img/bg-intro-triangle-tablet.svg");
-      height: 9.7%;
+      height: 16%;
     }
+
+    &--index {
+      &:after {
+        height: 9.7%;
+      }
+    }
+  }
+
+  .header__btn {
+    display: none;
   }
 
   .header--small:after {
@@ -154,91 +89,8 @@
     padding: 0;
   }
 
-  .menu-list {
-    margin: 0 auto;
-
-    min-height: 57px;
-
-    color: black;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .menu-list__item {
-    font-size: 14px;
-
-    &:nth-child(2) {
-      margin-right: 131px;
-    }
-
-    &:nth-child(3) {
-      margin-right: -29px;
-    }
-  }
-
-  .menu-list__item {
-    background: none;
-    border: none;
-    color: $black-color;
-
-    &--active {
-      color: #766357;
-
-      &:hover {
-        color: #604e43;
-      }
-
-      &:active {
-        opacity: 0.3;
-      }
-    }
-  }
-
-
-  .menu-list__item-btn--close {
-    display: none;
-  }
-
   .header__btn--menu {
     display: none;
-  }
-
-
-  .greeting {
-    height: 519px;
-    padding-top: 0;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-
-    &--small {
-      height: 291px;
-      background-position: bottom;
-    }
-  }
-
-  .greeting__image {
-    width: 460px;
-  }
-
-  .greeting--small {
-    .greeting__image {
-      top: -12px;
-      width: 457px;
-      height: 81px;
-    }
-  }
-
-  .greeting__image {
-    height: 351px;
-    top: -7px;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .greeting {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-    }
   }
 }
 
@@ -251,10 +103,16 @@
   .header {
     &:after {
       background-image: url("../img/bg-intro-triangle-desktop.svg");
-      height: 16%;
+      height: 25.7%;
 
       background-size: contain;
       bottom: -18px;
+    }
+
+    &--index {
+      &:after {
+        height: 16%;
+      }
     }
   }
 
@@ -264,33 +122,5 @@
 
   .header--small:after {
     bottom: 0;
-  }
-
-  .menu-list__item {
-    font-size: 14px;
-
-    &:nth-child(2) {
-      margin-right: 225px;
-    }
-
-    &:nth-child(3) {
-      margin-right: -21px;
-    }
-  }
-
-  .greeting {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-
-    &--small {
-      height: 302px;
-      background-image: url("../img/bg-back-desktop@1x.jpg");
-      background-position: bottom;
-    }
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .greeting {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
   }
 }

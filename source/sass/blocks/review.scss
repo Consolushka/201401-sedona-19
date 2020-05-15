@@ -10,339 +10,23 @@
 .review__heading {
   margin: 0;
   font-size: 18px;
+  line-height: 23px;
   text-align: center;
   margin-bottom: 32px;
 }
 
 .review__slogan {
   margin: 0;
+
+  @include base-text;
   line-height: 23px;
   text-align: center;
-}
-
-.review__form {
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.review__form-info {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 18px;
-}
-
-.review__form-quiz {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.review__form-wrapper {
-  width: 100%;
-  order: 2;
-
-  border-top: 1px solid $field-color-hover;
-
-  padding: 19px 0 15px 0;
-
-  &--opinion {
-    margin-bottom: 11px;
-  }
-
-  &:last-child {
-    border-top: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.review__user {
-  width: 100%;
-
-  margin: 5px 0 4px 0;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  &--name {
-    .review__user-field {
-      width: 265px;
-    }
-  }
-}
-
-.review__user-heading,
-.review__contacts-heading,
-.review__visited-heading,
-.review__impression-heading,
-.review__opinion-heading {
-  text-align: center;
-  font-size: 18px;
-}
-
-.review__user-indicator {
-  margin-right: 14px;
-}
-
-.review__user-heading {
-  margin: 0;
-  margin-bottom: 13px;
-}
-
-.review__slogan,
-.review__user {
-  @include base-text;
-}
-
-.review__form-wrapper--contacts {
-  padding-bottom: 27px;
-}
-
-.review__contacts-heading {
-  margin: 0;
-  margin-bottom: 11px;
-}
-
-.review__contacts-indicator {
-  @include base-text;
-  margin-top: 20px;
-  margin-left: 22px;
-  margin-bottom: 15px;
-}
-
-.review__contacts {
-  margin-top: 10px;
-  position: relative;
-  width: 100%;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 65px;
-    background-size: auto;
-    background-position: center;
-  }
-}
-
-.review__contacts-field {
-  padding: 18px;
-  margin-top: 7px;
-  padding-left: 18px;
-}
-
-.review__contacts--tel::after {
-  background-image: url("../../img/icon-phone.svg");
-}
-
-.review__contacts--mail::after {
-  background-image: url("../../img/icon-mail.svg");
-}
-
-.review__form-wrapper--impression {
-  padding-bottom: 16px;
-  padding-top: 15px;
-}
-
-.review__impression {
-  margin: 17px 0 29px 0;
-  position: relative;
-}
-
-.review__impression-heading {
-  margin: 0;
-  margin-bottom: 23px;
-}
-
-.review__impression-radio {
-  margin-bottom: 10px;
-  outline: none;
-}
-
-.review__impression-indicator {
-  margin-left: 78px;
-
-  &::before {
-    content: "";
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-    top: -14px;
-    height: 56px;
-    width: 56px;
-    background: $field-color;
-    border-radius: 50%;
-  }
-
-  &::after {
-    cursor: pointer;
-    content: "";
-    position: absolute;
-    left: 17px;
-    top: 2px;
-    width: 22px;
-    height: 22px;
-    background: $dark-grey-color;
-    opacity: 0;
-    border-radius: 50%;
-  }
-}
-
-.review__impression-radio:checked + .review__impression-indicator::after {
-  opacity: 1;
-}
-
-.review__impression-radio:hover + .review__impression-indicator::before,
-.review__impression-radio:focus + .review__impression-indicator::before {
-  background: $field-color-hover;
-}
-
-.review__impression-radio:active + .review__impression-indicator::before {
-  background: $field-color-active;
-}
-
-.review__impression-radio:active + .review__impression-indicator::after {
-  background: #a4a4a4;
-}
-
-.review__form-wrapper--visited {
-  padding-bottom: 14px;
-}
-
-.review__visited {
-  margin: 28px 0 29px;
-}
-
-.review__visited-heading {
-  margin: 0;
-  margin-bottom: 5px;
-  line-height: 25px;
-}
-
-.review__visited-indicator {
-  position: relative;
-
-  margin-left: 79px;
-
-  &::before {
-    cursor: pointer;
-    content: "";
-    position: absolute;
-    left: -79px;
-    top: -14px;
-    height: 56px;
-    width: 56px;
-    background: $field-color;
-    border-radius: 3px;
-  }
-
-  &::after {
-    cursor: pointer;
-    content: url("../../img/icon-tick.svg");
-    position: absolute;
-    left: -63px;
-    top: 3px;
-    opacity: 0;
-  }
-}
-
-.review__visited-cb:checked + .review__visited-indicator::after {
-  opacity: 1;
-}
-
-.review__visited-cb:hover + .review__visited-indicator::before,
-.review__visited-cb:focus + .review__visited-indicator::before {
-  background: $field-color-hover;
-}
-
-.review__visited-cb:active + .review__visited-indicator::before {
-  background: $field-color-active;
-}
-
-.review__visited-cb:active + .review__visited-indicator::after {
-  opacity: 0.3;
-}
-
-.review__user-field,
-.review__opinion-field,
-.review__contacts-field {
-  background-color: $field-color;
-
-  @include base-heading;
-  width: 100%;
-  text-transform: none;
-  border: 4px solid transparent;
-  outline: none;
-
-  &:hover {
-    background-color: $field-color-hover;
-  }
-
-  &:active,
-  &:focus {
-    background-color: $white-color;
-    border: 4px solid $field-color-hover;
-  }
-}
-
-.review__user-field {
-  padding: 20px;
-  width: 230px;
-}
-
-.review__user-field::placeholder,
-.review__opinion-field::placeholder,
-.review__contacts-field::placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-
-  @include base-heading;
-  text-transform: none;
-}
-
-.review__opinion-heading {
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.review__opinion-field {
-  width: 100%;
-  min-height: 160px;
-
-  padding: 17px;
-  padding-top: 11px;
-
-  line-height: 25px;
-  resize: none;
-}
-
-.review__impression-indicator,
-.review__visited-indicator {
-  text-transform: none;
-}
-
-.review__form-last {
-  width: 100%;
-
-  order: 2;
 }
 
 .review__btn {
   width: 100%;
   padding: 17px 19px;
+  line-height: 25px;
 
   @include base-heading;
   color: #ffffff;
@@ -350,15 +34,10 @@
   letter-spacing: 1.2px;
 }
 
-.review__form-necessarily {
-  margin: 0;
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .review {
     margin-top: 66px;
-    margin-bottom: 63px;
+    margin-bottom: 70px;
 
     .container {
       padding: 0;
@@ -372,152 +51,12 @@
   .review__heading {
     font-size: 30px;
     margin-bottom: 25px;
+    line-height: 39px;
   }
 
   .review__slogan {
     padding: 0 102px;
-  }
-
-  .review__form {
-
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .review__form-info {
-    margin-bottom: 74px;
-  }
-
-  .review__form-wrapper {
-    padding: 0;
-    border: none;
-
-    &--introducing,
-    &--impression {
-      width: 50%;
-    }
-
-    &--impression {
-      order: 1;
-      border-right: 1px solid $field-color-hover;
-
-      .container {
-        padding-right: 49px;
-      }
-    }
-  }
-
-  .review__impression-heading {
-    margin-bottom: 45px;
-  }
-
-  .review__impression {
-    margin: 28px 0;
-  }
-
-  .review__form-wrapper--introducing {
-    .container {
-      padding-left: 58px;
-    }
-  }
-
-  .review__user-heading {
-    width: 162px;
-    margin-bottom: 47px;
-  }
-
-  .review__form-wrapper--contacts {
-    margin-bottom: 3px;
-  }
-
-  .review__contacts {
-    padding: 0;
-
-    margin-top: 7px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    &::after {
-      bottom: -3px;
-    }
-  }
-
-  .review__contacts-heading {
-    margin-top: 3px;
-  }
-
-  .review__form-wrapper--contacts,
-  .review__form-wrapper--visited,
-  .review__form-wrapper--opinion {
-    border-top: 1px solid $field-color-hover;
-    margin-top: 69px;
-    margin-bottom: 14px;
-
-    .review__contacts-heading,
-    .review__visited-heading,
-    .review__opinion-heading {
-      position: relative;
-      top: 0;
-      width: 400px;
-      margin: 0 auto -15px auto;
-      transform: translateY(-50%);
-      background: $white-color;
-    }
-  }
-
-  .review__contacts-indicator {
-    margin-bottom: 10px;
-    margin-left: 22px;
-  }
-
-  .review__contacts-field {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: -3px;
-  }
-
-  .review__form-wrapper--visited {
-    margin-top: 61px;
-
-    .review__form-quiz {
-      padding: 23px 94px 16px 97px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  }
-
-  .review__visited {
-    margin-bottom: 37px;
-
-    &--mountain {
-      margin-right: 12px;
-    }
-  }
-
-  .review__user-heading,
-  .review__contacts-heading,
-  .review__impression-heading,
-  .review__visited-heading,
-  .review__opinion-heading {
-    font-size: 21px;
-  }
-
-  .review__form-wrapper--opinion {
-    margin-top: 30px;
-  }
-
-  .review__form-wrapper--opinion .review__opinion-heading {
-    margin-bottom: 44px;
-  }
-
-  .review__form-last {
-    margin-top: 39px;
+    letter-spacing: 0.1px;
   }
 
   .review__btn {
@@ -526,122 +65,20 @@
     letter-spacing: 1.2px;
     padding-left: 7px;
   }
-
-  .review__form-necessarily {
-    display: block;
-    font-size: 14px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .review {
     margin-top: 103px;
-    margin-bottom: 67px;
+    margin-bottom: 70px;
   }
 
   .container.container--special {
     padding: 0 120px;
   }
 
-  .review__form-info {
-    margin-bottom: 58px;
-  }
-
-  .review__form-wrapper--contacts,
-  .review__form-wrapper--visited,
-  .review__form-wrapper--opinion {
-    margin-top: 43px;
-  }
-
   .review__slogan {
     padding: 0 260px;
-  }
-
-  .review__form-wrapper--impression {
-    .container {
-      padding-right: 52px;
-    }
-  }
-
-  .review__form-wrapper--introducing .container {
-    padding-left: 80px;
-  }
-
-  .review__form-wrapper--contacts {
-    margin-top: 69px;
-
-    .review__contacts-heading {
-      margin-bottom: 43px;
-    }
-
-    .review__form-quiz {
-      flex-direction: row;
-      margin-bottom: 21px;
-    }
-  }
-
-  .review__contacts-indicator {
-    margin-top: 12px;
-    margin-left: 0;
-    margin-right: 20px;
-  }
-
-  .review__contacts-indicator span {
-    display: none;
-  }
-
-  .review__contacts {
-    padding-top: 7px;
-    padding-left: 0;
-    flex-direction: row;
-    align-items: center;
-
-    &::after {
-      bottom: 0;
-      right: 1px;
-    }
-  }
-
-  .review__contacts--tel {
-    padding-right: 2px;
-
-    &::after {
-      right: 79px;
-    }
-  }
-
-  .review__contacts--mail {
-    padding-right: 0;
-  }
-
-  .review__contacts-field {
-    width: 312px;
-    margin-bottom: 0;
-  }
-
-  .review__form-wrapper--visited {
-    margin-top: 40px;
-
-    .review__form-quiz {
-      padding: 0;
-    }
-
-    .review__visited-heading {
-      margin-bottom: 0;
-      padding-top: 5px;
-    }
-  }
-
-  .review__visited--mountain {
-    margin-right: 0;
-  }
-
-  .review__form-wrapper--opinion {
-    margin-top: 43px;
-  }
-
-  .review__form-last {
-    margin-bottom: 4px;
   }
 
   .review__btn {

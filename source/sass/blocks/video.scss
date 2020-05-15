@@ -16,6 +16,7 @@
 
 .video-heading {
   @include base-heading;
+  line-height: 21px;
   margin: 0;
   margin-bottom: 32px;
 }
@@ -115,10 +116,11 @@
 @media (min-width: $tablet-width) {
   .video {
     padding-top: 60px;
-    margin-bottom: -47px;
+    margin-bottom: -44px;
   }
 
   .video-heading {
+    line-height: 41px;
     font-size: 30px;
     margin-bottom: 25px;
   }
@@ -190,7 +192,7 @@
 @media (min-width: $desktop-width) {
   .video {
     padding-top: 63px;
-    margin-bottom: -6px;
+    margin-bottom: -1px;
   }
 
   .video-slogan {

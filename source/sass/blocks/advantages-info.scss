@@ -1,0 +1,43 @@
+.advantages-info__heading {
+  @include base-heading;
+
+  text-align: center;
+
+  width: 91%;
+  line-height: 26px;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.advantages-info__slogan {
+  @include base-text;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-info {
+    margin-bottom: 51px;
+  }
+
+  .advantages-info__heading {
+    font-size: 21px;
+  }
+
+  .advantages-info__slogan {
+    letter-spacing: 0.1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-info__heading {
+    width: 512px;
+  }
+
+  .advantages-info__slogan {
+    width: 512px;
+  }
+}

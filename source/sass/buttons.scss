@@ -33,13 +33,6 @@
     }
   }
 
-  &--burger {
-    width: 24px;
-    height: 22px;
-
-    background: url("../img/icon-menu.svg");
-  }
-
   &--burger:hover {
     opacity: 0.5;
   }
@@ -64,31 +57,22 @@
   }
 
   &--toggle {
-    height: 11px;
-    width: 10px;
+    padding: 4px;
     border-radius: 50%;
     background: #ffffff;
   }
 
-  &--menu:hover {
-    background-color: #669ec0;
-  }
-
-  &--menu:active {
-    background-color: #5496bd;
-    color: #94b9d2;
+  &--like {
+    padding-left: 0;
+    margin-right: 8px;
+    fill: #a9a9a9;
   }
 }
 
 @media (min-width: 768px) {
   .btn {
-    &--menu:hover {
-      background: none;
-      color: $base-color;
-    }
-
-    &--menu:active {
-      color: #cacaca;
+    &--like {
+      margin-right: 3px;
     }
   }
 }

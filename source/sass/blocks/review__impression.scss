@@ -1,0 +1,77 @@
+.review__impression-heading {
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+
+.review__impression {
+  margin: 17px 0 29px 0;
+  position: relative;
+}
+
+.review__impression-radio {
+  margin-bottom: 10px;
+  outline: none;
+}
+
+
+.review__impression-indicator {
+  margin-left: 78px;
+  text-transform: none;
+  line-height: 22px;
+
+  &::before {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: -14px;
+    height: 56px;
+    width: 56px;
+    background: $field-color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 2px;
+    width: 22px;
+    height: 22px;
+    background: $dark-grey-color;
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.review__impression-radio:checked + .review__impression-indicator::after {
+  opacity: 1;
+}
+
+.review__impression-radio:hover + .review__impression-indicator::before,
+.review__impression-radio:focus + .review__impression-indicator::before {
+  background: $field-color-hover;
+}
+
+.review__impression-radio:active + .review__impression-indicator::before {
+  background: $field-color-active;
+}
+
+.review__impression-radio:active + .review__impression-indicator::after {
+  background: #a4a4a4;
+}
+
+@media (min-width: $tablet-width) {
+  .review__impression-heading {
+    margin-bottom: 45px;
+    font-size: 21px;
+  }
+
+  .review__impression {
+    margin: 28px 0;
+  }
+}

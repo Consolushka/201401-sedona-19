@@ -1,14 +1,15 @@
-var btnOpen = document.querySelector(".header__btn--menu");
-var btnClose = document.querySelector(".menu-list__item-btn--close");
-btnClose.classList.remove("no-js");
+var btnOpen = document.querySelector(".header__btn");
+console.log(btnOpen);
+btnOpen.classList.remove("no-js");
 var menu = document.querySelector(".header__navigation");
 btnOpen.addEventListener("click", function () {
-  console.log("open");
-  menu.classList.remove("modal-disnone");
-  btnOpen.classList.add("modal-disnone");
-});
-btnClose.addEventListener("click", function () {
-  console.log(btnOpen);
-  btnOpen.classList.remove("modal-disnone");
-  menu.classList.add("modal-disnone");
+  if(btnOpen.classList.contains("header__btn--close")){
+    console.log("click");
+    btnOpen.classList.remove("header__btn--close");
+    menu.classList.add("modal-disnone");
+  }
+  else{
+    btnOpen.classList.add("header__btn--close");
+    menu.classList.remove("modal-disnone");
+  }
 });

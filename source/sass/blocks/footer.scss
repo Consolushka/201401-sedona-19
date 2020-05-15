@@ -15,44 +15,15 @@
   margin-bottom: 35px;
 
   @include base-heading;
-
+  line-height: 26px;
   font-size: 21px;
 }
 
-.socials-list {
-  @include list-style;
-  width: 151px;
-  margin-bottom: 48px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.socials-list__item-btn {
-  fill: $white-color;
-  width: 46px;
-  height: 48px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background: #5496bd;
-    fill: #88b6d1;
-  }
-}
-
-.copyrighting {
+.footer__copy {
   width: 130px;
   letter-spacing: 0.3px;
-
   position: relative;
+  line-height: 19px;
   margin: 0;
 
   @include base-text;
@@ -78,6 +49,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     font-size: 21px;
+    padding-top: 27px;
   }
 
   .footer__hashtag {

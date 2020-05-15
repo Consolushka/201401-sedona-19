@@ -8,6 +8,7 @@
 .find-hotel__heading {
   margin: 0;
   margin-bottom: 21px;
+  line-height: 26px;
 
   @include base-heading;
 
@@ -29,7 +30,7 @@
 
 .find-hotel__btn {
   margin: 0 auto;
-
+  line-height: 28px;
   width: 280px;
   padding: 15px;
 
@@ -50,6 +51,7 @@
 
   .find-hotel__heading {
     font-size: 30px;
+    line-height: 33px;
     margin-bottom: 25px;
   }
 
@@ -57,6 +59,7 @@
     width: 69%;
     margin: 0 auto;
     margin-bottom: 44px;
+    line-height: 26px;
 
     br {
       display: block;

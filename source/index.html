@@ -4,45 +4,45 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody();</script>
   <script src="js/picturepolyfill.js"></script>
 </head>
 <body>
-<header class="header">
+<header class="header header--index">
   <div class="container">
     <div class="header__flex-wrapper">
       <nav class="header__navigation">
         <ul class="header__navigation-list menu-list">
-          <li class="menu-list__item menu-list__item--main menu-list__item--active btn--menu">
+          <li class="menu-list__item menu-list__item--main menu-list__item--active">
             <a href="index.html" class="menu-list__item-btn">Главная</a>
-            <button type="button" class="btn btn--close menu-list__item-btn menu-list__item-btn--close no-js">
-              <span class="visually-hidden">Закрыть Меню</span>
-            </button>
           </li>
-          <li class="menu-list__item btn--menu">
+          <li class="menu-list__item">
             <a href="photos.html" class="menu-list__item-btn">Фото и Видео</a>
           </li>
-          <li class="menu-list__item btn--menu">
+          <li class="menu-list__item">
             <a href="form.html" class="menu-list__item-btn">Форма отзыва</a>
           </li>
-          <li class="menu-list__item btn--menu">
+          <li class="menu-list__item">
             <a href="https://up.htmlacademy.ru/adaptive/19" class="menu-list__item-btn">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <div class="header__wrapper">
-
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
           <img class="header__logo logo" src="img/logo-sedona-mobile.svg" alt="Логотип">
         </picture>
-        <button type="button" class="btn btn--burger header__btn--menu modal-disnone">
-          <span class="visually-hidden">Кнопка Меню</span>
-        </button>
       </div>
+      <button type="button" class="btn header__btn header__btn--close no-js">
+        <span class="visually-hidden">Закрыть Меню</span>
+      </button>
     </div>
   </div>
 
@@ -51,7 +51,7 @@
   </div>
 </header>
 
-<main class="page-main">
+<main>
   <section class="advantages-info">
     <div class="container">
       <h2 class="advantages-info__heading">
@@ -72,7 +72,7 @@
       <div class="advantages-item__adaptive-wrapper">
         <div class="advantages-item__wrapper">
           <h3 class="advantages-item__title">Настоящий городок</h3>
-          <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
+          <p class="advantages-item__number">№ 1</p>
           <p class="advantages-item__desc">
             СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
           </p>
@@ -97,7 +97,7 @@
       <div class="comfort-list__wrapper">
         <div class="comfort-list__item comfort-list__item--housing">
           <div class="comfort-list__item-wrapper">
-            <svg width="74.695" height="72.346" viewBox="0 0 74.695 72.346" class="comfort-list__item-image comfort-list__item-image--housing">
+            <svg width="75" height="72" viewBox="0 0 74.695 72.346" class="comfort-list__item-image comfort-list__item-image--housing">
               <use xlink:href="img/sprite.svg#icon-house"></use>
             </svg>
             <div>
@@ -110,12 +110,12 @@
         </div>
         <div class="comfort-list__item comfort-list__item--souvenirs">
           <div class="comfort-list__item-wrapper">
-            <svg width="63" height="75.084" viewBox="0 0 63 75.084" class="comfort-list__item-image comfort-list__item-image--souvenirs">
+            <svg width="63" height="75" viewBox="0 0 63 75.084" class="comfort-list__item-image comfort-list__item-image--souvenirs">
               <use xlink:href="img/sprite.svg#icon-gift"></use>
             </svg>
             <div>
               <h4 class="comfort-list__item-title">Сувениры</h4>
-              <p class="comfort-list__item-desc">
+              <p class="comfort-list__item-desc comfort-list__item-desc--firefox">
                 Не только китайского, <br>но и местного производства!
               </p>
             </div>
@@ -123,7 +123,7 @@
         </div>
         <div class="comfort-list__item comfort-list__item--eating">
           <div class="comfort-list__item-wrapper">
-            <svg width="76.166" height="68.959" viewBox="0 0 76.166 68.959" class="comfort-list__item-image comfort-list__item-image--eating">
+            <svg width="76" height="69" viewBox="0 0 76.166 68.959" class="comfort-list__item-image comfort-list__item-image--eating">
               <use xlink:href="img/sprite.svg#icon-burger"></use>
             </svg>
             <div>
@@ -142,7 +142,7 @@
       <div class="advantages-item__adaptive-wrapper advantages-item__adaptive-wrapper--reverse">
         <div class="advantages-item__wrapper">
           <h3 class="advantages-item__title">Там есть <br>мост Дьявола</h3>
-          <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
+          <p class="advantages-item__number">№ 2</p>
           <p class="advantages-item__desc">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
@@ -168,7 +168,7 @@
         <div class="advantages-other__item advantages-item">
           <div class="advantages-item__wrapper">
             <h3 class="advantages-item__title">Небольшая площадь</h3>
-            <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
+            <p class="advantages-item__number">№ 3</p>
             <p class="advantages-item__desc">
               Все интересные места находятся очень близко
             </p>
@@ -177,7 +177,7 @@
         <div class="advantages-other__item advantages-item">
           <div class="advantages-item__wrapper">
             <h3 class="advantages-item__title">Красивая дорога</h3>
-            <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
+            <p class="advantages-item__number">№ 4</p>
             <p class="advantages-item__desc advantages-item__desc--desktop">
               ЕХАТЬ В СЕДОНУ ИЗ <br>ЛАС-ВЕГАСА
               совсем <br>НЕ СКУЧНО!
@@ -187,7 +187,7 @@
         <div class="advantages-other__item advantages-item">
           <div class="advantages-item__wrapper">
             <h3 class="advantages-item__title">Мало туристов</h3>
-            <p class="advantages-item__number">№<span class="advantage__number-count"></span></p>
+            <p class="advantages-item__number">№ 5</p>
             <p class="advantages-item__desc">
               Большенство едет в гранд каньон и толпится там
             </p>
@@ -211,7 +211,7 @@
 
   <section class="location">
     <h3 class="visually-hidden">Местоположение</h3>
-    <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774555!2d-111.8301578595786!3d34.854443815278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1589366271324!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774555!2d-111.8301578595786!3d34.854443815278216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1589366271324!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
     </iframe>
     <svg xmlns="http://www.w3.org/2000/svg" class="location__marker" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
       <image id="map-marker.svg" width="27" height="27" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAABhUlEQVRIicWWwUrDQBCGZ6KCIEiLIh4q6EWPyc2j6RP4CH0FfZL4Cn0En6Dx6KnJUS8K9iCiFARBEBn5Q9PGzezGNG39bt3d2a+ZTGaXqhCRQEQiERmKznAyH1Ru5pCEIjKwCGxgfVhXFNWUmER/kbQc6aoL9mm5ZIsSTYXF/deLqSMi9SV/fn1TOhrT3fM7Pb59TMcPd7boZH+b/E6bNjfWtNCsuJj5Ej94IsJLHWirbx9e6eb+JRPagOjseI9Oj3ZtS7rMHOcyiEpVdJ2OKH0aWyUm/kGbzv2ONhUzc9ebfB8lEZ6ojghgPeIU8BkFHhH1zBmkDKmbB0fKe572VCgG1ztykReTQuhpFYiqa4IlPktjiWJ5z4MtXpUti/+XoTM0wRYPWWIOogU1wRKfQBabo45eVwniEK8QQ9bXAtDr5gFxlj/a95g50Z4OTRW9rg5Yb2nG6I3J6rs+zc6zC21lg/MMXOXn2S+WfVKbstXdQYopbSiqvl0ZwtXcGw3pYm7ERPQDTKEg3qwHbPQAAAAASUVORK5CYII="/>
@@ -241,7 +241,7 @@
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
+        <li class="socials-list__item">
           <a href="#" class="btn btn--sedona socials-list__item-btn socials-list__item-btn--youtube">
             <span class="visually-hidden">Ссылка на Ютуб</span>
             <svg width="20" height="20" viewBox="0 0 19.979 14.015">
@@ -250,7 +250,7 @@
           </a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copy copyrighting">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copy">
         Разработано
         <svg width="27" height="34" class="footer__copy-icon" viewBox="0 0 26.943 34.09">
           <use xlink:href="img/sprite.svg#icon-htmlacademy"/>
@@ -261,8 +261,8 @@
   </div>
 </footer>
 
-</body>
-
 <script type="text/javascript" src="js/menu.js"></script>
+
+</body>
 
 </html>

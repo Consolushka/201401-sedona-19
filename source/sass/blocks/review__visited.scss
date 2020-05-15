@@ -1,0 +1,76 @@
+.review__visited-heading {
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
+  line-height: 24px;
+}
+
+.review__visited {
+  margin: 28px 0 29px;
+}
+
+.review__visited-indicator {
+  position: relative;
+  line-height: 22px;
+  margin-left: 79px;
+  text-transform: none;
+
+  &::before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    left: -79px;
+    top: -14px;
+    height: 56px;
+    width: 56px;
+    background: $field-color;
+    border-radius: 3px;
+  }
+
+  &::after {
+    cursor: pointer;
+    content: url("../../img/icon-tick.svg");
+    position: absolute;
+    left: -63px;
+    top: 3px;
+    opacity: 0;
+  }
+}
+
+.review__visited-cb:checked + .review__visited-indicator::after {
+  opacity: 1;
+}
+
+.review__visited-cb:hover + .review__visited-indicator::before,
+.review__visited-cb:focus + .review__visited-indicator::before {
+  background: $field-color-hover;
+}
+
+.review__visited-cb:active + .review__visited-indicator::before {
+  background: $field-color-active;
+}
+
+.review__visited-cb:active + .review__visited-indicator::after {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .review__visited {
+    margin-bottom: 37px;
+
+    &--mountain {
+      margin-right: 12px;
+    }
+  }
+
+  .review__visited-heading {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__visited--mountain {
+    margin-right: 0;
+  }
+}
