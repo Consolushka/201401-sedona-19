@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Седона. Форма Отзывов</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/ptsans.woff" type="font/woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +55,7 @@
     <div class="container container--special">
       <form action="#" method="post" class="review__form">
         <div class="review__form-info">
-          <div class="container">
+          <div class="container container--review">
             <h2 class="review__heading">Оставьте свой отзыв</h2>
             <p class="review__slogan">
               Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
@@ -66,7 +64,7 @@
         </div>
 
         <div class="review__form-wrapper review__form-wrapper--introducing">
-          <div class="container">
+          <div class="container container--review container--introducing">
             <h3 class="review__user-heading">Представьтесь:</h3>
             <div class="review__form-quiz">
               <label class="review__user review__user--name">
@@ -86,7 +84,7 @@
         </div>
 
         <div class="review__form-wrapper review__form-wrapper--contacts">
-          <div class="container">
+          <div class="container container--review">
             <h3 class="review__contacts-heading">Контактная информация:</h3>
             <div class="review__form-quiz">
               <label class="review__contacts review__contacts--tel">
@@ -102,7 +100,7 @@
         </div>
 
         <div class="review__form-wrapper review__form-wrapper--impression">
-          <div class="container">
+          <div class="container container--review container--impression">
             <h3 class="review__impression-heading">ВАше Общее впечатление:</h3>
             <div class="review__form-quiz">
               <label class="review__impression review__impression--good">
@@ -122,7 +120,7 @@
         </div>
 
         <div class="review__form-wrapper review__form-wrapper--visited">
-          <div class="container">
+          <div class="container container--review">
             <h3 class="review__visited-heading">посещенные
               достопримечательности:</h3>
             <div class="review__form-quiz">
@@ -147,7 +145,7 @@
         </div>
 
         <div class="review__form-wrapper review__form-wrapper--opinion">
-          <div class="container">
+          <div class="container container--review">
             <h3 class="review__opinion-heading">Опишите свои эмоции:</h3>
             <label class="review__opinion">
               <textarea class="review__opinion-field" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -157,7 +155,7 @@
 
 
         <div class="review__form-last">
-          <div class="container">
+          <div class="container container--review">
             <div class="review__form-wrapper">
               <button type="submit" class="btn btn--sedona review__btn">Отправить отзыв</button>
               <p class="review__form-necessarily">* &#8211; Обязательные поля</p>

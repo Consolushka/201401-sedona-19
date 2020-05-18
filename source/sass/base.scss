@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 400;
 }
 
@@ -11,7 +11,7 @@
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
+  font-display: swap;
 }
 
 html {

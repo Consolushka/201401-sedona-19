@@ -12,7 +12,7 @@
 .advantages-other__item {
   border-top: 1px solid #d6d6d6;
 
-  padding: 28px 0;
+  padding: 27px 0;
 
   &:first-child {
     border: none;
@@ -22,10 +22,6 @@
 @media (min-width: $tablet-width) {
   .advantages-other {
     padding: 44px 0;
-
-    .container {
-      padding: 0;
-    }
   }
 
   .advantages-other__item {

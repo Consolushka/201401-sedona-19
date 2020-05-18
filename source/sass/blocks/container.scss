@@ -3,6 +3,10 @@
 
   margin: 0 auto;
   padding: 0 20px;
+
+  &--special {
+    padding: 0;
+  }
 }
 
 .container--centric {
@@ -15,11 +19,75 @@
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 60px;
+
+    &--review{
+      padding: 0;
+    }
+
+    &--photos{
+      padding: 0;
+    }
+
+    &--impression{
+      padding-right: 49px;
+    }
+
+    &--introducing{
+      padding-left: 58px;
+    }
+
+    &--advant{
+      padding-left: 0;
+    }
+
+    &--other{
+      padding: 0;
+    }
+
+    &--comfort{
+      padding: 0 4px;
+    }
+  }
+
+  .container.container--special {
+    padding: 0 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     padding: 0 65px;
+
+    &--review{
+      padding: 0;
+    }
+
+    &--impression{
+      padding-right: 52px;
+    }
+
+    &--introducing{
+      padding-left: 80px;
+    }
+
+    &--advant{
+      padding-left: 0;
+    }
+
+    &--other{
+      padding: 0;
+    }
+
+    &--comfort{
+      padding: 0;
+    }
+
+    &--centric {
+      padding: 0;
+    }
+  }
+
+  .container.container--special {
+    padding: 0 120px;
   }
 }

@@ -1,6 +1,6 @@
 var btnOpen = document.querySelector(".header__btn");
 console.log(btnOpen);
-btnOpen.classList.remove("no-js");
+btnOpen.classList.remove("header__btn--no-js");
 var menu = document.querySelector(".header__navigation");
 btnOpen.addEventListener("click", function () {
   if (btnOpen.classList.contains("header__btn--close")) {

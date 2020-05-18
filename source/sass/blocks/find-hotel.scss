@@ -7,7 +7,7 @@
 
 .find-hotel__heading {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   line-height: 26px;
 
   @include base-heading;
@@ -21,7 +21,7 @@
   @include base-text;
 
   margin-bottom: 36px;
-  line-height: 23px;
+  line-height: 24px;
 
   br {
     display: none;
@@ -30,7 +30,7 @@
 
 .find-hotel__btn {
   margin: 0 auto;
-  line-height: 28px;
+  line-height: 26px;
   width: 280px;
   padding: 15px;
 
@@ -46,20 +46,20 @@
 
 @media (min-width: $tablet-width) {
   .find-hotel {
-    padding: 49px 0;
+    padding: 55px 0;
   }
 
   .find-hotel__heading {
     font-size: 30px;
-    line-height: 33px;
-    margin-bottom: 25px;
+    line-height: 26px;
+    margin-bottom: 28px;
   }
 
   .find-hotel__desc {
     width: 69%;
     margin: 0 auto;
     margin-bottom: 44px;
-    line-height: 26px;
+    line-height: 24px;
 
     br {
       display: block;
@@ -75,7 +75,7 @@
 
 @media (min-width: $desktop-width) {
   .find-hotel {
-    padding: 49px 0;
+    padding: 54px 0;
   }
 
   .find-hotel__desc {

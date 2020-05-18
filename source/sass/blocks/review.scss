@@ -3,20 +3,17 @@
   margin-bottom: 27px;
 }
 
-.container--special {
-  padding: 0;
-}
-
 .review__heading {
   margin: 0;
   font-size: 18px;
+  line-height: 26px;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 }
 
 .review__slogan {
   margin: 0;
-  line-height: 23px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -51,7 +48,7 @@
   padding: 19px 0 15px 0;
 
   &--opinion {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 
   &:last-child {
@@ -66,7 +63,7 @@
 .review__user {
   width: 100%;
 
-  margin: 5px 0 4px 0;
+  margin: 3px 0 4px 0;
 
   display: flex;
   flex-direction: row;
@@ -76,6 +73,7 @@
   &--name {
     .review__user-field {
       width: 230px;
+      padding-left: 18px;
     }
   }
 }
@@ -87,15 +85,17 @@
 .review__opinion-heading {
   text-align: center;
   font-size: 18px;
+  line-height: 26px;
 }
 
 .review__user-indicator {
   margin-right: 14px;
+  line-height: 26px;
 }
 
 .review__user-heading {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .review__slogan,
@@ -104,12 +104,12 @@
 }
 
 .review__form-wrapper--contacts {
-  padding-bottom: 27px;
+  padding-bottom: 23px;
 }
 
 .review__contacts-heading {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
 }
 
 .review__contacts-indicator {
@@ -120,7 +120,7 @@
 }
 
 .review__contacts {
-  margin-top: 10px;
+  margin-top: 5px;
   position: relative;
   width: 100%;
 
@@ -159,7 +159,7 @@
 }
 
 .review__impression {
-  margin: 17px 0 29px 0;
+  margin: 17px 0 26px 0;
   position: relative;
 }
 
@@ -175,6 +175,7 @@
 
 .review__impression-indicator {
   margin-left: 78px;
+  line-height: 26px;
 
   &::before {
     content: "";
@@ -224,7 +225,7 @@
 }
 
 .review__visited {
-  margin: 28px 0 29px;
+  margin: 27px 0;
 }
 
 .review__visited-heading {
@@ -237,6 +238,7 @@
   position: relative;
 
   margin-left: 79px;
+  line-height: 26px;
 
   &::before {
     cursor: pointer;
@@ -281,7 +283,7 @@
 .review__opinion-field,
 .review__contacts-field {
   background-color: $field-color;
-
+  font-family: "PT Sans", "Arial", sans-serif;
   @include base-heading;
   width: 100%;
   text-transform: none;
@@ -302,13 +304,13 @@
 .review__user-field {
   padding: 20px;
   width: 193px;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .review__user-field::placeholder,
 .review__opinion-field::placeholder,
 .review__contacts-field::placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
-
   @include base-heading;
   text-transform: none;
 }
@@ -322,10 +324,8 @@
   width: 100%;
   min-height: 160px;
 
-  padding: 17px;
-  padding-top: 11px;
-
-  line-height: 25px;
+  padding: 13px 17px 17px;
+  line-height: 26px;
   resize: none;
 }
 
@@ -346,8 +346,9 @@
 
   @include base-heading;
   color: #ffffff;
-  font-size: 19px;
-  letter-spacing: 1.2px;
+  font-size: 21px;
+  letter-spacing: 0;
+  line-height: 26px;
 }
 
 .review__form-necessarily {
@@ -357,21 +358,13 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    margin-top: 66px;
+    margin-top: 72px;
     margin-bottom: 67px;
-
-    .container {
-      padding: 0;
-    }
-  }
-
-  .container.container--special {
-    padding: 0 60px;
   }
 
   .review__heading {
     font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 31px;
   }
 
   .review__slogan {
@@ -402,10 +395,6 @@
     &--impression {
       order: 1;
       border-right: 1px solid $field-color-hover;
-
-      .container {
-        padding-right: 49px;
-      }
     }
   }
 
@@ -414,13 +403,7 @@
   }
 
   .review__impression {
-    margin: 28px 0;
-  }
-
-  .review__form-wrapper--introducing {
-    .container {
-      padding-left: 58px;
-    }
+    margin: 27px 0;
   }
 
   .review__user-heading {
@@ -482,10 +465,10 @@
   }
 
   .review__form-wrapper--visited {
-    margin-top: 61px;
+    margin-top: 56px;
 
     .review__form-quiz {
-      padding: 23px 94px 16px 97px;
+      padding: 18px 94px 16px 97px;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -547,12 +530,8 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    margin-top: 103px;
+    margin-top: 109px;
     margin-bottom: 71px;
-  }
-
-  .container.container--special {
-    padding: 0 120px;
   }
 
   .review__form-info {
@@ -567,16 +546,6 @@
 
   .review__slogan {
     padding: 0 260px;
-  }
-
-  .review__form-wrapper--impression {
-    .container {
-      padding-right: 52px;
-    }
-  }
-
-  .review__form-wrapper--introducing .container {
-    padding-left: 80px;
   }
 
   .review__form-wrapper--contacts {
@@ -642,7 +611,7 @@
   }
 
   .review__form-wrapper--visited {
-    margin-top: 40px;
+    margin-top: 35px;
 
     .review__form-quiz {
       padding: 0;

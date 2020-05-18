@@ -16,15 +16,15 @@
 
 .video__heading {
   @include base-heading;
-  line-height: 21px;
+  line-height: 26px;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 }
 
 .video__slogan {
   @include base-text;
   padding: 0 10px;
-  line-height: 23px;
+  line-height: 24px;
   margin: 0;
   margin-bottom: 35px;
 }
@@ -115,14 +115,13 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding-top: 60px;
+    padding-top: 66px;
     margin-bottom: -44px;
   }
 
   .video__heading {
-    line-height: 41px;
     font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .video__slogan {
@@ -191,11 +190,12 @@
 
 @media (min-width: $desktop-width) {
   .video {
-    padding-top: 63px;
-    margin-bottom: -1px;
+    padding-top: 70px;
+    margin-bottom: -2px;
   }
 
   .video__slogan {
+    width: 100%;
     padding: 0 318px;
   }
 

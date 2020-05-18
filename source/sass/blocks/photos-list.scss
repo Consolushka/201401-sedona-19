@@ -8,33 +8,26 @@
 
 .photos-list__item {
   border-top: 1px solid #e5e5e5;
-  padding: 20px 0;
+  padding: 21px 0;
+  padding-bottom: 14px;
 
   @include base-heading;
 
-  .centric-container {
-    align-items: flex-start;
-  }
-
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
-  }
-
-  &:nth-child(2) {
-    padding-bottom: 24px;
   }
 }
 
 .photos-list__item-info__name {
   font-size: 14px;
-  line-height: 18px;
-  margin: 14px 0 5px 0;
+  line-height: 24px;
+  margin: 12px 0 0;
 }
 
 .photos-list__item-info__author {
   margin: 0;
   margin-bottom: 8px;
-  line-height: 18px;
+  line-height: 24px;
 
   @include base-text;
   text-transform: none;
@@ -42,7 +35,7 @@
 
 .photos-list__item-info__likes {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   display: flex;
   align-items: center;
 }
@@ -59,10 +52,6 @@
     width: 50%;
     border: none;
     padding: 0;
-
-    .centric-container {
-      align-items: center;
-    }
   }
 
   .photos-list__item:last-child {
@@ -127,7 +116,7 @@
   }
 
   .photos-list__item-info__name {
-    margin-top: 19px;
+    margin-top: 16px;
   }
 
   .photos-list__item-info__likes {
@@ -142,9 +131,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photos .container {
-    padding: 0;
-  }
+  .container
 
   .photos-list__item {
     width: 33.33%;
@@ -197,9 +184,5 @@
     margin-top: 26px;
     margin-right: 12px;
     line-height: 32px;
-  }
-
-  .btn--like {
-    fill: $white-color;
   }
 }

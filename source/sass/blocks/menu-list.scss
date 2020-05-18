@@ -28,9 +28,9 @@
 
 .menu-list__item-btn {
   display: block;
-  line-height: 23px;
+  line-height: 40px;
   width: 100%;
-  padding: 15.5px 0;
+  padding: 7px 0;
 }
 
 .menu-list__item:last-child {
@@ -85,6 +85,10 @@
         opacity: 0.3;
       }
     }
+  }
+
+  .menu-list__item-btn{
+    line-height: 26px;
   }
 
   .menu-list__item-open {

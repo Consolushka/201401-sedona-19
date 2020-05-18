@@ -69,10 +69,16 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .btn {
     &--like {
       margin-right: 3px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn--like {
+    fill: $white-color;
   }
 }
