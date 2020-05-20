@@ -18,13 +18,13 @@
   }
 }
 
-.photos-list__item-info__name {
+.photos-list__item-info-name {
   font-size: 14px;
   line-height: 24px;
   margin: 12px 0 0;
 }
 
-.photos-list__item-info__author {
+.photos-list__item-info-author {
   margin: 0;
   margin-bottom: 8px;
   line-height: 24px;
@@ -33,7 +33,7 @@
   text-transform: none;
 }
 
-.photos-list__item-info__likes {
+.photos-list__item-info-likes {
   font-size: 14px;
   line-height: 24px;
   display: flex;
@@ -70,7 +70,7 @@
       padding-left: 0;
     }
 
-    .photos-list__item-info__likes {
+    .photos-list__item-info-likes {
       margin-right: 16px;
     }
   }
@@ -84,7 +84,7 @@
       max-width: 648px;
     }
 
-    .photos-list__item-info__likes {
+    .photos-list__item-info-likes {
       margin-right: 0;
     }
   }
@@ -104,11 +104,11 @@
     background: #f2f2f2;
   }
 
-  .photos-list__item-info__name {
+  .photos-list__item-info-name {
     margin-top: 16px;
   }
 
-  .photos-list__item-info__likes {
+  .photos-list__item-info-likes {
     margin-top: 27px;
     margin-left: auto;
     margin-right: 11px;
@@ -147,17 +147,17 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .photos-list__item-info__author {
+  .photos-list__item-info-author {
     color: $white-color;
   }
 
   .photos-list__item:nth-child(3) {
-    .photos-list__item-info__likes {
+    .photos-list__item-info-likes {
       margin-right: 19px;
     }
   }
 
-  .photos-list__item-info__likes {
+  .photos-list__item-info-likes {
     margin-top: 26px;
     margin-right: 12px;
     line-height: 32px;
